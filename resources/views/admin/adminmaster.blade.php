@@ -58,13 +58,13 @@
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <a href="../widgets.html" class="nav-link">
+                        <router-link to="/category-list" class="nav-link">
                             <i class="nav-icon fa fa-th"></i>
                             <p>
                                 Category
 
                             </p>
-                        </a>
+                        </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link to="/post"  class="nav-link">
