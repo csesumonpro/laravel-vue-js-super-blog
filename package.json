@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "admin-lte": "^3.0.0-alpha.2",
+        "sweetalert2": "^7.29.2",
         "vform": "^1.0.0",
         "vue-router": "^3.0.2"
     }
