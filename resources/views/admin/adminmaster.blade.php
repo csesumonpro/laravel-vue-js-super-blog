@@ -49,13 +49,13 @@
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
                     <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
+                        <router-link to="/home" class="nav-link">
                             <i class="nav-icon fa fa-dashboard"></i>
                             <p>
                                 Dashboard
                                 <i class="right fa fa-angle-left"></i>
                             </p>
-                        </a>
+                        </router-link>
                     </li>
                     <li class="nav-item">
                         <a href="../widgets.html" class="nav-link">
@@ -67,13 +67,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="../widgets.html" class="nav-link">
+                        <router-link to="/post"  class="nav-link">
                             <i class="nav-icon fa fa-th"></i>
                             <p>
                                 Post
                                 <span class="right badge badge-danger">New</span>
                             </p>
-                        </a>
+                        </router-link>
                     </li>
 
                 </ul>
