@@ -32,8 +32,8 @@
                                     <td>{{category.cat_name}}</td>
                                     <td>{{category.created_at | timeformat}}</td>
                                     <td>
-                                        <a href="">Edit</a>
-                                        <a href="">Delete</a>
+                                        <router-link :to="`/edit-category/${category}`">Edit</router-link>
+                                        <a href="" @click.prevent = "deletecategory(category.id)" >Delete</a>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -64,7 +64,19 @@
            }
         },
         methods:{
+            deletecategory(id){
+               axios.get('/category/'+id)
+                   .then(()=>{
+                       this.$store.dispatch("allCategory")
+                       toast({
+                           type: 'success',
+                           title: 'Category Deleted successfully'
+                       })
+                   })
+                   .catch(()=>{
 
+                   })
+            }
         }
     }
 </script>
