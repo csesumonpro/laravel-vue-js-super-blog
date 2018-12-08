@@ -51492,7 +51492,7 @@ exports = module.exports = __webpack_require__(13)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -51536,6 +51536,7 @@ module.exports = function listToStyles (parentId, list) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -72665,15 +72666,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-        addCategory: function addCategory() {
+        updateCategory: function updateCategory() {
             var _this2 = this;
 
-            this.form.post('/add-category').then(function (response) {
+            this.form.post('/update-category/' + this.$route.params.categoryid).then(function (response) {
                 _this2.$router.push('/category-list');
 
                 toast({
                     type: 'success',
-                    title: 'Category Added successfully'
+                    title: 'Category Updated successfully'
                 });
             }).catch(function () {});
         }
@@ -72700,9 +72701,9 @@ var render = function() {
               {
                 attrs: { role: "form" },
                 on: {
-                  click: function($event) {
+                  submit: function($event) {
                     $event.preventDefault()
-                    _vm.addCategory()
+                    _vm.updateCategory()
                   }
                 }
               },

@@ -27,6 +27,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+
                                 <tr v-for="(category,index) in getallCategory" :key="category.id">
                                     <td>{{index+1}}</td>
                                     <td>{{category.cat_name}}</td>
