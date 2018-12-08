@@ -6,9 +6,9 @@ window.Vue = require('vue');
 import Vuex from 'vuex'
 Vue.use(Vuex)
 import storeData from "./store/index"
-const store = new Vuex.Store({
+const store = new Vuex.Store(
     storeData
-})
+)
 
 
 // vue router
@@ -40,7 +40,8 @@ window.toast = toast
 
 const router = new VueRouter({
     routes, // short for `routes: routes`
-    mode:'history'
+    mode:'hash',
+
 })
 
 

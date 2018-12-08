@@ -25,4 +25,10 @@ class HomeController extends Controller
     {
         return view('admin.adminmaster');
     }
+    public function all_category(){
+        $categories = Category::all();
+        return response()->json([
+            'categories'=>$categories
+        ],200);
+    }
 }
