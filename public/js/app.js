@@ -65012,6 +65012,10 @@ __WEBPACK_IMPORTED_MODULE_1_vue___default.a.filter('timeformat', function (arg) 
     return __WEBPACK_IMPORTED_MODULE_0_moment___default()(arg).format("MMM Do YYYY");
 });
 
+__WEBPACK_IMPORTED_MODULE_1_vue___default.a.filter('sortlength', function (text, length, suffix) {
+    return text.substring(0, length) + suffix;
+});
+
 /***/ }),
 /* 170 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -69206,13 +69210,27 @@ var render = function() {
                       return _c("tr", [
                         _c("td", [_vm._v(_vm._s(index + 1))]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("User Name")]),
+                        post.user
+                          ? _c("td", [_vm._v(_vm._s(post.user.name))])
+                          : _vm._e(),
                         _vm._v(" "),
-                        _c("td", [_vm._v("Category Name")]),
+                        post.category
+                          ? _c("td", [_vm._v(_vm._s(post.category.cat_name))])
+                          : _vm._e(),
                         _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(post.title))]),
+                        _c("td", [
+                          _vm._v(
+                            _vm._s(_vm._f("sortlength")(post.title, 20, "---"))
+                          )
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(post.description))]),
+                        _c("td", [
+                          _vm._v(
+                            _vm._s(
+                              _vm._f("sortlength")(post.description, 40, "....")
+                            )
+                          )
+                        ]),
                         _vm._v(" "),
                         _c("td", [
                           _c("img", {
