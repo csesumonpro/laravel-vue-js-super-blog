@@ -30,7 +30,7 @@ export const routes = [
         component:PostList
     },
     {
-        path:'/add-category',
+        path:'/add-post',
         component:AddPost
     },
     {

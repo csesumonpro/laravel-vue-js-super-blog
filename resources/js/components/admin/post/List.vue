@@ -9,7 +9,7 @@
 
                             <div class="card-tools">
                                 <button class="btn btn-primary">
-                                    <router-link to="/" style="color:#fff"> Add Post</router-link>
+                                    <router-link to="/add-post" style="color:#fff"> Add New Post</router-link>
                                 </button>
                             </div>
                         </div>
