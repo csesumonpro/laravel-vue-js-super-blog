@@ -11,10 +11,10 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form role="form" enctype="multipart/form-data">
+                        <form role="form" enctype="multipart/form-data" @submit.prevent="addnewPost()">
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="postId">Add New Post</label>
+                                    <label for="postId">Add New Post </label>
                                     <input type="text" class="form-control" id="postId" placeholder="Add New Post" v-model="form.title" name="title" :class="{ 'is-invalid': form.errors.has('title') }">
                                     <has-error :form="form" field="title"></has-error>
                                 </div>
@@ -89,8 +89,20 @@
                 reader.onload = event => {
                    this.form.photo = event.target.result
                 };
-
                 reader.readAsDataURL(file);
+            },
+            addnewPost(){
+                this.form.post('/savepost')
+                    .then(()=>{
+                        this.$router.push('/post-list')
+                        toast({
+                            type: 'success',
+                            title: 'Post Added successfully'
+                        })
+                    })
+                    .catch(()=>{
+
+                    })
             }
         }
 

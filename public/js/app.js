@@ -1902,7 +1902,7 @@
             try {
                 oldLocale = globalLocale._abbr;
                 var aliasedRequire = require;
-                __webpack_require__(255)("./" + name);
+                __webpack_require__(254)("./" + name);
                 getSetGlobalLocale(oldLocale);
             } catch (e) {}
         }
@@ -4838,7 +4838,7 @@ function normalizeReference(str) {
 //
 exports.lib                 = {};
 exports.lib.mdurl           = __webpack_require__(25);
-exports.lib.ucmicro         = __webpack_require__(195);
+exports.lib.ucmicro         = __webpack_require__(194);
 
 exports.assign              = assign;
 exports.isString            = isString;
@@ -4866,7 +4866,7 @@ exports.normalizeReference  = normalizeReference;
 
 
 var bind = __webpack_require__(16);
-var isBuffer = __webpack_require__(164);
+var isBuffer = __webpack_require__(163);
 
 /*global toString:true*/
 
@@ -15137,7 +15137,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(263)
+var listToStyles = __webpack_require__(262)
 
 /*
 type StyleObject = {
@@ -25752,7 +25752,7 @@ return jQuery;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(2);
-var normalizeHeaderName = __webpack_require__(166);
+var normalizeHeaderName = __webpack_require__(165);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -28964,7 +28964,7 @@ Popper.Defaults = Defaults;
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(163);
+module.exports = __webpack_require__(162);
 
 /***/ }),
 /* 16 */
@@ -29182,12 +29182,12 @@ process.umask = function() { return 0; };
 
 
 var utils = __webpack_require__(2);
-var settle = __webpack_require__(167);
-var buildURL = __webpack_require__(169);
-var parseHeaders = __webpack_require__(170);
-var isURLSameOrigin = __webpack_require__(171);
+var settle = __webpack_require__(166);
+var buildURL = __webpack_require__(168);
+var parseHeaders = __webpack_require__(169);
+var isURLSameOrigin = __webpack_require__(170);
 var createError = __webpack_require__(19);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(172);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(171);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -29284,7 +29284,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(173);
+      var cookies = __webpack_require__(172);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -29368,7 +29368,7 @@ module.exports = function xhrAdapter(config) {
 "use strict";
 
 
-var enhanceError = __webpack_require__(168);
+var enhanceError = __webpack_require__(167);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -40388,7 +40388,7 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(181).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(180).setImmediate))
 
 /***/ }),
 /* 23 */
@@ -40437,7 +40437,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(185);
+var	fixUrls = __webpack_require__(184);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -40759,7 +40759,7 @@ function updateLink (link, options, obj) {
 
 
 /*eslint quotes:0*/
-module.exports = __webpack_require__(190);
+module.exports = __webpack_require__(189);
 
 
 /***/ }),
@@ -40770,10 +40770,10 @@ module.exports = __webpack_require__(190);
 
 
 
-module.exports.encode = __webpack_require__(191);
-module.exports.decode = __webpack_require__(192);
-module.exports.format = __webpack_require__(193);
-module.exports.parse  = __webpack_require__(194);
+module.exports.encode = __webpack_require__(190);
+module.exports.decode = __webpack_require__(191);
+module.exports.format = __webpack_require__(192);
+module.exports.parse  = __webpack_require__(193);
 
 
 /***/ }),
@@ -41096,7 +41096,7 @@ module.exports.postProcess = function emphasis(state) {
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(3), __webpack_require__(246), __webpack_require__(247));
+    mod(__webpack_require__(3), __webpack_require__(245), __webpack_require__(246));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror", "../xml/xml", "../meta"], mod);
   else // Plain browser env
@@ -53827,7 +53827,7 @@ CodeMirror.defineMIME("text/x-markdown", "markdown");
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(157);
-module.exports = __webpack_require__(298);
+module.exports = __webpack_require__(297);
 
 
 /***/ }),
@@ -53836,18 +53836,18 @@ module.exports = __webpack_require__(298);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_v_markdown_editor_dist_index_css__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_v_markdown_editor_dist_index_css__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_v_markdown_editor_dist_index_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_v_markdown_editor_dist_index_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_v_markdown_editor__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_v_markdown_editor__ = __webpack_require__(185);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_v_markdown_editor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_v_markdown_editor__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuex__ = __webpack_require__(252);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store_index__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter__ = __webpack_require__(254);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue_router__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__routes__ = __webpack_require__(257);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vform__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuex__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store_index__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue_router__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__routes__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vform__ = __webpack_require__(295);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vform___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_vform__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_sweetalert2__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_sweetalert2__ = __webpack_require__(296);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_sweetalert2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_sweetalert2__);
 
 __webpack_require__(158);
@@ -53870,8 +53870,8 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_5_vue_router__["a" /* default */]);
 
 
 
-Vue.component('example-component', __webpack_require__(291));
-Vue.component('admin-main', __webpack_require__(294));
+Vue.component('example-component', __webpack_require__(290));
+Vue.component('admin-main', __webpack_require__(293));
 
 // V-form
 
@@ -53923,7 +53923,7 @@ try {
 
   __webpack_require__(160);
   __webpack_require__(161);
-  __webpack_require__(162);
+  // require('@fortawesome/fontawesome-free');
 } catch (e) {}
 
 /**
@@ -75046,2013 +75046,6 @@ if (token) {
 
 /***/ }),
 /* 162 */
-/***/ (function(module, exports) {
-
-/*!
- * Font Awesome Free 5.6.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-(function () {
-  'use strict';
-
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
-
-  function _defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-
-  function _createClass(Constructor, protoProps, staticProps) {
-    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) _defineProperties(Constructor, staticProps);
-    return Constructor;
-  }
-
-  function _defineProperty(obj, key, value) {
-    if (key in obj) {
-      Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      });
-    } else {
-      obj[key] = value;
-    }
-
-    return obj;
-  }
-
-  function _objectSpread(target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i] != null ? arguments[i] : {};
-      var ownKeys = Object.keys(source);
-
-      if (typeof Object.getOwnPropertySymbols === 'function') {
-        ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
-          return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-        }));
-      }
-
-      ownKeys.forEach(function (key) {
-        _defineProperty(target, key, source[key]);
-      });
-    }
-
-    return target;
-  }
-
-  function _slicedToArray(arr, i) {
-    return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();
-  }
-
-  function _toConsumableArray(arr) {
-    return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
-  }
-
-  function _arrayWithoutHoles(arr) {
-    if (Array.isArray(arr)) {
-      for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
-
-      return arr2;
-    }
-  }
-
-  function _arrayWithHoles(arr) {
-    if (Array.isArray(arr)) return arr;
-  }
-
-  function _iterableToArray(iter) {
-    if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
-  }
-
-  function _iterableToArrayLimit(arr, i) {
-    var _arr = [];
-    var _n = true;
-    var _d = false;
-    var _e = undefined;
-
-    try {
-      for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-        _arr.push(_s.value);
-
-        if (i && _arr.length === i) break;
-      }
-    } catch (err) {
-      _d = true;
-      _e = err;
-    } finally {
-      try {
-        if (!_n && _i["return"] != null) _i["return"]();
-      } finally {
-        if (_d) throw _e;
-      }
-    }
-
-    return _arr;
-  }
-
-  function _nonIterableSpread() {
-    throw new TypeError("Invalid attempt to spread non-iterable instance");
-  }
-
-  function _nonIterableRest() {
-    throw new TypeError("Invalid attempt to destructure non-iterable instance");
-  }
-
-  var noop = function noop() {};
-
-  var _WINDOW = {};
-  var _DOCUMENT = {};
-  var _MUTATION_OBSERVER = null;
-  var _PERFORMANCE = {
-    mark: noop,
-    measure: noop
-  };
-
-  try {
-    if (typeof window !== 'undefined') _WINDOW = window;
-    if (typeof document !== 'undefined') _DOCUMENT = document;
-    if (typeof MutationObserver !== 'undefined') _MUTATION_OBSERVER = MutationObserver;
-    if (typeof performance !== 'undefined') _PERFORMANCE = performance;
-  } catch (e) {}
-
-  var _ref = _WINDOW.navigator || {},
-      _ref$userAgent = _ref.userAgent,
-      userAgent = _ref$userAgent === void 0 ? '' : _ref$userAgent;
-
-  var WINDOW = _WINDOW;
-  var DOCUMENT = _DOCUMENT;
-  var MUTATION_OBSERVER = _MUTATION_OBSERVER;
-  var PERFORMANCE = _PERFORMANCE;
-  var IS_BROWSER = !!WINDOW.document;
-  var IS_DOM = !!DOCUMENT.documentElement && !!DOCUMENT.head && typeof DOCUMENT.addEventListener === 'function' && typeof DOCUMENT.createElement === 'function';
-  var IS_IE = ~userAgent.indexOf('MSIE') || ~userAgent.indexOf('Trident/');
-
-  var NAMESPACE_IDENTIFIER = '___FONT_AWESOME___';
-  var UNITS_IN_GRID = 16;
-  var DEFAULT_FAMILY_PREFIX = 'fa';
-  var DEFAULT_REPLACEMENT_CLASS = 'svg-inline--fa';
-  var DATA_FA_I2SVG = 'data-fa-i2svg';
-  var DATA_FA_PSEUDO_ELEMENT = 'data-fa-pseudo-element';
-  var DATA_PREFIX = 'data-prefix';
-  var DATA_ICON = 'data-icon';
-  var HTML_CLASS_I2SVG_BASE_CLASS = 'fontawesome-i2svg';
-  var TAGNAMES_TO_SKIP_FOR_PSEUDOELEMENTS = ['HTML', 'HEAD', 'STYLE', 'SCRIPT'];
-  var PRODUCTION = function () {
-    try {
-      return "production" === 'production';
-    } catch (e) {
-      return false;
-    }
-  }();
-  var oneToTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  var oneToTwenty = oneToTen.concat([11, 12, 13, 14, 15, 16, 17, 18, 19, 20]);
-  var ATTRIBUTES_WATCHED_FOR_MUTATION = ['class', 'data-prefix', 'data-icon', 'data-fa-transform', 'data-fa-mask'];
-  var RESERVED_CLASSES = ['xs', 'sm', 'lg', 'fw', 'ul', 'li', 'border', 'pull-left', 'pull-right', 'spin', 'pulse', 'rotate-90', 'rotate-180', 'rotate-270', 'flip-horizontal', 'flip-vertical', 'stack', 'stack-1x', 'stack-2x', 'inverse', 'layers', 'layers-text', 'layers-counter'].concat(oneToTen.map(function (n) {
-    return "".concat(n, "x");
-  })).concat(oneToTwenty.map(function (n) {
-    return "w-".concat(n);
-  }));
-
-  var initial = WINDOW.FontAwesomeConfig || {};
-
-  function getAttrConfig(attr) {
-    var element = DOCUMENT.querySelector('script[' + attr + ']');
-
-    if (element) {
-      return element.getAttribute(attr);
-    }
-  }
-
-  function coerce(val) {
-    // Getting an empty string will occur if the attribute is set on the HTML tag but without a value
-    // We'll assume that this is an indication that it should be toggled to true
-    // For example <script data-search-pseudo-elements src="..."></script>
-    if (val === '') return true;
-    if (val === 'false') return false;
-    if (val === 'true') return true;
-    return val;
-  }
-
-  if (DOCUMENT && typeof DOCUMENT.querySelector === 'function') {
-    var attrs = [['data-family-prefix', 'familyPrefix'], ['data-replacement-class', 'replacementClass'], ['data-auto-replace-svg', 'autoReplaceSvg'], ['data-auto-add-css', 'autoAddCss'], ['data-auto-a11y', 'autoA11y'], ['data-search-pseudo-elements', 'searchPseudoElements'], ['data-observe-mutations', 'observeMutations'], ['data-keep-original-source', 'keepOriginalSource'], ['data-measure-performance', 'measurePerformance'], ['data-show-missing-icons', 'showMissingIcons']];
-    attrs.forEach(function (_ref) {
-      var _ref2 = _slicedToArray(_ref, 2),
-          attr = _ref2[0],
-          key = _ref2[1];
-
-      var val = coerce(getAttrConfig(attr));
-
-      if (val !== undefined && val !== null) {
-        initial[key] = val;
-      }
-    });
-  }
-
-  var _default = _objectSpread({
-    familyPrefix: DEFAULT_FAMILY_PREFIX,
-    replacementClass: DEFAULT_REPLACEMENT_CLASS,
-    autoReplaceSvg: true,
-    autoAddCss: true,
-    autoA11y: true,
-    searchPseudoElements: false,
-    observeMutations: true,
-    keepOriginalSource: true,
-    measurePerformance: false,
-    showMissingIcons: true
-  }, initial);
-
-  if (!_default.autoReplaceSvg) _default.observeMutations = false;
-
-  var config = _objectSpread({}, _default);
-
-  WINDOW.FontAwesomeConfig = config;
-
-  var w = WINDOW || {};
-  if (!w[NAMESPACE_IDENTIFIER]) w[NAMESPACE_IDENTIFIER] = {};
-  if (!w[NAMESPACE_IDENTIFIER].styles) w[NAMESPACE_IDENTIFIER].styles = {};
-  if (!w[NAMESPACE_IDENTIFIER].hooks) w[NAMESPACE_IDENTIFIER].hooks = {};
-  if (!w[NAMESPACE_IDENTIFIER].shims) w[NAMESPACE_IDENTIFIER].shims = [];
-  var namespace = w[NAMESPACE_IDENTIFIER];
-
-  var functions = [];
-
-  var listener = function listener() {
-    DOCUMENT.removeEventListener('DOMContentLoaded', listener);
-    loaded = 1;
-    functions.map(function (fn) {
-      return fn();
-    });
-  };
-
-  var loaded = false;
-
-  if (IS_DOM) {
-    loaded = (DOCUMENT.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(DOCUMENT.readyState);
-    if (!loaded) DOCUMENT.addEventListener('DOMContentLoaded', listener);
-  }
-
-  function domready (fn) {
-    if (!IS_DOM) return;
-    loaded ? setTimeout(fn, 0) : functions.push(fn);
-  }
-
-  var d = UNITS_IN_GRID;
-  var meaninglessTransform = {
-    size: 16,
-    x: 0,
-    y: 0,
-    rotate: 0,
-    flipX: false,
-    flipY: false
-  };
-
-  function isReserved(name) {
-    return ~RESERVED_CLASSES.indexOf(name);
-  }
-
-  function bunker(fn) {
-    try {
-      fn();
-    } catch (e) {
-      if (!PRODUCTION) {
-        throw e;
-      }
-    }
-  }
-  function insertCss(css) {
-    if (!css || !IS_DOM) {
-      return;
-    }
-
-    var style = DOCUMENT.createElement('style');
-    style.setAttribute('type', 'text/css');
-    style.innerHTML = css;
-    var headChildren = DOCUMENT.head.childNodes;
-    var beforeChild = null;
-
-    for (var i = headChildren.length - 1; i > -1; i--) {
-      var child = headChildren[i];
-      var tagName = (child.tagName || '').toUpperCase();
-
-      if (['STYLE', 'LINK'].indexOf(tagName) > -1) {
-        beforeChild = child;
-      }
-    }
-
-    DOCUMENT.head.insertBefore(style, beforeChild);
-    return css;
-  }
-  var idPool = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  function nextUniqueId() {
-    var size = 12;
-    var id = '';
-
-    while (size-- > 0) {
-      id += idPool[Math.random() * 62 | 0];
-    }
-
-    return id;
-  }
-  function toArray(obj) {
-    var array = [];
-
-    for (var i = (obj || []).length >>> 0; i--;) {
-      array[i] = obj[i];
-    }
-
-    return array;
-  }
-  function classArray(node) {
-    if (node.classList) {
-      return toArray(node.classList);
-    } else {
-      return (node.getAttribute('class') || '').split(' ').filter(function (i) {
-        return i;
-      });
-    }
-  }
-  function getIconName(familyPrefix, cls) {
-    var parts = cls.split('-');
-    var prefix = parts[0];
-    var iconName = parts.slice(1).join('-');
-
-    if (prefix === familyPrefix && iconName !== '' && !isReserved(iconName)) {
-      return iconName;
-    } else {
-      return null;
-    }
-  }
-  function htmlEscape(str) {
-    return "".concat(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  }
-  function joinAttributes(attributes) {
-    return Object.keys(attributes || {}).reduce(function (acc, attributeName) {
-      return acc + "".concat(attributeName, "=\"").concat(htmlEscape(attributes[attributeName]), "\" ");
-    }, '').trim();
-  }
-  function joinStyles(styles) {
-    return Object.keys(styles || {}).reduce(function (acc, styleName) {
-      return acc + "".concat(styleName, ": ").concat(styles[styleName], ";");
-    }, '');
-  }
-  function transformIsMeaningful(transform) {
-    return transform.size !== meaninglessTransform.size || transform.x !== meaninglessTransform.x || transform.y !== meaninglessTransform.y || transform.rotate !== meaninglessTransform.rotate || transform.flipX || transform.flipY;
-  }
-  function transformForSvg(_ref) {
-    var transform = _ref.transform,
-        containerWidth = _ref.containerWidth,
-        iconWidth = _ref.iconWidth;
-    var outer = {
-      transform: "translate(".concat(containerWidth / 2, " 256)")
-    };
-    var innerTranslate = "translate(".concat(transform.x * 32, ", ").concat(transform.y * 32, ") ");
-    var innerScale = "scale(".concat(transform.size / 16 * (transform.flipX ? -1 : 1), ", ").concat(transform.size / 16 * (transform.flipY ? -1 : 1), ") ");
-    var innerRotate = "rotate(".concat(transform.rotate, " 0 0)");
-    var inner = {
-      transform: "".concat(innerTranslate, " ").concat(innerScale, " ").concat(innerRotate)
-    };
-    var path = {
-      transform: "translate(".concat(iconWidth / 2 * -1, " -256)")
-    };
-    return {
-      outer: outer,
-      inner: inner,
-      path: path
-    };
-  }
-  function transformForCss(_ref2) {
-    var transform = _ref2.transform,
-        _ref2$width = _ref2.width,
-        width = _ref2$width === void 0 ? UNITS_IN_GRID : _ref2$width,
-        _ref2$height = _ref2.height,
-        height = _ref2$height === void 0 ? UNITS_IN_GRID : _ref2$height,
-        _ref2$startCentered = _ref2.startCentered,
-        startCentered = _ref2$startCentered === void 0 ? false : _ref2$startCentered;
-    var val = '';
-
-    if (startCentered && IS_IE) {
-      val += "translate(".concat(transform.x / d - width / 2, "em, ").concat(transform.y / d - height / 2, "em) ");
-    } else if (startCentered) {
-      val += "translate(calc(-50% + ".concat(transform.x / d, "em), calc(-50% + ").concat(transform.y / d, "em)) ");
-    } else {
-      val += "translate(".concat(transform.x / d, "em, ").concat(transform.y / d, "em) ");
-    }
-
-    val += "scale(".concat(transform.size / d * (transform.flipX ? -1 : 1), ", ").concat(transform.size / d * (transform.flipY ? -1 : 1), ") ");
-    val += "rotate(".concat(transform.rotate, "deg) ");
-    return val;
-  }
-
-  var ALL_SPACE = {
-    x: 0,
-    y: 0,
-    width: '100%',
-    height: '100%'
-  };
-  function makeIconMasking (_ref) {
-    var children = _ref.children,
-        attributes = _ref.attributes,
-        main = _ref.main,
-        mask = _ref.mask,
-        transform = _ref.transform;
-    var mainWidth = main.width,
-        mainPath = main.icon;
-    var maskWidth = mask.width,
-        maskPath = mask.icon;
-    var trans = transformForSvg({
-      transform: transform,
-      containerWidth: maskWidth,
-      iconWidth: mainWidth
-    });
-    var maskRect = {
-      tag: 'rect',
-      attributes: _objectSpread({}, ALL_SPACE, {
-        fill: 'white'
-      })
-    };
-    var maskInnerGroup = {
-      tag: 'g',
-      attributes: _objectSpread({}, trans.inner),
-      children: [{
-        tag: 'path',
-        attributes: _objectSpread({}, mainPath.attributes, trans.path, {
-          fill: 'black'
-        })
-      }]
-    };
-    var maskOuterGroup = {
-      tag: 'g',
-      attributes: _objectSpread({}, trans.outer),
-      children: [maskInnerGroup]
-    };
-    var maskId = "mask-".concat(nextUniqueId());
-    var clipId = "clip-".concat(nextUniqueId());
-    var maskTag = {
-      tag: 'mask',
-      attributes: _objectSpread({}, ALL_SPACE, {
-        id: maskId,
-        maskUnits: 'userSpaceOnUse',
-        maskContentUnits: 'userSpaceOnUse'
-      }),
-      children: [maskRect, maskOuterGroup]
-    };
-    var defs = {
-      tag: 'defs',
-      children: [{
-        tag: 'clipPath',
-        attributes: {
-          id: clipId
-        },
-        children: [maskPath]
-      }, maskTag]
-    };
-    children.push(defs, {
-      tag: 'rect',
-      attributes: _objectSpread({
-        fill: 'currentColor',
-        'clip-path': "url(#".concat(clipId, ")"),
-        mask: "url(#".concat(maskId, ")")
-      }, ALL_SPACE)
-    });
-    return {
-      children: children,
-      attributes: attributes
-    };
-  }
-
-  function makeIconStandard (_ref) {
-    var children = _ref.children,
-        attributes = _ref.attributes,
-        main = _ref.main,
-        transform = _ref.transform,
-        styles = _ref.styles;
-    var styleString = joinStyles(styles);
-
-    if (styleString.length > 0) {
-      attributes['style'] = styleString;
-    }
-
-    if (transformIsMeaningful(transform)) {
-      var trans = transformForSvg({
-        transform: transform,
-        containerWidth: main.width,
-        iconWidth: main.width
-      });
-      children.push({
-        tag: 'g',
-        attributes: _objectSpread({}, trans.outer),
-        children: [{
-          tag: 'g',
-          attributes: _objectSpread({}, trans.inner),
-          children: [{
-            tag: main.icon.tag,
-            children: main.icon.children,
-            attributes: _objectSpread({}, main.icon.attributes, trans.path)
-          }]
-        }]
-      });
-    } else {
-      children.push(main.icon);
-    }
-
-    return {
-      children: children,
-      attributes: attributes
-    };
-  }
-
-  function asIcon (_ref) {
-    var children = _ref.children,
-        main = _ref.main,
-        mask = _ref.mask,
-        attributes = _ref.attributes,
-        styles = _ref.styles,
-        transform = _ref.transform;
-
-    if (transformIsMeaningful(transform) && main.found && !mask.found) {
-      var width = main.width,
-          height = main.height;
-      var offset = {
-        x: width / height / 2,
-        y: 0.5
-      };
-      attributes['style'] = joinStyles(_objectSpread({}, styles, {
-        'transform-origin': "".concat(offset.x + transform.x / 16, "em ").concat(offset.y + transform.y / 16, "em")
-      }));
-    }
-
-    return [{
-      tag: 'svg',
-      attributes: attributes,
-      children: children
-    }];
-  }
-
-  function asSymbol (_ref) {
-    var prefix = _ref.prefix,
-        iconName = _ref.iconName,
-        children = _ref.children,
-        attributes = _ref.attributes,
-        symbol = _ref.symbol;
-    var id = symbol === true ? "".concat(prefix, "-").concat(config.familyPrefix, "-").concat(iconName) : symbol;
-    return [{
-      tag: 'svg',
-      attributes: {
-        style: 'display: none;'
-      },
-      children: [{
-        tag: 'symbol',
-        attributes: _objectSpread({}, attributes, {
-          id: id
-        }),
-        children: children
-      }]
-    }];
-  }
-
-  function makeInlineSvgAbstract(params) {
-    var _params$icons = params.icons,
-        main = _params$icons.main,
-        mask = _params$icons.mask,
-        prefix = params.prefix,
-        iconName = params.iconName,
-        transform = params.transform,
-        symbol = params.symbol,
-        title = params.title,
-        extra = params.extra,
-        _params$watchable = params.watchable,
-        watchable = _params$watchable === void 0 ? false : _params$watchable;
-
-    var _ref = mask.found ? mask : main,
-        width = _ref.width,
-        height = _ref.height;
-
-    var widthClass = "fa-w-".concat(Math.ceil(width / height * 16));
-    var attrClass = [config.replacementClass, iconName ? "".concat(config.familyPrefix, "-").concat(iconName) : '', widthClass].filter(function (c) {
-      return extra.classes.indexOf(c) === -1;
-    }).concat(extra.classes).join(' ');
-    var content = {
-      children: [],
-      attributes: _objectSpread({}, extra.attributes, {
-        'data-prefix': prefix,
-        'data-icon': iconName,
-        'class': attrClass,
-        'role': 'img',
-        'xmlns': 'http://www.w3.org/2000/svg',
-        'viewBox': "0 0 ".concat(width, " ").concat(height)
-      })
-    };
-
-    if (watchable) {
-      content.attributes[DATA_FA_I2SVG] = '';
-    }
-
-    if (title) content.children.push({
-      tag: 'title',
-      attributes: {
-        id: content.attributes['aria-labelledby'] || "title-".concat(nextUniqueId())
-      },
-      children: [title]
-    });
-
-    var args = _objectSpread({}, content, {
-      prefix: prefix,
-      iconName: iconName,
-      main: main,
-      mask: mask,
-      transform: transform,
-      symbol: symbol,
-      styles: extra.styles
-    });
-
-    var _ref2 = mask.found && main.found ? makeIconMasking(args) : makeIconStandard(args),
-        children = _ref2.children,
-        attributes = _ref2.attributes;
-
-    args.children = children;
-    args.attributes = attributes;
-
-    if (symbol) {
-      return asSymbol(args);
-    } else {
-      return asIcon(args);
-    }
-  }
-  function makeLayersTextAbstract(params) {
-    var content = params.content,
-        width = params.width,
-        height = params.height,
-        transform = params.transform,
-        title = params.title,
-        extra = params.extra,
-        _params$watchable2 = params.watchable,
-        watchable = _params$watchable2 === void 0 ? false : _params$watchable2;
-
-    var attributes = _objectSpread({}, extra.attributes, title ? {
-      'title': title
-    } : {}, {
-      'class': extra.classes.join(' ')
-    });
-
-    if (watchable) {
-      attributes[DATA_FA_I2SVG] = '';
-    }
-
-    var styles = _objectSpread({}, extra.styles);
-
-    if (transformIsMeaningful(transform)) {
-      styles['transform'] = transformForCss({
-        transform: transform,
-        startCentered: true,
-        width: width,
-        height: height
-      });
-      styles['-webkit-transform'] = styles['transform'];
-    }
-
-    var styleString = joinStyles(styles);
-
-    if (styleString.length > 0) {
-      attributes['style'] = styleString;
-    }
-
-    var val = [];
-    val.push({
-      tag: 'span',
-      attributes: attributes,
-      children: [content]
-    });
-
-    if (title) {
-      val.push({
-        tag: 'span',
-        attributes: {
-          class: 'sr-only'
-        },
-        children: [title]
-      });
-    }
-
-    return val;
-  }
-  function makeLayersCounterAbstract(params) {
-    var content = params.content,
-        title = params.title,
-        extra = params.extra;
-
-    var attributes = _objectSpread({}, extra.attributes, title ? {
-      'title': title
-    } : {}, {
-      'class': extra.classes.join(' ')
-    });
-
-    var styleString = joinStyles(extra.styles);
-
-    if (styleString.length > 0) {
-      attributes['style'] = styleString;
-    }
-
-    var val = [];
-    val.push({
-      tag: 'span',
-      attributes: attributes,
-      children: [content]
-    });
-
-    if (title) {
-      val.push({
-        tag: 'span',
-        attributes: {
-          class: 'sr-only'
-        },
-        children: [title]
-      });
-    }
-
-    return val;
-  }
-
-  var noop$1 = function noop() {};
-
-  var p = config.measurePerformance && PERFORMANCE && PERFORMANCE.mark && PERFORMANCE.measure ? PERFORMANCE : {
-    mark: noop$1,
-    measure: noop$1
-  };
-  var preamble = "FA \"5.6.1\"";
-
-  var begin = function begin(name) {
-    p.mark("".concat(preamble, " ").concat(name, " begins"));
-    return function () {
-      return end(name);
-    };
-  };
-
-  var end = function end(name) {
-    p.mark("".concat(preamble, " ").concat(name, " ends"));
-    p.measure("".concat(preamble, " ").concat(name), "".concat(preamble, " ").concat(name, " begins"), "".concat(preamble, " ").concat(name, " ends"));
-  };
-
-  var perf = {
-    begin: begin,
-    end: end
-  };
-
-  /**
-   * Internal helper to bind a function known to have 4 arguments
-   * to a given context.
-   */
-
-  var bindInternal4 = function bindInternal4(func, thisContext) {
-    return function (a, b, c, d) {
-      return func.call(thisContext, a, b, c, d);
-    };
-  };
-
-  /**
-   * # Reduce
-   *
-   * A fast object `.reduce()` implementation.
-   *
-   * @param  {Object}   subject      The object to reduce over.
-   * @param  {Function} fn           The reducer function.
-   * @param  {mixed}    initialValue The initial value for the reducer, defaults to subject[0].
-   * @param  {Object}   thisContext  The context for the reducer.
-   * @return {mixed}                 The final result.
-   */
-
-
-  var reduce = function fastReduceObject(subject, fn, initialValue, thisContext) {
-    var keys = Object.keys(subject),
-        length = keys.length,
-        iterator = thisContext !== undefined ? bindInternal4(fn, thisContext) : fn,
-        i,
-        key,
-        result;
-
-    if (initialValue === undefined) {
-      i = 1;
-      result = subject[keys[0]];
-    } else {
-      i = 0;
-      result = initialValue;
-    }
-
-    for (; i < length; i++) {
-      key = keys[i];
-      result = iterator(result, subject[key], key, subject);
-    }
-
-    return result;
-  };
-
-  var styles = namespace.styles,
-      shims = namespace.shims;
-  var _byUnicode = {};
-  var _byLigature = {};
-  var _byOldName = {};
-  var build = function build() {
-    var lookup = function lookup(reducer) {
-      return reduce(styles, function (o, style, prefix) {
-        o[prefix] = reduce(style, reducer, {});
-        return o;
-      }, {});
-    };
-
-    _byUnicode = lookup(function (acc, icon, iconName) {
-      acc[icon[3]] = iconName;
-      return acc;
-    });
-    _byLigature = lookup(function (acc, icon, iconName) {
-      var ligatures = icon[2];
-      acc[iconName] = iconName;
-      ligatures.forEach(function (ligature) {
-        acc[ligature] = iconName;
-      });
-      return acc;
-    });
-    var hasRegular = 'far' in styles;
-    _byOldName = reduce(shims, function (acc, shim) {
-      var oldName = shim[0];
-      var prefix = shim[1];
-      var iconName = shim[2];
-
-      if (prefix === 'far' && !hasRegular) {
-        prefix = 'fas';
-      }
-
-      acc[oldName] = {
-        prefix: prefix,
-        iconName: iconName
-      };
-      return acc;
-    }, {});
-  };
-  build();
-  function byUnicode(prefix, unicode) {
-    return _byUnicode[prefix][unicode];
-  }
-  function byLigature(prefix, ligature) {
-    return _byLigature[prefix][ligature];
-  }
-  function byOldName(name) {
-    return _byOldName[name] || {
-      prefix: null,
-      iconName: null
-    };
-  }
-
-  var styles$1 = namespace.styles;
-  var emptyCanonicalIcon = function emptyCanonicalIcon() {
-    return {
-      prefix: null,
-      iconName: null,
-      rest: []
-    };
-  };
-  function getCanonicalIcon(values) {
-    return values.reduce(function (acc, cls) {
-      var iconName = getIconName(config.familyPrefix, cls);
-
-      if (styles$1[cls]) {
-        acc.prefix = cls;
-      } else if (iconName) {
-        var shim = acc.prefix === 'fa' ? byOldName(iconName) : {};
-        acc.iconName = shim.iconName || iconName;
-        acc.prefix = shim.prefix || acc.prefix;
-      } else if (cls !== config.replacementClass && cls.indexOf('fa-w-') !== 0) {
-        acc.rest.push(cls);
-      }
-
-      return acc;
-    }, emptyCanonicalIcon());
-  }
-  function iconFromMapping(mapping, prefix, iconName) {
-    if (mapping && mapping[prefix] && mapping[prefix][iconName]) {
-      return {
-        prefix: prefix,
-        iconName: iconName,
-        icon: mapping[prefix][iconName]
-      };
-    }
-  }
-
-  function toHtml(abstractNodes) {
-    var tag = abstractNodes.tag,
-        _abstractNodes$attrib = abstractNodes.attributes,
-        attributes = _abstractNodes$attrib === void 0 ? {} : _abstractNodes$attrib,
-        _abstractNodes$childr = abstractNodes.children,
-        children = _abstractNodes$childr === void 0 ? [] : _abstractNodes$childr;
-
-    if (typeof abstractNodes === 'string') {
-      return htmlEscape(abstractNodes);
-    } else {
-      return "<".concat(tag, " ").concat(joinAttributes(attributes), ">").concat(children.map(toHtml).join(''), "</").concat(tag, ">");
-    }
-  }
-
-  var noop$2 = function noop() {};
-
-  function isWatched(node) {
-    var i2svg = node.getAttribute ? node.getAttribute(DATA_FA_I2SVG) : null;
-    return typeof i2svg === 'string';
-  }
-
-  function getMutator() {
-    if (config.autoReplaceSvg === true) {
-      return mutators.replace;
-    }
-
-    var mutator = mutators[config.autoReplaceSvg];
-    return mutator || mutators.replace;
-  }
-
-  var mutators = {
-    replace: function replace(mutation) {
-      var node = mutation[0];
-      var abstract = mutation[1];
-      var newOuterHTML = abstract.map(function (a) {
-        return toHtml(a);
-      }).join('\n');
-
-      if (node.parentNode && node.outerHTML) {
-        node.outerHTML = newOuterHTML + (config.keepOriginalSource && node.tagName.toLowerCase() !== 'svg' ? "<!-- ".concat(node.outerHTML, " -->") : '');
-      } else if (node.parentNode) {
-        var newNode = document.createElement('span');
-        node.parentNode.replaceChild(newNode, node);
-        newNode.outerHTML = newOuterHTML;
-      }
-    },
-    nest: function nest(mutation) {
-      var node = mutation[0];
-      var abstract = mutation[1]; // If we already have a replaced node we do not want to continue nesting within it.
-      // Short-circuit to the standard replacement
-
-      if (~classArray(node).indexOf(config.replacementClass)) {
-        return mutators.replace(mutation);
-      }
-
-      var forSvg = new RegExp("".concat(config.familyPrefix, "-.*"));
-      delete abstract[0].attributes.style;
-      var splitClasses = abstract[0].attributes.class.split(' ').reduce(function (acc, cls) {
-        if (cls === config.replacementClass || cls.match(forSvg)) {
-          acc.toSvg.push(cls);
-        } else {
-          acc.toNode.push(cls);
-        }
-
-        return acc;
-      }, {
-        toNode: [],
-        toSvg: []
-      });
-      abstract[0].attributes.class = splitClasses.toSvg.join(' ');
-      var newInnerHTML = abstract.map(function (a) {
-        return toHtml(a);
-      }).join('\n');
-      node.setAttribute('class', splitClasses.toNode.join(' '));
-      node.setAttribute(DATA_FA_I2SVG, '');
-      node.innerHTML = newInnerHTML;
-    }
-  };
-  function perform(mutations, callback) {
-    var callbackFunction = typeof callback === 'function' ? callback : noop$2;
-
-    if (mutations.length === 0) {
-      callbackFunction();
-    } else {
-      var frame = WINDOW.requestAnimationFrame || function (op) {
-        return op();
-      };
-
-      frame(function () {
-        var mutator = getMutator();
-        var mark = perf.begin('mutate');
-        mutations.map(mutator);
-        mark();
-        callbackFunction();
-      });
-    }
-  }
-  var disabled = false;
-  function disableObservation(operation) {
-    disabled = true;
-    operation();
-    disabled = false;
-  }
-  var mo = null;
-  function observe(options) {
-    if (!MUTATION_OBSERVER) {
-      return;
-    }
-
-    if (!config.observeMutations) {
-      return;
-    }
-
-    var treeCallback = options.treeCallback,
-        nodeCallback = options.nodeCallback,
-        pseudoElementsCallback = options.pseudoElementsCallback,
-        _options$observeMutat = options.observeMutationsRoot,
-        observeMutationsRoot = _options$observeMutat === void 0 ? DOCUMENT.body : _options$observeMutat;
-    mo = new MUTATION_OBSERVER(function (objects) {
-      if (disabled) return;
-      toArray(objects).forEach(function (mutationRecord) {
-        if (mutationRecord.type === 'childList' && mutationRecord.addedNodes.length > 0 && !isWatched(mutationRecord.addedNodes[0])) {
-          if (config.searchPseudoElements) {
-            pseudoElementsCallback(mutationRecord.target);
-          }
-
-          treeCallback(mutationRecord.target);
-        }
-
-        if (mutationRecord.type === 'attributes' && mutationRecord.target.parentNode && config.searchPseudoElements) {
-          pseudoElementsCallback(mutationRecord.target.parentNode);
-        }
-
-        if (mutationRecord.type === 'attributes' && isWatched(mutationRecord.target) && ~ATTRIBUTES_WATCHED_FOR_MUTATION.indexOf(mutationRecord.attributeName)) {
-          if (mutationRecord.attributeName === 'class') {
-            var _getCanonicalIcon = getCanonicalIcon(classArray(mutationRecord.target)),
-                prefix = _getCanonicalIcon.prefix,
-                iconName = _getCanonicalIcon.iconName;
-
-            if (prefix) mutationRecord.target.setAttribute('data-prefix', prefix);
-            if (iconName) mutationRecord.target.setAttribute('data-icon', iconName);
-          } else {
-            nodeCallback(mutationRecord.target);
-          }
-        }
-      });
-    });
-    if (!IS_DOM) return;
-    mo.observe(observeMutationsRoot, {
-      childList: true,
-      attributes: true,
-      characterData: true,
-      subtree: true
-    });
-  }
-  function disconnect() {
-    if (!mo) return;
-    mo.disconnect();
-  }
-
-  function styleParser (node) {
-    var style = node.getAttribute('style');
-    var val = [];
-
-    if (style) {
-      val = style.split(';').reduce(function (acc, style) {
-        var styles = style.split(':');
-        var prop = styles[0];
-        var value = styles.slice(1);
-
-        if (prop && value.length > 0) {
-          acc[prop] = value.join(':').trim();
-        }
-
-        return acc;
-      }, {});
-    }
-
-    return val;
-  }
-
-  function toHex(unicode) {
-    var result = '';
-
-    for (var i = 0; i < unicode.length; i++) {
-      var hex = unicode.charCodeAt(i).toString(16);
-      result += ('000' + hex).slice(-4);
-    }
-
-    return result;
-  }
-
-  function classParser (node) {
-    var existingPrefix = node.getAttribute('data-prefix');
-    var existingIconName = node.getAttribute('data-icon');
-    var innerText = node.innerText !== undefined ? node.innerText.trim() : '';
-    var val = getCanonicalIcon(classArray(node));
-
-    if (existingPrefix && existingIconName) {
-      val.prefix = existingPrefix;
-      val.iconName = existingIconName;
-    }
-
-    if (val.prefix && innerText.length > 1) {
-      val.iconName = byLigature(val.prefix, node.innerText);
-    } else if (val.prefix && innerText.length === 1) {
-      val.iconName = byUnicode(val.prefix, toHex(node.innerText));
-    }
-
-    return val;
-  }
-
-  var parseTransformString = function parseTransformString(transformString) {
-    var transform = {
-      size: 16,
-      x: 0,
-      y: 0,
-      flipX: false,
-      flipY: false,
-      rotate: 0
-    };
-
-    if (!transformString) {
-      return transform;
-    } else {
-      return transformString.toLowerCase().split(' ').reduce(function (acc, n) {
-        var parts = n.toLowerCase().split('-');
-        var first = parts[0];
-        var rest = parts.slice(1).join('-');
-
-        if (first && rest === 'h') {
-          acc.flipX = true;
-          return acc;
-        }
-
-        if (first && rest === 'v') {
-          acc.flipY = true;
-          return acc;
-        }
-
-        rest = parseFloat(rest);
-
-        if (isNaN(rest)) {
-          return acc;
-        }
-
-        switch (first) {
-          case 'grow':
-            acc.size = acc.size + rest;
-            break;
-
-          case 'shrink':
-            acc.size = acc.size - rest;
-            break;
-
-          case 'left':
-            acc.x = acc.x - rest;
-            break;
-
-          case 'right':
-            acc.x = acc.x + rest;
-            break;
-
-          case 'up':
-            acc.y = acc.y - rest;
-            break;
-
-          case 'down':
-            acc.y = acc.y + rest;
-            break;
-
-          case 'rotate':
-            acc.rotate = acc.rotate + rest;
-            break;
-        }
-
-        return acc;
-      }, transform);
-    }
-  };
-  function transformParser (node) {
-    return parseTransformString(node.getAttribute('data-fa-transform'));
-  }
-
-  function symbolParser (node) {
-    var symbol = node.getAttribute('data-fa-symbol');
-    return symbol === null ? false : symbol === '' ? true : symbol;
-  }
-
-  function attributesParser (node) {
-    var extraAttributes = toArray(node.attributes).reduce(function (acc, attr) {
-      if (acc.name !== 'class' && acc.name !== 'style') {
-        acc[attr.name] = attr.value;
-      }
-
-      return acc;
-    }, {});
-    var title = node.getAttribute('title');
-
-    if (config.autoA11y) {
-      if (title) {
-        extraAttributes['aria-labelledby'] = "".concat(config.replacementClass, "-title-").concat(nextUniqueId());
-      } else {
-        extraAttributes['aria-hidden'] = 'true';
-      }
-    }
-
-    return extraAttributes;
-  }
-
-  function maskParser (node) {
-    var mask = node.getAttribute('data-fa-mask');
-
-    if (!mask) {
-      return emptyCanonicalIcon();
-    } else {
-      return getCanonicalIcon(mask.split(' ').map(function (i) {
-        return i.trim();
-      }));
-    }
-  }
-
-  var blankMeta = {
-    iconName: null,
-    title: null,
-    prefix: null,
-    transform: meaninglessTransform,
-    symbol: false,
-    mask: null,
-    extra: {
-      classes: [],
-      styles: {},
-      attributes: {}
-    }
-  };
-  function parseMeta(node) {
-    var _classParser = classParser(node),
-        iconName = _classParser.iconName,
-        prefix = _classParser.prefix,
-        extraClasses = _classParser.rest;
-
-    var extraStyles = styleParser(node);
-    var transform = transformParser(node);
-    var symbol = symbolParser(node);
-    var extraAttributes = attributesParser(node);
-    var mask = maskParser(node);
-    return {
-      iconName: iconName,
-      title: node.getAttribute('title'),
-      prefix: prefix,
-      transform: transform,
-      symbol: symbol,
-      mask: mask,
-      extra: {
-        classes: extraClasses,
-        styles: extraStyles,
-        attributes: extraAttributes
-      }
-    };
-  }
-
-  function MissingIcon(error) {
-    this.name = 'MissingIcon';
-    this.message = error || 'Icon unavailable';
-    this.stack = new Error().stack;
-  }
-  MissingIcon.prototype = Object.create(Error.prototype);
-  MissingIcon.prototype.constructor = MissingIcon;
-
-  var FILL = {
-    fill: 'currentColor'
-  };
-  var ANIMATION_BASE = {
-    attributeType: 'XML',
-    repeatCount: 'indefinite',
-    dur: '2s'
-  };
-  var RING = {
-    tag: 'path',
-    attributes: _objectSpread({}, FILL, {
-      d: 'M156.5,447.7l-12.6,29.5c-18.7-9.5-35.9-21.2-51.5-34.9l22.7-22.7C127.6,430.5,141.5,440,156.5,447.7z M40.6,272H8.5 c1.4,21.2,5.4,41.7,11.7,61.1L50,321.2C45.1,305.5,41.8,289,40.6,272z M40.6,240c1.4-18.8,5.2-37,11.1-54.1l-29.5-12.6 C14.7,194.3,10,216.7,8.5,240H40.6z M64.3,156.5c7.8-14.9,17.2-28.8,28.1-41.5L69.7,92.3c-13.7,15.6-25.5,32.8-34.9,51.5 L64.3,156.5z M397,419.6c-13.9,12-29.4,22.3-46.1,30.4l11.9,29.8c20.7-9.9,39.8-22.6,56.9-37.6L397,419.6z M115,92.4 c13.9-12,29.4-22.3,46.1-30.4l-11.9-29.8c-20.7,9.9-39.8,22.6-56.8,37.6L115,92.4z M447.7,355.5c-7.8,14.9-17.2,28.8-28.1,41.5 l22.7,22.7c13.7-15.6,25.5-32.9,34.9-51.5L447.7,355.5z M471.4,272c-1.4,18.8-5.2,37-11.1,54.1l29.5,12.6 c7.5-21.1,12.2-43.5,13.6-66.8H471.4z M321.2,462c-15.7,5-32.2,8.2-49.2,9.4v32.1c21.2-1.4,41.7-5.4,61.1-11.7L321.2,462z M240,471.4c-18.8-1.4-37-5.2-54.1-11.1l-12.6,29.5c21.1,7.5,43.5,12.2,66.8,13.6V471.4z M462,190.8c5,15.7,8.2,32.2,9.4,49.2h32.1 c-1.4-21.2-5.4-41.7-11.7-61.1L462,190.8z M92.4,397c-12-13.9-22.3-29.4-30.4-46.1l-29.8,11.9c9.9,20.7,22.6,39.8,37.6,56.9 L92.4,397z M272,40.6c18.8,1.4,36.9,5.2,54.1,11.1l12.6-29.5C317.7,14.7,295.3,10,272,8.5V40.6z M190.8,50 c15.7-5,32.2-8.2,49.2-9.4V8.5c-21.2,1.4-41.7,5.4-61.1,11.7L190.8,50z M442.3,92.3L419.6,115c12,13.9,22.3,29.4,30.5,46.1 l29.8-11.9C470,128.5,457.3,109.4,442.3,92.3z M397,92.4l22.7-22.7c-15.6-13.7-32.8-25.5-51.5-34.9l-12.6,29.5 C370.4,72.1,384.4,81.5,397,92.4z'
-    })
-  };
-
-  var OPACITY_ANIMATE = _objectSpread({}, ANIMATION_BASE, {
-    attributeName: 'opacity'
-  });
-
-  var DOT = {
-    tag: 'circle',
-    attributes: _objectSpread({}, FILL, {
-      cx: '256',
-      cy: '364',
-      r: '28'
-    }),
-    children: [{
-      tag: 'animate',
-      attributes: _objectSpread({}, ANIMATION_BASE, {
-        attributeName: 'r',
-        values: '28;14;28;28;14;28;'
-      })
-    }, {
-      tag: 'animate',
-      attributes: _objectSpread({}, OPACITY_ANIMATE, {
-        values: '1;0;1;1;0;1;'
-      })
-    }]
-  };
-  var QUESTION = {
-    tag: 'path',
-    attributes: _objectSpread({}, FILL, {
-      opacity: '1',
-      d: 'M263.7,312h-16c-6.6,0-12-5.4-12-12c0-71,77.4-63.9,77.4-107.8c0-20-17.8-40.2-57.4-40.2c-29.1,0-44.3,9.6-59.2,28.7 c-3.9,5-11.1,6-16.2,2.4l-13.1-9.2c-5.6-3.9-6.9-11.8-2.6-17.2c21.2-27.2,46.4-44.7,91.2-44.7c52.3,0,97.4,29.8,97.4,80.2 c0,67.6-77.4,63.5-77.4,107.8C275.7,306.6,270.3,312,263.7,312z'
-    }),
-    children: [{
-      tag: 'animate',
-      attributes: _objectSpread({}, OPACITY_ANIMATE, {
-        values: '1;0;0;0;0;1;'
-      })
-    }]
-  };
-  var EXCLAMATION = {
-    tag: 'path',
-    attributes: _objectSpread({}, FILL, {
-      opacity: '0',
-      d: 'M232.5,134.5l7,168c0.3,6.4,5.6,11.5,12,11.5h9c6.4,0,11.7-5.1,12-11.5l7-168c0.3-6.8-5.2-12.5-12-12.5h-23 C237.7,122,232.2,127.7,232.5,134.5z'
-    }),
-    children: [{
-      tag: 'animate',
-      attributes: _objectSpread({}, OPACITY_ANIMATE, {
-        values: '0;0;1;1;0;0;'
-      })
-    }]
-  };
-  var missing = {
-    tag: 'g',
-    children: [RING, DOT, QUESTION, EXCLAMATION]
-  };
-
-  var styles$2 = namespace.styles;
-  var LAYERS_TEXT_CLASSNAME = 'fa-layers-text';
-  var FONT_FAMILY_PATTERN = /Font Awesome 5 (Solid|Regular|Light|Brands|Free|Pro)/;
-  var STYLE_TO_PREFIX = {
-    'Solid': 'fas',
-    'Regular': 'far',
-    'Light': 'fal',
-    'Brands': 'fab'
-  };
-  var FONT_WEIGHT_TO_PREFIX = {
-    '900': 'fas',
-    '400': 'far',
-    '300': 'fal'
-  };
-
-  function findIcon(iconName, prefix) {
-    var val = {
-      found: false,
-      width: 512,
-      height: 512,
-      icon: missing
-    };
-
-    if (iconName && prefix && styles$2[prefix] && styles$2[prefix][iconName]) {
-      var icon = styles$2[prefix][iconName];
-      var width = icon[0];
-      var height = icon[1];
-      var vectorData = icon.slice(4);
-      val = {
-        found: true,
-        width: width,
-        height: height,
-        icon: {
-          tag: 'path',
-          attributes: {
-            fill: 'currentColor',
-            d: vectorData[0]
-          }
-        }
-      };
-    } else if (iconName && prefix && !config.showMissingIcons) {
-      throw new MissingIcon("Icon is missing for prefix ".concat(prefix, " with icon name ").concat(iconName));
-    }
-
-    return val;
-  }
-
-  function generateSvgReplacementMutation(node, nodeMeta) {
-    var iconName = nodeMeta.iconName,
-        title = nodeMeta.title,
-        prefix = nodeMeta.prefix,
-        transform = nodeMeta.transform,
-        symbol = nodeMeta.symbol,
-        mask = nodeMeta.mask,
-        extra = nodeMeta.extra;
-    return [node, makeInlineSvgAbstract({
-      icons: {
-        main: findIcon(iconName, prefix),
-        mask: findIcon(mask.iconName, mask.prefix)
-      },
-      prefix: prefix,
-      iconName: iconName,
-      transform: transform,
-      symbol: symbol,
-      mask: mask,
-      title: title,
-      extra: extra,
-      watchable: true
-    })];
-  }
-
-  function generateLayersText(node, nodeMeta) {
-    var title = nodeMeta.title,
-        transform = nodeMeta.transform,
-        extra = nodeMeta.extra;
-    var width = null;
-    var height = null;
-
-    if (IS_IE) {
-      var computedFontSize = parseInt(getComputedStyle(node).fontSize, 10);
-      var boundingClientRect = node.getBoundingClientRect();
-      width = boundingClientRect.width / computedFontSize;
-      height = boundingClientRect.height / computedFontSize;
-    }
-
-    if (config.autoA11y && !title) {
-      extra.attributes['aria-hidden'] = 'true';
-    }
-
-    return [node, makeLayersTextAbstract({
-      content: node.innerHTML,
-      width: width,
-      height: height,
-      transform: transform,
-      title: title,
-      extra: extra,
-      watchable: true
-    })];
-  }
-
-  function generateMutation(node) {
-    var nodeMeta = parseMeta(node);
-
-    if (~nodeMeta.extra.classes.indexOf(LAYERS_TEXT_CLASSNAME)) {
-      return generateLayersText(node, nodeMeta);
-    } else {
-      return generateSvgReplacementMutation(node, nodeMeta);
-    }
-  }
-
-  function searchPseudoElements(root) {
-    if (!IS_DOM) return;
-    var end = perf.begin('searchPseudoElements');
-    disableObservation(function () {
-      toArray(root.querySelectorAll('*')).filter(function (n) {
-        return n.parentNode !== document.head && !~TAGNAMES_TO_SKIP_FOR_PSEUDOELEMENTS.indexOf(n.tagName.toUpperCase()) && !n.getAttribute(DATA_FA_PSEUDO_ELEMENT) && (!n.parentNode || n.parentNode.tagName !== 'svg');
-      }).forEach(function (node) {
-        [':before', ':after'].forEach(function (pos) {
-          var children = toArray(node.children);
-          var alreadyProcessedPseudoElement = children.filter(function (c) {
-            return c.getAttribute(DATA_FA_PSEUDO_ELEMENT) === pos;
-          })[0];
-          var styles = WINDOW.getComputedStyle(node, pos);
-          var fontFamily = styles.getPropertyValue('font-family').match(FONT_FAMILY_PATTERN);
-          var fontWeight = styles.getPropertyValue('font-weight');
-
-          if (alreadyProcessedPseudoElement && !fontFamily) {
-            // If we've already processed it but the current computed style does not result in a font-family,
-            // that probably means that a class name that was previously present to make the icon has been
-            // removed. So we now should delete the icon.
-            node.removeChild(alreadyProcessedPseudoElement);
-          } else if (fontFamily) {
-            var content = styles.getPropertyValue('content');
-            var prefix = ~['Light', 'Regular', 'Solid', 'Brands'].indexOf(fontFamily[1]) ? STYLE_TO_PREFIX[fontFamily[1]] : FONT_WEIGHT_TO_PREFIX[fontWeight];
-            var iconName = byUnicode(prefix, toHex(content.length === 3 ? content.substr(1, 1) : content)); // Only convert the pseudo element in this :before/:after position into an icon if we haven't
-            // already done so with the same prefix and iconName
-
-            if (!alreadyProcessedPseudoElement || alreadyProcessedPseudoElement.getAttribute(DATA_PREFIX) !== prefix || alreadyProcessedPseudoElement.getAttribute(DATA_ICON) !== iconName) {
-              if (alreadyProcessedPseudoElement) {
-                // Delete the old one, since we're replacing it with a new one
-                node.removeChild(alreadyProcessedPseudoElement);
-              }
-
-              var extra = blankMeta.extra;
-              extra.attributes[DATA_FA_PSEUDO_ELEMENT] = pos;
-              var abstract = makeInlineSvgAbstract(_objectSpread({}, blankMeta, {
-                icons: {
-                  main: findIcon(iconName, prefix),
-                  mask: emptyCanonicalIcon()
-                },
-                prefix: prefix,
-                iconName: iconName,
-                extra: extra,
-                watchable: true
-              }));
-              var element = DOCUMENT.createElement('svg');
-
-              if (pos === ':before') {
-                node.insertBefore(element, node.firstChild);
-              } else {
-                node.appendChild(element);
-              }
-
-              element.outerHTML = abstract.map(function (a) {
-                return toHtml(a);
-              }).join('\n');
-            }
-          }
-        });
-      });
-    });
-    end();
-  }
-  function onTree(root) {
-    var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-    if (!IS_DOM) return;
-    var htmlClassList = DOCUMENT.documentElement.classList;
-
-    var hclAdd = function hclAdd(suffix) {
-      return htmlClassList.add("".concat(HTML_CLASS_I2SVG_BASE_CLASS, "-").concat(suffix));
-    };
-
-    var hclRemove = function hclRemove(suffix) {
-      return htmlClassList.remove("".concat(HTML_CLASS_I2SVG_BASE_CLASS, "-").concat(suffix));
-    };
-
-    var prefixes = Object.keys(styles$2);
-    var prefixesDomQuery = [".".concat(LAYERS_TEXT_CLASSNAME, ":not([").concat(DATA_FA_I2SVG, "])")].concat(prefixes.map(function (p) {
-      return ".".concat(p, ":not([").concat(DATA_FA_I2SVG, "])");
-    })).join(', ');
-
-    if (prefixesDomQuery.length === 0) {
-      return;
-    }
-
-    var candidates = toArray(root.querySelectorAll(prefixesDomQuery));
-
-    if (candidates.length > 0) {
-      hclAdd('pending');
-      hclRemove('complete');
-    } else {
-      return;
-    }
-
-    var mark = perf.begin('onTree');
-    var mutations = candidates.reduce(function (acc, node) {
-      try {
-        var mutation = generateMutation(node);
-
-        if (mutation) {
-          acc.push(mutation);
-        }
-      } catch (e) {
-        if (!PRODUCTION) {
-          if (e instanceof MissingIcon) {
-            console.error(e);
-          }
-        }
-      }
-
-      return acc;
-    }, []);
-    mark();
-    perform(mutations, function () {
-      hclAdd('active');
-      hclAdd('complete');
-      hclRemove('pending');
-      if (typeof callback === 'function') callback();
-    });
-  }
-  function onNode(node) {
-    var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-    var mutation = generateMutation(node);
-
-    if (mutation) {
-      perform([mutation], callback);
-    }
-  }
-
-  var baseStyles = "svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}";
-
-  function css () {
-    var dfp = DEFAULT_FAMILY_PREFIX;
-    var drc = DEFAULT_REPLACEMENT_CLASS;
-    var fp = config.familyPrefix;
-    var rc = config.replacementClass;
-    var s = baseStyles;
-
-    if (fp !== dfp || rc !== drc) {
-      var dPatt = new RegExp("\\.".concat(dfp, "\\-"), 'g');
-      var rPatt = new RegExp("\\.".concat(drc), 'g');
-      s = s.replace(dPatt, ".".concat(fp, "-")).replace(rPatt, ".".concat(rc));
-    }
-
-    return s;
-  }
-
-  function define(prefix, icons) {
-    var normalized = Object.keys(icons).reduce(function (acc, iconName) {
-      var icon = icons[iconName];
-      var expanded = !!icon.icon;
-
-      if (expanded) {
-        acc[icon.iconName] = icon.icon;
-      } else {
-        acc[iconName] = icon;
-      }
-
-      return acc;
-    }, {});
-
-    if (typeof namespace.hooks.addPack === 'function') {
-      namespace.hooks.addPack(prefix, normalized);
-    } else {
-      namespace.styles[prefix] = _objectSpread({}, namespace.styles[prefix] || {}, normalized);
-    }
-    /**
-     * Font Awesome 4 used the prefix of `fa` for all icons. With the introduction
-     * of new styles we needed to differentiate between them. Prefix `fa` is now an alias
-     * for `fas` so we'll easy the upgrade process for our users by automatically defining
-     * this as well.
-     */
-
-
-    if (prefix === 'fas') {
-      define('fa', icons);
-    }
-  }
-
-  var Library =
-  /*#__PURE__*/
-  function () {
-    function Library() {
-      _classCallCheck(this, Library);
-
-      this.definitions = {};
-    }
-
-    _createClass(Library, [{
-      key: "add",
-      value: function add() {
-        var _this = this;
-
-        for (var _len = arguments.length, definitions = new Array(_len), _key = 0; _key < _len; _key++) {
-          definitions[_key] = arguments[_key];
-        }
-
-        var additions = definitions.reduce(this._pullDefinitions, {});
-        Object.keys(additions).forEach(function (key) {
-          _this.definitions[key] = _objectSpread({}, _this.definitions[key] || {}, additions[key]);
-          define(key, additions[key]);
-          build();
-        });
-      }
-    }, {
-      key: "reset",
-      value: function reset() {
-        this.definitions = {};
-      }
-    }, {
-      key: "_pullDefinitions",
-      value: function _pullDefinitions(additions, definition) {
-        var normalized = definition.prefix && definition.iconName && definition.icon ? {
-          0: definition
-        } : definition;
-        Object.keys(normalized).map(function (key) {
-          var _normalized$key = normalized[key],
-              prefix = _normalized$key.prefix,
-              iconName = _normalized$key.iconName,
-              icon = _normalized$key.icon;
-          if (!additions[prefix]) additions[prefix] = {};
-          additions[prefix][iconName] = icon;
-        });
-        return additions;
-      }
-    }]);
-
-    return Library;
-  }();
-
-  function prepIcon(icon) {
-    var width = icon[0];
-    var height = icon[1];
-    var vectorData = icon.slice(4);
-    return {
-      found: true,
-      width: width,
-      height: height,
-      icon: {
-        tag: 'path',
-        attributes: {
-          fill: 'currentColor',
-          d: vectorData[0]
-        }
-      }
-    };
-  }
-
-  function ensureCss() {
-    if (config.autoAddCss && !_cssInserted) {
-      insertCss(css());
-
-      _cssInserted = true;
-    }
-  }
-
-  function apiObject(val, abstractCreator) {
-    Object.defineProperty(val, 'abstract', {
-      get: abstractCreator
-    });
-    Object.defineProperty(val, 'html', {
-      get: function get() {
-        return val.abstract.map(function (a) {
-          return toHtml(a);
-        });
-      }
-    });
-    Object.defineProperty(val, 'node', {
-      get: function get() {
-        if (!IS_DOM) return;
-        var container = DOCUMENT.createElement('div');
-        container.innerHTML = val.html;
-        return container.children;
-      }
-    });
-    return val;
-  }
-
-  function findIconDefinition(params) {
-    var _params$prefix = params.prefix,
-        prefix = _params$prefix === void 0 ? 'fa' : _params$prefix,
-        iconName = params.iconName;
-    if (!iconName) return;
-    return iconFromMapping(library.definitions, prefix, iconName) || iconFromMapping(namespace.styles, prefix, iconName);
-  }
-
-  function resolveIcons(next) {
-    return function (maybeIconDefinition) {
-      var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-      var iconDefinition = (maybeIconDefinition || {}).icon ? maybeIconDefinition : findIconDefinition(maybeIconDefinition || {});
-      var mask = params.mask;
-
-      if (mask) {
-        mask = (mask || {}).icon ? mask : findIconDefinition(mask || {});
-      }
-
-      return next(iconDefinition, _objectSpread({}, params, {
-        mask: mask
-      }));
-    };
-  }
-
-  var library = new Library();
-  var noAuto = function noAuto() {
-    config.autoReplaceSvg = false;
-    config.observeMutations = false;
-    disconnect();
-  };
-  var _cssInserted = false;
-  var dom = {
-    i2svg: function i2svg() {
-      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-      if (IS_DOM) {
-        ensureCss();
-        var _params$node = params.node,
-            node = _params$node === void 0 ? DOCUMENT : _params$node,
-            _params$callback = params.callback,
-            callback = _params$callback === void 0 ? function () {} : _params$callback;
-
-        if (config.searchPseudoElements) {
-          searchPseudoElements(node);
-        }
-
-        onTree(node, callback);
-      }
-    },
-    css: css,
-    insertCss: function insertCss$$1() {
-      if (!_cssInserted) {
-        insertCss(css());
-
-        _cssInserted = true;
-      }
-    },
-    watch: function watch() {
-      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      var autoReplaceSvgRoot = params.autoReplaceSvgRoot,
-          observeMutationsRoot = params.observeMutationsRoot;
-
-      if (config.autoReplaceSvg === false) {
-        config.autoReplaceSvg = true;
-      }
-
-      config.observeMutations = true;
-      domready(function () {
-        autoReplace({
-          autoReplaceSvgRoot: autoReplaceSvgRoot
-        });
-        observe({
-          treeCallback: onTree,
-          nodeCallback: onNode,
-          pseudoElementsCallback: searchPseudoElements,
-          observeMutationsRoot: observeMutationsRoot
-        });
-      });
-    }
-  };
-  var parse = {
-    transform: function transform(transformString) {
-      return parseTransformString(transformString);
-    }
-  };
-  var icon = resolveIcons(function (iconDefinition) {
-    var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    var _params$transform = params.transform,
-        transform = _params$transform === void 0 ? meaninglessTransform : _params$transform,
-        _params$symbol = params.symbol,
-        symbol = _params$symbol === void 0 ? false : _params$symbol,
-        _params$mask = params.mask,
-        mask = _params$mask === void 0 ? null : _params$mask,
-        _params$title = params.title,
-        title = _params$title === void 0 ? null : _params$title,
-        _params$classes = params.classes,
-        classes = _params$classes === void 0 ? [] : _params$classes,
-        _params$attributes = params.attributes,
-        attributes = _params$attributes === void 0 ? {} : _params$attributes,
-        _params$styles = params.styles,
-        styles = _params$styles === void 0 ? {} : _params$styles;
-    if (!iconDefinition) return;
-    var prefix = iconDefinition.prefix,
-        iconName = iconDefinition.iconName,
-        icon = iconDefinition.icon;
-    return apiObject(_objectSpread({
-      type: 'icon'
-    }, iconDefinition), function () {
-      ensureCss();
-
-      if (config.autoA11y) {
-        if (title) {
-          attributes['aria-labelledby'] = "".concat(config.replacementClass, "-title-").concat(nextUniqueId());
-        } else {
-          attributes['aria-hidden'] = 'true';
-        }
-      }
-
-      return makeInlineSvgAbstract({
-        icons: {
-          main: prepIcon(icon),
-          mask: mask ? prepIcon(mask.icon) : {
-            found: false,
-            width: null,
-            height: null,
-            icon: {}
-          }
-        },
-        prefix: prefix,
-        iconName: iconName,
-        transform: _objectSpread({}, meaninglessTransform, transform),
-        symbol: symbol,
-        title: title,
-        extra: {
-          attributes: attributes,
-          styles: styles,
-          classes: classes
-        }
-      });
-    });
-  });
-  var text = function text(content) {
-    var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    var _params$transform2 = params.transform,
-        transform = _params$transform2 === void 0 ? meaninglessTransform : _params$transform2,
-        _params$title2 = params.title,
-        title = _params$title2 === void 0 ? null : _params$title2,
-        _params$classes2 = params.classes,
-        classes = _params$classes2 === void 0 ? [] : _params$classes2,
-        _params$attributes2 = params.attributes,
-        attributes = _params$attributes2 === void 0 ? {} : _params$attributes2,
-        _params$styles2 = params.styles,
-        styles = _params$styles2 === void 0 ? {} : _params$styles2;
-    return apiObject({
-      type: 'text',
-      content: content
-    }, function () {
-      ensureCss();
-      return makeLayersTextAbstract({
-        content: content,
-        transform: _objectSpread({}, meaninglessTransform, transform),
-        title: title,
-        extra: {
-          attributes: attributes,
-          styles: styles,
-          classes: ["".concat(config.familyPrefix, "-layers-text")].concat(_toConsumableArray(classes))
-        }
-      });
-    });
-  };
-  var counter = function counter(content) {
-    var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    var _params$title3 = params.title,
-        title = _params$title3 === void 0 ? null : _params$title3,
-        _params$classes3 = params.classes,
-        classes = _params$classes3 === void 0 ? [] : _params$classes3,
-        _params$attributes3 = params.attributes,
-        attributes = _params$attributes3 === void 0 ? {} : _params$attributes3,
-        _params$styles3 = params.styles,
-        styles = _params$styles3 === void 0 ? {} : _params$styles3;
-    return apiObject({
-      type: 'counter',
-      content: content
-    }, function () {
-      ensureCss();
-      return makeLayersCounterAbstract({
-        content: content.toString(),
-        title: title,
-        extra: {
-          attributes: attributes,
-          styles: styles,
-          classes: ["".concat(config.familyPrefix, "-layers-counter")].concat(_toConsumableArray(classes))
-        }
-      });
-    });
-  };
-  var layer = function layer(assembler) {
-    return apiObject({
-      type: 'layer'
-    }, function () {
-      ensureCss();
-      var children = [];
-      assembler(function (args) {
-        Array.isArray(args) ? args.map(function (a) {
-          children = children.concat(a.abstract);
-        }) : children = children.concat(args.abstract);
-      });
-      return [{
-        tag: 'span',
-        attributes: {
-          class: "".concat(config.familyPrefix, "-layers")
-        },
-        children: children
-      }];
-    });
-  };
-  var api = {
-    noAuto: noAuto,
-    config: config,
-    dom: dom,
-    library: library,
-    parse: parse,
-    findIconDefinition: findIconDefinition,
-    icon: icon,
-    text: text,
-    counter: counter,
-    layer: layer,
-    toHtml: toHtml
-  };
-
-  var autoReplace = function autoReplace() {
-    var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var _params$autoReplaceSv = params.autoReplaceSvgRoot,
-        autoReplaceSvgRoot = _params$autoReplaceSv === void 0 ? DOCUMENT : _params$autoReplaceSv;
-    if (Object.keys(namespace.styles).length > 0 && IS_DOM && config.autoReplaceSvg) api.dom.i2svg({
-      node: autoReplaceSvgRoot
-    });
-  };
-
-  function bootstrap() {
-    if (IS_BROWSER) {
-      if (!WINDOW.FontAwesome) {
-        WINDOW.FontAwesome = api;
-      }
-
-      domready(function () {
-        autoReplace();
-        observe({
-          treeCallback: onTree,
-          nodeCallback: onNode,
-          pseudoElementsCallback: searchPseudoElements
-        });
-      });
-    }
-
-    namespace.hooks = _objectSpread({}, namespace.hooks, {
-      addPack: function addPack(prefix, icons) {
-        namespace.styles[prefix] = _objectSpread({}, namespace.styles[prefix] || {}, icons);
-        build();
-        autoReplace();
-      },
-      addShims: function addShims(shims) {
-        var _namespace$shims;
-
-        (_namespace$shims = namespace.shims).push.apply(_namespace$shims, _toConsumableArray(shims));
-
-        build();
-        autoReplace();
-      }
-    });
-  }
-
-  bunker(bootstrap);
-
-}());
-
-
-/***/ }),
-/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77060,7 +75053,7 @@ if (token) {
 
 var utils = __webpack_require__(2);
 var bind = __webpack_require__(16);
-var Axios = __webpack_require__(165);
+var Axios = __webpack_require__(164);
 var defaults = __webpack_require__(10);
 
 /**
@@ -77095,14 +75088,14 @@ axios.create = function create(instanceConfig) {
 
 // Expose Cancel & CancelToken
 axios.Cancel = __webpack_require__(21);
-axios.CancelToken = __webpack_require__(179);
+axios.CancelToken = __webpack_require__(178);
 axios.isCancel = __webpack_require__(20);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(180);
+axios.spread = __webpack_require__(179);
 
 module.exports = axios;
 
@@ -77111,7 +75104,7 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 164 */
+/* 163 */
 /***/ (function(module, exports) {
 
 /*!
@@ -77138,7 +75131,7 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 165 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77146,8 +75139,8 @@ function isSlowBuffer (obj) {
 
 var defaults = __webpack_require__(10);
 var utils = __webpack_require__(2);
-var InterceptorManager = __webpack_require__(174);
-var dispatchRequest = __webpack_require__(175);
+var InterceptorManager = __webpack_require__(173);
+var dispatchRequest = __webpack_require__(174);
 
 /**
  * Create a new instance of Axios
@@ -77224,7 +75217,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 166 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77243,7 +75236,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 167 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77276,7 +75269,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 168 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77304,7 +75297,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 
 /***/ }),
-/* 169 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77377,7 +75370,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 170 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77437,7 +75430,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 171 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77512,7 +75505,7 @@ module.exports = (
 
 
 /***/ }),
-/* 172 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77555,7 +75548,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 173 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77615,7 +75608,7 @@ module.exports = (
 
 
 /***/ }),
-/* 174 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77674,18 +75667,18 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 175 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(2);
-var transformData = __webpack_require__(176);
+var transformData = __webpack_require__(175);
 var isCancel = __webpack_require__(20);
 var defaults = __webpack_require__(10);
-var isAbsoluteURL = __webpack_require__(177);
-var combineURLs = __webpack_require__(178);
+var isAbsoluteURL = __webpack_require__(176);
+var combineURLs = __webpack_require__(177);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -77767,7 +75760,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 176 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77794,7 +75787,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 177 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77815,7 +75808,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 178 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77836,7 +75829,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 179 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77900,7 +75893,7 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 180 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77934,7 +75927,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 181 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -77990,7 +75983,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(182);
+__webpack_require__(181);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -78004,7 +75997,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
-/* 182 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -78197,13 +76190,13 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(17)))
 
 /***/ }),
-/* 183 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(184);
+var content = __webpack_require__(183);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -78228,7 +76221,7 @@ if(false) {
 }
 
 /***/ }),
-/* 184 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)(false);
@@ -78242,7 +76235,7 @@ exports.push([module.i, ".v-md-container{background:#f5f5f5;border:solid 1px #dd
 
 
 /***/ }),
-/* 185 */
+/* 184 */
 /***/ (function(module, exports) {
 
 
@@ -78337,13 +76330,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 186 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports=function(t){var e={};function i(a){if(e[a])return e[a].exports;var l=e[a]={i:a,l:!1,exports:{}};return t[a].call(l.exports,l,l.exports,i),l.l=!0,l.exports}return i.m=t,i.c=e,i.d=function(t,e,a){i.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:a})},i.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},i.t=function(t,e){if(1&e&&(t=i(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var a=Object.create(null);if(i.r(a),Object.defineProperty(a,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var l in t)i.d(a,l,function(e){return t[e]}.bind(null,l));return a},i.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return i.d(e,"a",e),e},i.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},i.p="",i(i.s=11)}([function(t,e){t.exports=__webpack_require__(9)},function(t,e){t.exports=__webpack_require__(187)},function(t,e){t.exports=__webpack_require__(188)},function(t,e){t.exports=__webpack_require__(3)},function(t,e){t.exports=__webpack_require__(243)},function(t,e,i){},function(t,e){t.exports=__webpack_require__(245)},function(t,e){t.exports=__webpack_require__(32)},function(t,e){t.exports=__webpack_require__(248)},function(t,e){t.exports=__webpack_require__(250)},function(t,e){t.exports=__webpack_require__(251)},function(t,e,i){"use strict";i.r(e);i(4),i(5);var a=i(0),l=i.n(a),r=i(1),o=i.n(r),s=i(2),n=i.n(s),d=i(3),c=i.n(d);i(6),i(7),i(8),i(9),i(10);var u=function(t,e,i,a,l,r,o,s){var n,d="function"==typeof t?t.options:t;if(e&&(d.render=e,d.staticRenderFns=i,d._compiled=!0),a&&(d.functional=!0),r&&(d._scopeId="data-v-"+r),o?(n=function(t){(t=t||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext)||"undefined"==typeof __VUE_SSR_CONTEXT__||(t=__VUE_SSR_CONTEXT__),l&&l.call(this,t),t&&t._registeredComponents&&t._registeredComponents.add(o)},d._ssrRegister=n):l&&(n=s?function(){l.call(this,this.$root.$options.shadowRoot)}:l),n)if(d.functional){d._injectStyles=n;var c=d.render;d.render=function(t,e){return n.call(e),c(t,e)}}else{var u=d.beforeCreate;d.beforeCreate=u?[].concat(u,n):[n]}return{exports:t,options:d}}({props:{css:{type:String},width:{type:String,default:"100%"},height:{type:String,default:"280px"},toolbar:{type:String,default:"clipboard redo undo | bold italic strikethrough heading | image link | numlist bullist code quote | preview fullscreen"},name:{type:String,default:"html"},value:{type:String,default:"",required:!1},buttonClass:{type:String,default:"btn btn-outline-secondary"},options:{type:Object,default:function(){return{}}}},data:()=>({id:"v-md-editor-"+(new Date).getTime(),editor:null,preview:!1,buttons:{bold:{title:"Bold",className:"far fa-bold",cmd:"bold",hotkey:"Ctrl-B"},italic:{title:"Italic",className:"far fa-italic",cmd:"italic",hotkey:"Ctrl-I"},strikethrough:{cmd:"strikethrough",className:"far fa-strikethrough",title:"Strikethrough"},heading:{title:"Heading",className:"far fa-heading",cmd:"heading",hotkey:"Ctrl-H"},code:{title:"Code",className:"far fa-code",cmd:"code",hotkey:"Ctrl-X"},quote:{title:"Quote",className:"far fa-quote-left",cmd:"quote",hotkey:"Ctrl-Q"},link:{title:"Link",className:"far fa-link",cmd:"link",hotkey:"Ctrl-K"},image:{title:"Image",className:"far fa-image",cmd:"image",hotkey:"Ctrl-P"},fullscreen:{cmd:"fullscreen",className:"far fa-arrows-alt no-disable no-mobile",title:"Toggle Fullscreen",hotkey:"F11",ready:!0},preview:{cmd:"preview",className:"far fa-eye no-disable",title:"Toggle Preview",hotkey:"Ctrl-P",ready:!0},clipboard:{cmd:"clipboard",className:"far fa-clipboard",title:"Copy & Markdown Format",hotkey:"Ctrl-V"},undo:{cmd:"undo",className:"far fa-undo",title:"Undo",hotkey:"Ctrl-Z"},redo:{cmd:"redo",className:"far fa-repeat",title:"Redo",hotkey:"Ctrl-Y"},bullist:{cmd:"bullist",className:"far fa-list-ul",title:"Generic List"},numlist:{cmd:"numlist",className:"far fa-list-ol",title:"Numbered List"}},defaults:{mode:"gfm",theme:"elegent",lineNumbers:!0,styleActiveLine:!0,styleSelectedText:!0,lineWrapping:!0,indentWithTabs:!0,autoRefresh:!0,tabSize:2,indentUnit:2},shortcuts:{}}),watch:{value(t){t!=this.editor.getValue()&&this.editor.setValue(t)}},computed:{styles(){return{width:isNaN(this.width)?this.width:this.width+"%",height:isNaN(this.height)?this.height:this.height+"%"}}},methods:{isEmpty:function(t){return null==t||/^[\s\xa0]*$/.test(t)},isUrl:function(t){return!this.isEmpty(t)&&t.match(/((http|https):\/\/)?(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/gi)},format(){for(var t=arguments[0],e=1;e<=arguments.length;e++)t=t.replace(/%[a-z]/,arguments[e]);return t},uid(t){return this.format("%s-%s",this.id,t)},obj(t){return l()("#"+this.uid(t))},_toggleBlock(t,e,i){i=this.isEmpty(i)?e:i;var a,l=this.editor,r=l.getCursor("start"),o=l.getCursor("end");this.state()[t]?(e=(a=l.getLine(r.line)).slice(0,r.ch),i=a.slice(r.ch),"bold"==t?(e=e.replace(/(\*\*|__)(?![\s\S]*(\*\*|__))/,""),i=i.replace(/(\*\*|__)/,"")):"italic"==t?(e=e.replace(/(\*|_)(?![\s\S]*(\*|_))/,""),i=i.replace(/(\*|_)/,"")):"strikethrough"==t&&(e=e.replace(/(\*\*|~~)(?![\s\S]*(\*\*|~~))/,""),i=i.replace(/(\*\*|~~)/,"")),l.replaceRange(e+i,{line:r.line,ch:0},{line:r.line,ch:99999999999999}),"bold"==t||"strikethrough"==t?(r.ch-=2,r!==o&&(o.ch-=2)):"italic"==t&&(r.ch-=1,r!==o&&(o.ch-=1))):(a=l.getSelection(),"bold"==t?a=(a=a.split("**").join("")).split("__").join(""):"italic"==t?a=(a=a.split("*").join("")).split("_").join(""):"strikethrough"==t&&(a=a.split("~~").join("")),l.replaceSelection(e+a+i),r.ch+=e.length,o.ch=r.ch+a.length),l.setSelection(r,o)},_toggleLine(t){for(var e=this.editor,i=this.state(),a=e.getCursor("start"),l=e.getCursor("end"),r={quote:/^(\s*)\>\s+/,bullist:/^(\s*)(\*|\-|\+)\s+/,numlist:/^(\s*)\d+\.\s+/},o={quote:"> ",bullist:"* ",numlist:"1. "},s=a.line;s<=l.line;s++)!function(a){var l=e.getLine(a);l=i[t]?l.replace(r[t],"$1"):o[t]+l,e.replaceRange(l,{line:a,ch:0},{line:a,ch:99999999999999})}(s)},state(t){t=t||this.editor.getCursor("start");var e=this.editor.getTokenAt(t);if(!e.type)return{};for(var i,a,l=e.type.split(" "),r={},o=0;o<l.length;o++)"strong"===(i=l[o])?r.bold=!0:"variable-2"===i?(a=this.editor.getLine(t.line),/^\s*\d+\.\s/.test(a)?r.numlist=!0:r.bullist=!0):"atom"===i?r.quote=!0:"em"===i?r.italic=!0:"quote"===i?r.quote=!0:"strikethrough"===i?r.strikethrough=!0:"comment"===i?r.code=!0:"link"===i?r.link=!0:"tag"===i?r.image=!0:i.match(/^header(\-[1-6])?$/)&&(r[i.replace("header","heading")]=!0);return r},_replaceSelection(t,e,i){var a,l=this.editor,r=e[0],o=e[1],s=l.getCursor("start"),n=l.getCursor("end");i&&Object.keys(i).forEach(t=>{r=r.replace("#"+t+"#",i[t]),o=o.replace("#"+t+"#",i[t])}),t?(a=l.getLine(s.line),r=a.slice(0,s.ch),o=a.slice(s.ch),l.replaceRange(r+o,{line:s.line,ch:0})):(a=l.getSelection(),l.replaceSelection(r+a+o),s.ch+=r.length,s!==n&&(n.ch+=r.length)),l.setSelection(s,n),l.focus()},command(t){var e=this.editor,i=e.getSelection();this.state();switch(t){case"undo":e.undo();break;case"redo":e.redo();break;case"bold":this._toggleBlock("bold","**");break;case"italic":this._toggleBlock("italic","*");break;case"strikethrough":this._toggleBlock("strikethrough","~~");break;case"code":this._toggleBlock("code","```");break;case"heading":e.replaceSelection("\n### "+i);break;case"clipboard":this.obj("modal-clipboard").modal("show");break;case"image":this.obj("modal-image").modal("show");break;case"link":this.obj("modal-link").modal("show");break;case"quote":case"quote":this._toggleLine("quote");break;case"numlist":this._toggleLine("numlist");break;case"bullist":this._toggleLine("bullist");break;case"preview":var a=new n.a({html:!0,linkify:!0,typographer:!0,breaks:!0,quotes:"“”‘’",langPrefix:"language-",highlight:function(t,e){return'<pre class="hljs" data-lang="'+e+'"><code>'+a.utils.escapeHtml(t)+"</code></pre>"}}),l=a.render(e.getValue());this.obj("html-preview").html(l).toggle(),this.obj("preview").toggleClass("active"),this.preview^=!0,this.obj("toolbar").find('.btn:not(".ready")').prop("disabled",this.preview);break;case"fullscreen":this.obj("container").toggleClass("v-md-fullscreen"),this.obj("fullscreen").toggleClass("active"),e.setOption("fullScreen",!e.getOption("fullScreen"))}e.focus()},drawImage(){var t=this.obj("img-src").val(),e=this.obj("img-title").val();if(this.isUrl(t)){var i=this.state();this._replaceSelection(i.image,["![#title#](",'#url# "#title#")'],{title:e,url:t}),this.hideModal("modal-image")}else this.obj("image-alert").fadeIn()},drawLink(){var t=this.obj("link-src").val(),e=this.obj("link-title").val();if(this.isUrl(t)){var i=this.state();this._replaceSelection(i.link,["[#title#]",'(#url# "#title#")'],{title:e,url:t}),this.hideModal("modal-link")}else this.obj("link-alert").fadeIn()},toMarkdown(){var t=this.obj("clipboard-text").val(),e=o.a.parse(t);this.editor.replaceSelection(e),this.editor.focus(),this.hideModal("modal-clipboard")},hideModal(t){this.obj(t).modal("hide")},build(){if(this.isEmpty(this.toolbar))console.error("You must set toolbar!");else if(!this.__rendered){for(var t=this,e=t.toolbar.toLowerCase().split(/(\s)/).filter(function(e){return!t.isEmpty(e)}),i=l()('<div class="btn-group mr-3" role="group"></div>'),a=t.obj("toolbar"),r=0;r<e.length;r++){var o=e[r],s=t.buttons[o];s&&(o=l()(t.format('<button type="button" id="%s-%s" data-cmd="%s" title="%s" class="%s %s"><i class="%s" aria-hidden="true"></i></button>',t.id,o,s.cmd,s.title,t.buttonClass,s.ready?"ready":"",s.className)).on("click",function(){t.command(l()(this).attr("data-cmd"))}),i.append(o)),"|"!==o&&r!=e.length-1||(a.append(i),i=i.clone().empty())}var n=Object.assign({},{extraKeys:t.shortcuts,initialValue:t.value},t.defaults,t.options),d=document.getElementById(t.id+"-input");t.editor=c.a.fromTextArea(d,n),t.editor.on("change",function(e){t.$emit("input",e.getValue())}),t.editor.on("cursorActivity",function(){var e=t.state();t.obj("toolbar").find(".btn.active:not(.ready)").removeClass("active"),Object.keys(e).forEach(e=>{t.obj(e).addClass("active")})}),t.__rendered=!0}}},mounted(){this.build()},destroyed(){this.editor=null}},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("div",{class:["v-md-container",t.css],attrs:{id:t.uid("container")}},[i("div",{staticClass:"v-md-toolbar",attrs:{id:t.uid("toolbar")}}),t._v(" "),i("div",{staticClass:"v-md-wrapper"},[i("textarea",{directives:[{name:"model",rawName:"v-model",value:t.value,expression:"value"}],style:t.styles,attrs:{id:t.uid("input"),name:t.name},domProps:{value:t.value},on:{input:function(e){e.target.composing||(t.value=e.target.value)}}}),t._v(" "),i("div",{staticClass:"v-md-preview",attrs:{id:t.uid("html-preview")}})]),t._v(" "),t._t("clipboard",[i("div",{staticClass:"modal fade",attrs:{id:t.uid("modal-clipboard"),"data-backdrop":"false","aria-labelledby":"v-md-editor-modal-clipboard-label","aria-hidden":"true",role:"dialog",tabindex:"-1"}},[i("div",{staticClass:"modal-dialog modal-center"},[i("div",{staticClass:"modal-content"},[i("div",{staticClass:"modal-header"},[i("h4",{staticClass:"modal-title",attrs:{id:"v-md-editor-modal-clipboard-label"}},[t._v("Html to Markdown")]),t._v(" "),i("button",{staticClass:"close",attrs:{type:"button","aria-label":"Close"},on:{click:function(e){t.hideModal("modal-clipboard")}}},[i("span",{attrs:{"aria-hidden":"true"}},[t._v("×")])])]),t._v(" "),i("div",{staticClass:"modal-body"},[i("div",{staticClass:"form-group"},[i("textarea",{staticClass:"form-control clipboard-text",attrs:{id:t.uid("clipboard-text")}})])]),t._v(" "),i("div",{staticClass:"modal-footer"},[i("button",{staticClass:"btn btn-outline-secondary",attrs:{type:"button"},on:{click:function(e){t.hideModal("modal-clipboard")}}},[t._v("Close")]),t._v(" "),i("button",{staticClass:"btn btn-outline-primary",attrs:{type:"button"},on:{click:t.toMarkdown}},[t._v("Convert")])])])])])]),t._v(" "),t._t("image",[i("div",{staticClass:"modal fade",attrs:{id:t.uid("modal-image"),"data-backdrop":"false","aria-labelledby":"v-md-editor-modal-image-label","aria-hidden":"true",role:"dialog",tabindex:"-1"}},[i("div",{staticClass:"modal-dialog modal-center"},[i("div",{staticClass:"modal-content"},[i("div",{staticClass:"modal-header"},[i("h4",{staticClass:"modal-title",attrs:{id:"v-md-editor-modal-image-label"}},[t._v("Image")]),t._v(" "),i("button",{staticClass:"close",attrs:{type:"button","aria-label":"Close"},on:{click:function(e){t.hideModal("modal-image")}}},[i("span",{attrs:{"aria-hidden":"true"}},[t._v("×")])])]),t._v(" "),i("div",{staticClass:"modal-body"},[i("div",{staticClass:"form-group"},[i("label",[t._v("Image title")]),t._v(" "),i("input",{staticClass:"form-control",attrs:{placeholder:"Image title",id:t.uid("img-title")}})]),t._v(" "),i("div",{staticClass:"form-group"},[i("label",[t._v("Source")]),t._v(" "),i("input",{staticClass:"form-control",attrs:{placeholder:"http://",id:t.uid("img-src")}})]),t._v(" "),i("div",{staticClass:"alert alert-danger alert-dismissible",staticStyle:{display:"none"},attrs:{role:"alert",id:t.uid("image-alert")}},[i("span",[t._v("Image source is invalid!")]),t._v(" "),t._m(0)])]),t._v(" "),i("div",{staticClass:"modal-footer"},[i("button",{staticClass:"btn btn-outline-secondary float-left",attrs:{type:"button"},on:{click:function(e){t.hideModal("modal-image")}}},[t._v("Close")]),t._v(" "),i("button",{staticClass:"btn btn-outline-primary",attrs:{type:"button"},on:{click:t.drawImage}},[t._v(" Ok ")])])])])])]),t._v(" "),t._t("link",[i("div",{staticClass:"modal fade",attrs:{id:t.uid("modal-link"),"data-backdrop":"false","aria-labelledby":"v-md-editor-modal-link-label","aria-hidden":"true",role:"dialog",tabindex:"-1"}},[i("div",{staticClass:"modal-dialog modal-center"},[i("div",{staticClass:"modal-content"},[i("div",{staticClass:"modal-header"},[i("h4",{staticClass:"modal-title",attrs:{id:"v-md-editor-modal-link-label"}},[t._v("Link")]),t._v(" "),i("button",{staticClass:"close",attrs:{type:"button","aria-label":"Close"},on:{click:function(e){t.hideModal("modal-link")}}},[i("span",{attrs:{"aria-hidden":"true"}},[t._v("×")])])]),t._v(" "),i("div",{staticClass:"modal-body"},[i("div",{staticClass:"form-group"},[i("label",[t._v("Link title")]),t._v(" "),i("input",{staticClass:"form-control",attrs:{placeholder:"Link title",id:t.uid("link-title")}})]),t._v(" "),i("div",{staticClass:"form-group"},[i("label",[t._v("Source")]),t._v(" "),i("input",{staticClass:"form-control",attrs:{placeholder:"http://",id:t.uid("link-src")}})]),t._v(" "),i("div",{staticClass:"alert alert-danger alert-dismissible",staticStyle:{display:"none"},attrs:{role:"alert",id:t.uid("link-alert")}},[i("span",[t._v("Link is invalid!")]),t._v(" "),t._m(1)])]),t._v(" "),i("div",{staticClass:"modal-footer"},[i("button",{staticClass:"btn btn-outline-secondary float-left",attrs:{type:"button"},on:{click:function(e){t.hideModal("modal-link")}}},[t._v("Cancel")]),t._v(" "),i("button",{staticClass:"btn btn-outline-primary",attrs:{type:"button"},on:{click:t.drawLink}},[t._v(" Ok ")])])])])])])],2)},[function(){var t=this.$createElement,e=this._self._c||t;return e("button",{staticClass:"close",attrs:{type:"button","data-dismiss":"alert","aria-label":"Close"}},[e("span",{attrs:{"aria-hidden":"true"}},[this._v("×")])])},function(){var t=this.$createElement,e=this._self._c||t;return e("button",{staticClass:"close",attrs:{type:"button","data-dismiss":"alert","aria-label":"Close"}},[e("span",{attrs:{"aria-hidden":"true"}},[this._v("×")])])}],!1,null,null,null);u.options.__file="editor.vue";var m=u.exports;const h={install:function(t){t.__md_editor_installed||(t.__md_editor_installed=!0,t.component("markdown-editor",m))}};"undefined"!=typeof window&&window.Vue&&window.Vue.use(h);e.default=h}]);
+module.exports=function(t){var e={};function i(a){if(e[a])return e[a].exports;var l=e[a]={i:a,l:!1,exports:{}};return t[a].call(l.exports,l,l.exports,i),l.l=!0,l.exports}return i.m=t,i.c=e,i.d=function(t,e,a){i.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:a})},i.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},i.t=function(t,e){if(1&e&&(t=i(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var a=Object.create(null);if(i.r(a),Object.defineProperty(a,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var l in t)i.d(a,l,function(e){return t[e]}.bind(null,l));return a},i.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return i.d(e,"a",e),e},i.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},i.p="",i(i.s=11)}([function(t,e){t.exports=__webpack_require__(9)},function(t,e){t.exports=__webpack_require__(186)},function(t,e){t.exports=__webpack_require__(187)},function(t,e){t.exports=__webpack_require__(3)},function(t,e){t.exports=__webpack_require__(242)},function(t,e,i){},function(t,e){t.exports=__webpack_require__(244)},function(t,e){t.exports=__webpack_require__(32)},function(t,e){t.exports=__webpack_require__(247)},function(t,e){t.exports=__webpack_require__(249)},function(t,e){t.exports=__webpack_require__(250)},function(t,e,i){"use strict";i.r(e);i(4),i(5);var a=i(0),l=i.n(a),r=i(1),o=i.n(r),s=i(2),n=i.n(s),d=i(3),c=i.n(d);i(6),i(7),i(8),i(9),i(10);var u=function(t,e,i,a,l,r,o,s){var n,d="function"==typeof t?t.options:t;if(e&&(d.render=e,d.staticRenderFns=i,d._compiled=!0),a&&(d.functional=!0),r&&(d._scopeId="data-v-"+r),o?(n=function(t){(t=t||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext)||"undefined"==typeof __VUE_SSR_CONTEXT__||(t=__VUE_SSR_CONTEXT__),l&&l.call(this,t),t&&t._registeredComponents&&t._registeredComponents.add(o)},d._ssrRegister=n):l&&(n=s?function(){l.call(this,this.$root.$options.shadowRoot)}:l),n)if(d.functional){d._injectStyles=n;var c=d.render;d.render=function(t,e){return n.call(e),c(t,e)}}else{var u=d.beforeCreate;d.beforeCreate=u?[].concat(u,n):[n]}return{exports:t,options:d}}({props:{css:{type:String},width:{type:String,default:"100%"},height:{type:String,default:"280px"},toolbar:{type:String,default:"clipboard redo undo | bold italic strikethrough heading | image link | numlist bullist code quote | preview fullscreen"},name:{type:String,default:"html"},value:{type:String,default:"",required:!1},buttonClass:{type:String,default:"btn btn-outline-secondary"},options:{type:Object,default:function(){return{}}}},data:()=>({id:"v-md-editor-"+(new Date).getTime(),editor:null,preview:!1,buttons:{bold:{title:"Bold",className:"far fa-bold",cmd:"bold",hotkey:"Ctrl-B"},italic:{title:"Italic",className:"far fa-italic",cmd:"italic",hotkey:"Ctrl-I"},strikethrough:{cmd:"strikethrough",className:"far fa-strikethrough",title:"Strikethrough"},heading:{title:"Heading",className:"far fa-heading",cmd:"heading",hotkey:"Ctrl-H"},code:{title:"Code",className:"far fa-code",cmd:"code",hotkey:"Ctrl-X"},quote:{title:"Quote",className:"far fa-quote-left",cmd:"quote",hotkey:"Ctrl-Q"},link:{title:"Link",className:"far fa-link",cmd:"link",hotkey:"Ctrl-K"},image:{title:"Image",className:"far fa-image",cmd:"image",hotkey:"Ctrl-P"},fullscreen:{cmd:"fullscreen",className:"far fa-arrows-alt no-disable no-mobile",title:"Toggle Fullscreen",hotkey:"F11",ready:!0},preview:{cmd:"preview",className:"far fa-eye no-disable",title:"Toggle Preview",hotkey:"Ctrl-P",ready:!0},clipboard:{cmd:"clipboard",className:"far fa-clipboard",title:"Copy & Markdown Format",hotkey:"Ctrl-V"},undo:{cmd:"undo",className:"far fa-undo",title:"Undo",hotkey:"Ctrl-Z"},redo:{cmd:"redo",className:"far fa-repeat",title:"Redo",hotkey:"Ctrl-Y"},bullist:{cmd:"bullist",className:"far fa-list-ul",title:"Generic List"},numlist:{cmd:"numlist",className:"far fa-list-ol",title:"Numbered List"}},defaults:{mode:"gfm",theme:"elegent",lineNumbers:!0,styleActiveLine:!0,styleSelectedText:!0,lineWrapping:!0,indentWithTabs:!0,autoRefresh:!0,tabSize:2,indentUnit:2},shortcuts:{}}),watch:{value(t){t!=this.editor.getValue()&&this.editor.setValue(t)}},computed:{styles(){return{width:isNaN(this.width)?this.width:this.width+"%",height:isNaN(this.height)?this.height:this.height+"%"}}},methods:{isEmpty:function(t){return null==t||/^[\s\xa0]*$/.test(t)},isUrl:function(t){return!this.isEmpty(t)&&t.match(/((http|https):\/\/)?(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/gi)},format(){for(var t=arguments[0],e=1;e<=arguments.length;e++)t=t.replace(/%[a-z]/,arguments[e]);return t},uid(t){return this.format("%s-%s",this.id,t)},obj(t){return l()("#"+this.uid(t))},_toggleBlock(t,e,i){i=this.isEmpty(i)?e:i;var a,l=this.editor,r=l.getCursor("start"),o=l.getCursor("end");this.state()[t]?(e=(a=l.getLine(r.line)).slice(0,r.ch),i=a.slice(r.ch),"bold"==t?(e=e.replace(/(\*\*|__)(?![\s\S]*(\*\*|__))/,""),i=i.replace(/(\*\*|__)/,"")):"italic"==t?(e=e.replace(/(\*|_)(?![\s\S]*(\*|_))/,""),i=i.replace(/(\*|_)/,"")):"strikethrough"==t&&(e=e.replace(/(\*\*|~~)(?![\s\S]*(\*\*|~~))/,""),i=i.replace(/(\*\*|~~)/,"")),l.replaceRange(e+i,{line:r.line,ch:0},{line:r.line,ch:99999999999999}),"bold"==t||"strikethrough"==t?(r.ch-=2,r!==o&&(o.ch-=2)):"italic"==t&&(r.ch-=1,r!==o&&(o.ch-=1))):(a=l.getSelection(),"bold"==t?a=(a=a.split("**").join("")).split("__").join(""):"italic"==t?a=(a=a.split("*").join("")).split("_").join(""):"strikethrough"==t&&(a=a.split("~~").join("")),l.replaceSelection(e+a+i),r.ch+=e.length,o.ch=r.ch+a.length),l.setSelection(r,o)},_toggleLine(t){for(var e=this.editor,i=this.state(),a=e.getCursor("start"),l=e.getCursor("end"),r={quote:/^(\s*)\>\s+/,bullist:/^(\s*)(\*|\-|\+)\s+/,numlist:/^(\s*)\d+\.\s+/},o={quote:"> ",bullist:"* ",numlist:"1. "},s=a.line;s<=l.line;s++)!function(a){var l=e.getLine(a);l=i[t]?l.replace(r[t],"$1"):o[t]+l,e.replaceRange(l,{line:a,ch:0},{line:a,ch:99999999999999})}(s)},state(t){t=t||this.editor.getCursor("start");var e=this.editor.getTokenAt(t);if(!e.type)return{};for(var i,a,l=e.type.split(" "),r={},o=0;o<l.length;o++)"strong"===(i=l[o])?r.bold=!0:"variable-2"===i?(a=this.editor.getLine(t.line),/^\s*\d+\.\s/.test(a)?r.numlist=!0:r.bullist=!0):"atom"===i?r.quote=!0:"em"===i?r.italic=!0:"quote"===i?r.quote=!0:"strikethrough"===i?r.strikethrough=!0:"comment"===i?r.code=!0:"link"===i?r.link=!0:"tag"===i?r.image=!0:i.match(/^header(\-[1-6])?$/)&&(r[i.replace("header","heading")]=!0);return r},_replaceSelection(t,e,i){var a,l=this.editor,r=e[0],o=e[1],s=l.getCursor("start"),n=l.getCursor("end");i&&Object.keys(i).forEach(t=>{r=r.replace("#"+t+"#",i[t]),o=o.replace("#"+t+"#",i[t])}),t?(a=l.getLine(s.line),r=a.slice(0,s.ch),o=a.slice(s.ch),l.replaceRange(r+o,{line:s.line,ch:0})):(a=l.getSelection(),l.replaceSelection(r+a+o),s.ch+=r.length,s!==n&&(n.ch+=r.length)),l.setSelection(s,n),l.focus()},command(t){var e=this.editor,i=e.getSelection();this.state();switch(t){case"undo":e.undo();break;case"redo":e.redo();break;case"bold":this._toggleBlock("bold","**");break;case"italic":this._toggleBlock("italic","*");break;case"strikethrough":this._toggleBlock("strikethrough","~~");break;case"code":this._toggleBlock("code","```");break;case"heading":e.replaceSelection("\n### "+i);break;case"clipboard":this.obj("modal-clipboard").modal("show");break;case"image":this.obj("modal-image").modal("show");break;case"link":this.obj("modal-link").modal("show");break;case"quote":case"quote":this._toggleLine("quote");break;case"numlist":this._toggleLine("numlist");break;case"bullist":this._toggleLine("bullist");break;case"preview":var a=new n.a({html:!0,linkify:!0,typographer:!0,breaks:!0,quotes:"“”‘’",langPrefix:"language-",highlight:function(t,e){return'<pre class="hljs" data-lang="'+e+'"><code>'+a.utils.escapeHtml(t)+"</code></pre>"}}),l=a.render(e.getValue());this.obj("html-preview").html(l).toggle(),this.obj("preview").toggleClass("active"),this.preview^=!0,this.obj("toolbar").find('.btn:not(".ready")').prop("disabled",this.preview);break;case"fullscreen":this.obj("container").toggleClass("v-md-fullscreen"),this.obj("fullscreen").toggleClass("active"),e.setOption("fullScreen",!e.getOption("fullScreen"))}e.focus()},drawImage(){var t=this.obj("img-src").val(),e=this.obj("img-title").val();if(this.isUrl(t)){var i=this.state();this._replaceSelection(i.image,["![#title#](",'#url# "#title#")'],{title:e,url:t}),this.hideModal("modal-image")}else this.obj("image-alert").fadeIn()},drawLink(){var t=this.obj("link-src").val(),e=this.obj("link-title").val();if(this.isUrl(t)){var i=this.state();this._replaceSelection(i.link,["[#title#]",'(#url# "#title#")'],{title:e,url:t}),this.hideModal("modal-link")}else this.obj("link-alert").fadeIn()},toMarkdown(){var t=this.obj("clipboard-text").val(),e=o.a.parse(t);this.editor.replaceSelection(e),this.editor.focus(),this.hideModal("modal-clipboard")},hideModal(t){this.obj(t).modal("hide")},build(){if(this.isEmpty(this.toolbar))console.error("You must set toolbar!");else if(!this.__rendered){for(var t=this,e=t.toolbar.toLowerCase().split(/(\s)/).filter(function(e){return!t.isEmpty(e)}),i=l()('<div class="btn-group mr-3" role="group"></div>'),a=t.obj("toolbar"),r=0;r<e.length;r++){var o=e[r],s=t.buttons[o];s&&(o=l()(t.format('<button type="button" id="%s-%s" data-cmd="%s" title="%s" class="%s %s"><i class="%s" aria-hidden="true"></i></button>',t.id,o,s.cmd,s.title,t.buttonClass,s.ready?"ready":"",s.className)).on("click",function(){t.command(l()(this).attr("data-cmd"))}),i.append(o)),"|"!==o&&r!=e.length-1||(a.append(i),i=i.clone().empty())}var n=Object.assign({},{extraKeys:t.shortcuts,initialValue:t.value},t.defaults,t.options),d=document.getElementById(t.id+"-input");t.editor=c.a.fromTextArea(d,n),t.editor.on("change",function(e){t.$emit("input",e.getValue())}),t.editor.on("cursorActivity",function(){var e=t.state();t.obj("toolbar").find(".btn.active:not(.ready)").removeClass("active"),Object.keys(e).forEach(e=>{t.obj(e).addClass("active")})}),t.__rendered=!0}}},mounted(){this.build()},destroyed(){this.editor=null}},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("div",{class:["v-md-container",t.css],attrs:{id:t.uid("container")}},[i("div",{staticClass:"v-md-toolbar",attrs:{id:t.uid("toolbar")}}),t._v(" "),i("div",{staticClass:"v-md-wrapper"},[i("textarea",{directives:[{name:"model",rawName:"v-model",value:t.value,expression:"value"}],style:t.styles,attrs:{id:t.uid("input"),name:t.name},domProps:{value:t.value},on:{input:function(e){e.target.composing||(t.value=e.target.value)}}}),t._v(" "),i("div",{staticClass:"v-md-preview",attrs:{id:t.uid("html-preview")}})]),t._v(" "),t._t("clipboard",[i("div",{staticClass:"modal fade",attrs:{id:t.uid("modal-clipboard"),"data-backdrop":"false","aria-labelledby":"v-md-editor-modal-clipboard-label","aria-hidden":"true",role:"dialog",tabindex:"-1"}},[i("div",{staticClass:"modal-dialog modal-center"},[i("div",{staticClass:"modal-content"},[i("div",{staticClass:"modal-header"},[i("h4",{staticClass:"modal-title",attrs:{id:"v-md-editor-modal-clipboard-label"}},[t._v("Html to Markdown")]),t._v(" "),i("button",{staticClass:"close",attrs:{type:"button","aria-label":"Close"},on:{click:function(e){t.hideModal("modal-clipboard")}}},[i("span",{attrs:{"aria-hidden":"true"}},[t._v("×")])])]),t._v(" "),i("div",{staticClass:"modal-body"},[i("div",{staticClass:"form-group"},[i("textarea",{staticClass:"form-control clipboard-text",attrs:{id:t.uid("clipboard-text")}})])]),t._v(" "),i("div",{staticClass:"modal-footer"},[i("button",{staticClass:"btn btn-outline-secondary",attrs:{type:"button"},on:{click:function(e){t.hideModal("modal-clipboard")}}},[t._v("Close")]),t._v(" "),i("button",{staticClass:"btn btn-outline-primary",attrs:{type:"button"},on:{click:t.toMarkdown}},[t._v("Convert")])])])])])]),t._v(" "),t._t("image",[i("div",{staticClass:"modal fade",attrs:{id:t.uid("modal-image"),"data-backdrop":"false","aria-labelledby":"v-md-editor-modal-image-label","aria-hidden":"true",role:"dialog",tabindex:"-1"}},[i("div",{staticClass:"modal-dialog modal-center"},[i("div",{staticClass:"modal-content"},[i("div",{staticClass:"modal-header"},[i("h4",{staticClass:"modal-title",attrs:{id:"v-md-editor-modal-image-label"}},[t._v("Image")]),t._v(" "),i("button",{staticClass:"close",attrs:{type:"button","aria-label":"Close"},on:{click:function(e){t.hideModal("modal-image")}}},[i("span",{attrs:{"aria-hidden":"true"}},[t._v("×")])])]),t._v(" "),i("div",{staticClass:"modal-body"},[i("div",{staticClass:"form-group"},[i("label",[t._v("Image title")]),t._v(" "),i("input",{staticClass:"form-control",attrs:{placeholder:"Image title",id:t.uid("img-title")}})]),t._v(" "),i("div",{staticClass:"form-group"},[i("label",[t._v("Source")]),t._v(" "),i("input",{staticClass:"form-control",attrs:{placeholder:"http://",id:t.uid("img-src")}})]),t._v(" "),i("div",{staticClass:"alert alert-danger alert-dismissible",staticStyle:{display:"none"},attrs:{role:"alert",id:t.uid("image-alert")}},[i("span",[t._v("Image source is invalid!")]),t._v(" "),t._m(0)])]),t._v(" "),i("div",{staticClass:"modal-footer"},[i("button",{staticClass:"btn btn-outline-secondary float-left",attrs:{type:"button"},on:{click:function(e){t.hideModal("modal-image")}}},[t._v("Close")]),t._v(" "),i("button",{staticClass:"btn btn-outline-primary",attrs:{type:"button"},on:{click:t.drawImage}},[t._v(" Ok ")])])])])])]),t._v(" "),t._t("link",[i("div",{staticClass:"modal fade",attrs:{id:t.uid("modal-link"),"data-backdrop":"false","aria-labelledby":"v-md-editor-modal-link-label","aria-hidden":"true",role:"dialog",tabindex:"-1"}},[i("div",{staticClass:"modal-dialog modal-center"},[i("div",{staticClass:"modal-content"},[i("div",{staticClass:"modal-header"},[i("h4",{staticClass:"modal-title",attrs:{id:"v-md-editor-modal-link-label"}},[t._v("Link")]),t._v(" "),i("button",{staticClass:"close",attrs:{type:"button","aria-label":"Close"},on:{click:function(e){t.hideModal("modal-link")}}},[i("span",{attrs:{"aria-hidden":"true"}},[t._v("×")])])]),t._v(" "),i("div",{staticClass:"modal-body"},[i("div",{staticClass:"form-group"},[i("label",[t._v("Link title")]),t._v(" "),i("input",{staticClass:"form-control",attrs:{placeholder:"Link title",id:t.uid("link-title")}})]),t._v(" "),i("div",{staticClass:"form-group"},[i("label",[t._v("Source")]),t._v(" "),i("input",{staticClass:"form-control",attrs:{placeholder:"http://",id:t.uid("link-src")}})]),t._v(" "),i("div",{staticClass:"alert alert-danger alert-dismissible",staticStyle:{display:"none"},attrs:{role:"alert",id:t.uid("link-alert")}},[i("span",[t._v("Link is invalid!")]),t._v(" "),t._m(1)])]),t._v(" "),i("div",{staticClass:"modal-footer"},[i("button",{staticClass:"btn btn-outline-secondary float-left",attrs:{type:"button"},on:{click:function(e){t.hideModal("modal-link")}}},[t._v("Cancel")]),t._v(" "),i("button",{staticClass:"btn btn-outline-primary",attrs:{type:"button"},on:{click:t.drawLink}},[t._v(" Ok ")])])])])])])],2)},[function(){var t=this.$createElement,e=this._self._c||t;return e("button",{staticClass:"close",attrs:{type:"button","data-dismiss":"alert","aria-label":"Close"}},[e("span",{attrs:{"aria-hidden":"true"}},[this._v("×")])])},function(){var t=this.$createElement,e=this._self._c||t;return e("button",{staticClass:"close",attrs:{type:"button","data-dismiss":"alert","aria-label":"Close"}},[e("span",{attrs:{"aria-hidden":"true"}},[this._v("×")])])}],!1,null,null,null);u.options.__file="editor.vue";var m=u.exports;const h={install:function(t){t.__md_editor_installed||(t.__md_editor_installed=!0,t.component("markdown-editor",m))}};"undefined"!=typeof window&&window.Vue&&window.Vue.use(h);e.default=h}]);
 
 /***/ }),
-/* 187 */
+/* 186 */
 /***/ (function(module, exports) {
 
 
@@ -78566,18 +76559,18 @@ module.exports = {
 }
 
 /***/ }),
-/* 188 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 
-module.exports = __webpack_require__(189);
+module.exports = __webpack_require__(188);
 
 
 /***/ }),
-/* 189 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78587,20 +76580,20 @@ module.exports = __webpack_require__(189);
 
 
 var utils        = __webpack_require__(1);
-var helpers      = __webpack_require__(197);
-var Renderer     = __webpack_require__(201);
-var ParserCore   = __webpack_require__(202);
-var ParserBlock  = __webpack_require__(210);
-var ParserInline = __webpack_require__(224);
-var LinkifyIt    = __webpack_require__(237);
+var helpers      = __webpack_require__(196);
+var Renderer     = __webpack_require__(200);
+var ParserCore   = __webpack_require__(201);
+var ParserBlock  = __webpack_require__(209);
+var ParserInline = __webpack_require__(223);
+var LinkifyIt    = __webpack_require__(236);
 var mdurl        = __webpack_require__(25);
-var punycode     = __webpack_require__(239);
+var punycode     = __webpack_require__(238);
 
 
 var config = {
-  'default': __webpack_require__(240),
-  zero: __webpack_require__(241),
-  commonmark: __webpack_require__(242)
+  'default': __webpack_require__(239),
+  zero: __webpack_require__(240),
+  commonmark: __webpack_require__(241)
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -79165,13 +77158,13 @@ module.exports = MarkdownIt;
 
 
 /***/ }),
-/* 190 */
+/* 189 */
 /***/ (function(module, exports) {
 
 module.exports = {"Aacute":"Á","aacute":"á","Abreve":"Ă","abreve":"ă","ac":"∾","acd":"∿","acE":"∾̳","Acirc":"Â","acirc":"â","acute":"´","Acy":"А","acy":"а","AElig":"Æ","aelig":"æ","af":"⁡","Afr":"𝔄","afr":"𝔞","Agrave":"À","agrave":"à","alefsym":"ℵ","aleph":"ℵ","Alpha":"Α","alpha":"α","Amacr":"Ā","amacr":"ā","amalg":"⨿","amp":"&","AMP":"&","andand":"⩕","And":"⩓","and":"∧","andd":"⩜","andslope":"⩘","andv":"⩚","ang":"∠","ange":"⦤","angle":"∠","angmsdaa":"⦨","angmsdab":"⦩","angmsdac":"⦪","angmsdad":"⦫","angmsdae":"⦬","angmsdaf":"⦭","angmsdag":"⦮","angmsdah":"⦯","angmsd":"∡","angrt":"∟","angrtvb":"⊾","angrtvbd":"⦝","angsph":"∢","angst":"Å","angzarr":"⍼","Aogon":"Ą","aogon":"ą","Aopf":"𝔸","aopf":"𝕒","apacir":"⩯","ap":"≈","apE":"⩰","ape":"≊","apid":"≋","apos":"'","ApplyFunction":"⁡","approx":"≈","approxeq":"≊","Aring":"Å","aring":"å","Ascr":"𝒜","ascr":"𝒶","Assign":"≔","ast":"*","asymp":"≈","asympeq":"≍","Atilde":"Ã","atilde":"ã","Auml":"Ä","auml":"ä","awconint":"∳","awint":"⨑","backcong":"≌","backepsilon":"϶","backprime":"‵","backsim":"∽","backsimeq":"⋍","Backslash":"∖","Barv":"⫧","barvee":"⊽","barwed":"⌅","Barwed":"⌆","barwedge":"⌅","bbrk":"⎵","bbrktbrk":"⎶","bcong":"≌","Bcy":"Б","bcy":"б","bdquo":"„","becaus":"∵","because":"∵","Because":"∵","bemptyv":"⦰","bepsi":"϶","bernou":"ℬ","Bernoullis":"ℬ","Beta":"Β","beta":"β","beth":"ℶ","between":"≬","Bfr":"𝔅","bfr":"𝔟","bigcap":"⋂","bigcirc":"◯","bigcup":"⋃","bigodot":"⨀","bigoplus":"⨁","bigotimes":"⨂","bigsqcup":"⨆","bigstar":"★","bigtriangledown":"▽","bigtriangleup":"△","biguplus":"⨄","bigvee":"⋁","bigwedge":"⋀","bkarow":"⤍","blacklozenge":"⧫","blacksquare":"▪","blacktriangle":"▴","blacktriangledown":"▾","blacktriangleleft":"◂","blacktriangleright":"▸","blank":"␣","blk12":"▒","blk14":"░","blk34":"▓","block":"█","bne":"=⃥","bnequiv":"≡⃥","bNot":"⫭","bnot":"⌐","Bopf":"𝔹","bopf":"𝕓","bot":"⊥","bottom":"⊥","bowtie":"⋈","boxbox":"⧉","boxdl":"┐","boxdL":"╕","boxDl":"╖","boxDL":"╗","boxdr":"┌","boxdR":"╒","boxDr":"╓","boxDR":"╔","boxh":"─","boxH":"═","boxhd":"┬","boxHd":"╤","boxhD":"╥","boxHD":"╦","boxhu":"┴","boxHu":"╧","boxhU":"╨","boxHU":"╩","boxminus":"⊟","boxplus":"⊞","boxtimes":"⊠","boxul":"┘","boxuL":"╛","boxUl":"╜","boxUL":"╝","boxur":"└","boxuR":"╘","boxUr":"╙","boxUR":"╚","boxv":"│","boxV":"║","boxvh":"┼","boxvH":"╪","boxVh":"╫","boxVH":"╬","boxvl":"┤","boxvL":"╡","boxVl":"╢","boxVL":"╣","boxvr":"├","boxvR":"╞","boxVr":"╟","boxVR":"╠","bprime":"‵","breve":"˘","Breve":"˘","brvbar":"¦","bscr":"𝒷","Bscr":"ℬ","bsemi":"⁏","bsim":"∽","bsime":"⋍","bsolb":"⧅","bsol":"\\","bsolhsub":"⟈","bull":"•","bullet":"•","bump":"≎","bumpE":"⪮","bumpe":"≏","Bumpeq":"≎","bumpeq":"≏","Cacute":"Ć","cacute":"ć","capand":"⩄","capbrcup":"⩉","capcap":"⩋","cap":"∩","Cap":"⋒","capcup":"⩇","capdot":"⩀","CapitalDifferentialD":"ⅅ","caps":"∩︀","caret":"⁁","caron":"ˇ","Cayleys":"ℭ","ccaps":"⩍","Ccaron":"Č","ccaron":"č","Ccedil":"Ç","ccedil":"ç","Ccirc":"Ĉ","ccirc":"ĉ","Cconint":"∰","ccups":"⩌","ccupssm":"⩐","Cdot":"Ċ","cdot":"ċ","cedil":"¸","Cedilla":"¸","cemptyv":"⦲","cent":"¢","centerdot":"·","CenterDot":"·","cfr":"𝔠","Cfr":"ℭ","CHcy":"Ч","chcy":"ч","check":"✓","checkmark":"✓","Chi":"Χ","chi":"χ","circ":"ˆ","circeq":"≗","circlearrowleft":"↺","circlearrowright":"↻","circledast":"⊛","circledcirc":"⊚","circleddash":"⊝","CircleDot":"⊙","circledR":"®","circledS":"Ⓢ","CircleMinus":"⊖","CirclePlus":"⊕","CircleTimes":"⊗","cir":"○","cirE":"⧃","cire":"≗","cirfnint":"⨐","cirmid":"⫯","cirscir":"⧂","ClockwiseContourIntegral":"∲","CloseCurlyDoubleQuote":"”","CloseCurlyQuote":"’","clubs":"♣","clubsuit":"♣","colon":":","Colon":"∷","Colone":"⩴","colone":"≔","coloneq":"≔","comma":",","commat":"@","comp":"∁","compfn":"∘","complement":"∁","complexes":"ℂ","cong":"≅","congdot":"⩭","Congruent":"≡","conint":"∮","Conint":"∯","ContourIntegral":"∮","copf":"𝕔","Copf":"ℂ","coprod":"∐","Coproduct":"∐","copy":"©","COPY":"©","copysr":"℗","CounterClockwiseContourIntegral":"∳","crarr":"↵","cross":"✗","Cross":"⨯","Cscr":"𝒞","cscr":"𝒸","csub":"⫏","csube":"⫑","csup":"⫐","csupe":"⫒","ctdot":"⋯","cudarrl":"⤸","cudarrr":"⤵","cuepr":"⋞","cuesc":"⋟","cularr":"↶","cularrp":"⤽","cupbrcap":"⩈","cupcap":"⩆","CupCap":"≍","cup":"∪","Cup":"⋓","cupcup":"⩊","cupdot":"⊍","cupor":"⩅","cups":"∪︀","curarr":"↷","curarrm":"⤼","curlyeqprec":"⋞","curlyeqsucc":"⋟","curlyvee":"⋎","curlywedge":"⋏","curren":"¤","curvearrowleft":"↶","curvearrowright":"↷","cuvee":"⋎","cuwed":"⋏","cwconint":"∲","cwint":"∱","cylcty":"⌭","dagger":"†","Dagger":"‡","daleth":"ℸ","darr":"↓","Darr":"↡","dArr":"⇓","dash":"‐","Dashv":"⫤","dashv":"⊣","dbkarow":"⤏","dblac":"˝","Dcaron":"Ď","dcaron":"ď","Dcy":"Д","dcy":"д","ddagger":"‡","ddarr":"⇊","DD":"ⅅ","dd":"ⅆ","DDotrahd":"⤑","ddotseq":"⩷","deg":"°","Del":"∇","Delta":"Δ","delta":"δ","demptyv":"⦱","dfisht":"⥿","Dfr":"𝔇","dfr":"𝔡","dHar":"⥥","dharl":"⇃","dharr":"⇂","DiacriticalAcute":"´","DiacriticalDot":"˙","DiacriticalDoubleAcute":"˝","DiacriticalGrave":"`","DiacriticalTilde":"˜","diam":"⋄","diamond":"⋄","Diamond":"⋄","diamondsuit":"♦","diams":"♦","die":"¨","DifferentialD":"ⅆ","digamma":"ϝ","disin":"⋲","div":"÷","divide":"÷","divideontimes":"⋇","divonx":"⋇","DJcy":"Ђ","djcy":"ђ","dlcorn":"⌞","dlcrop":"⌍","dollar":"$","Dopf":"𝔻","dopf":"𝕕","Dot":"¨","dot":"˙","DotDot":"⃜","doteq":"≐","doteqdot":"≑","DotEqual":"≐","dotminus":"∸","dotplus":"∔","dotsquare":"⊡","doublebarwedge":"⌆","DoubleContourIntegral":"∯","DoubleDot":"¨","DoubleDownArrow":"⇓","DoubleLeftArrow":"⇐","DoubleLeftRightArrow":"⇔","DoubleLeftTee":"⫤","DoubleLongLeftArrow":"⟸","DoubleLongLeftRightArrow":"⟺","DoubleLongRightArrow":"⟹","DoubleRightArrow":"⇒","DoubleRightTee":"⊨","DoubleUpArrow":"⇑","DoubleUpDownArrow":"⇕","DoubleVerticalBar":"∥","DownArrowBar":"⤓","downarrow":"↓","DownArrow":"↓","Downarrow":"⇓","DownArrowUpArrow":"⇵","DownBreve":"̑","downdownarrows":"⇊","downharpoonleft":"⇃","downharpoonright":"⇂","DownLeftRightVector":"⥐","DownLeftTeeVector":"⥞","DownLeftVectorBar":"⥖","DownLeftVector":"↽","DownRightTeeVector":"⥟","DownRightVectorBar":"⥗","DownRightVector":"⇁","DownTeeArrow":"↧","DownTee":"⊤","drbkarow":"⤐","drcorn":"⌟","drcrop":"⌌","Dscr":"𝒟","dscr":"𝒹","DScy":"Ѕ","dscy":"ѕ","dsol":"⧶","Dstrok":"Đ","dstrok":"đ","dtdot":"⋱","dtri":"▿","dtrif":"▾","duarr":"⇵","duhar":"⥯","dwangle":"⦦","DZcy":"Џ","dzcy":"џ","dzigrarr":"⟿","Eacute":"É","eacute":"é","easter":"⩮","Ecaron":"Ě","ecaron":"ě","Ecirc":"Ê","ecirc":"ê","ecir":"≖","ecolon":"≕","Ecy":"Э","ecy":"э","eDDot":"⩷","Edot":"Ė","edot":"ė","eDot":"≑","ee":"ⅇ","efDot":"≒","Efr":"𝔈","efr":"𝔢","eg":"⪚","Egrave":"È","egrave":"è","egs":"⪖","egsdot":"⪘","el":"⪙","Element":"∈","elinters":"⏧","ell":"ℓ","els":"⪕","elsdot":"⪗","Emacr":"Ē","emacr":"ē","empty":"∅","emptyset":"∅","EmptySmallSquare":"◻","emptyv":"∅","EmptyVerySmallSquare":"▫","emsp13":" ","emsp14":" ","emsp":" ","ENG":"Ŋ","eng":"ŋ","ensp":" ","Eogon":"Ę","eogon":"ę","Eopf":"𝔼","eopf":"𝕖","epar":"⋕","eparsl":"⧣","eplus":"⩱","epsi":"ε","Epsilon":"Ε","epsilon":"ε","epsiv":"ϵ","eqcirc":"≖","eqcolon":"≕","eqsim":"≂","eqslantgtr":"⪖","eqslantless":"⪕","Equal":"⩵","equals":"=","EqualTilde":"≂","equest":"≟","Equilibrium":"⇌","equiv":"≡","equivDD":"⩸","eqvparsl":"⧥","erarr":"⥱","erDot":"≓","escr":"ℯ","Escr":"ℰ","esdot":"≐","Esim":"⩳","esim":"≂","Eta":"Η","eta":"η","ETH":"Ð","eth":"ð","Euml":"Ë","euml":"ë","euro":"€","excl":"!","exist":"∃","Exists":"∃","expectation":"ℰ","exponentiale":"ⅇ","ExponentialE":"ⅇ","fallingdotseq":"≒","Fcy":"Ф","fcy":"ф","female":"♀","ffilig":"ﬃ","fflig":"ﬀ","ffllig":"ﬄ","Ffr":"𝔉","ffr":"𝔣","filig":"ﬁ","FilledSmallSquare":"◼","FilledVerySmallSquare":"▪","fjlig":"fj","flat":"♭","fllig":"ﬂ","fltns":"▱","fnof":"ƒ","Fopf":"𝔽","fopf":"𝕗","forall":"∀","ForAll":"∀","fork":"⋔","forkv":"⫙","Fouriertrf":"ℱ","fpartint":"⨍","frac12":"½","frac13":"⅓","frac14":"¼","frac15":"⅕","frac16":"⅙","frac18":"⅛","frac23":"⅔","frac25":"⅖","frac34":"¾","frac35":"⅗","frac38":"⅜","frac45":"⅘","frac56":"⅚","frac58":"⅝","frac78":"⅞","frasl":"⁄","frown":"⌢","fscr":"𝒻","Fscr":"ℱ","gacute":"ǵ","Gamma":"Γ","gamma":"γ","Gammad":"Ϝ","gammad":"ϝ","gap":"⪆","Gbreve":"Ğ","gbreve":"ğ","Gcedil":"Ģ","Gcirc":"Ĝ","gcirc":"ĝ","Gcy":"Г","gcy":"г","Gdot":"Ġ","gdot":"ġ","ge":"≥","gE":"≧","gEl":"⪌","gel":"⋛","geq":"≥","geqq":"≧","geqslant":"⩾","gescc":"⪩","ges":"⩾","gesdot":"⪀","gesdoto":"⪂","gesdotol":"⪄","gesl":"⋛︀","gesles":"⪔","Gfr":"𝔊","gfr":"𝔤","gg":"≫","Gg":"⋙","ggg":"⋙","gimel":"ℷ","GJcy":"Ѓ","gjcy":"ѓ","gla":"⪥","gl":"≷","glE":"⪒","glj":"⪤","gnap":"⪊","gnapprox":"⪊","gne":"⪈","gnE":"≩","gneq":"⪈","gneqq":"≩","gnsim":"⋧","Gopf":"𝔾","gopf":"𝕘","grave":"`","GreaterEqual":"≥","GreaterEqualLess":"⋛","GreaterFullEqual":"≧","GreaterGreater":"⪢","GreaterLess":"≷","GreaterSlantEqual":"⩾","GreaterTilde":"≳","Gscr":"𝒢","gscr":"ℊ","gsim":"≳","gsime":"⪎","gsiml":"⪐","gtcc":"⪧","gtcir":"⩺","gt":">","GT":">","Gt":"≫","gtdot":"⋗","gtlPar":"⦕","gtquest":"⩼","gtrapprox":"⪆","gtrarr":"⥸","gtrdot":"⋗","gtreqless":"⋛","gtreqqless":"⪌","gtrless":"≷","gtrsim":"≳","gvertneqq":"≩︀","gvnE":"≩︀","Hacek":"ˇ","hairsp":" ","half":"½","hamilt":"ℋ","HARDcy":"Ъ","hardcy":"ъ","harrcir":"⥈","harr":"↔","hArr":"⇔","harrw":"↭","Hat":"^","hbar":"ℏ","Hcirc":"Ĥ","hcirc":"ĥ","hearts":"♥","heartsuit":"♥","hellip":"…","hercon":"⊹","hfr":"𝔥","Hfr":"ℌ","HilbertSpace":"ℋ","hksearow":"⤥","hkswarow":"⤦","hoarr":"⇿","homtht":"∻","hookleftarrow":"↩","hookrightarrow":"↪","hopf":"𝕙","Hopf":"ℍ","horbar":"―","HorizontalLine":"─","hscr":"𝒽","Hscr":"ℋ","hslash":"ℏ","Hstrok":"Ħ","hstrok":"ħ","HumpDownHump":"≎","HumpEqual":"≏","hybull":"⁃","hyphen":"‐","Iacute":"Í","iacute":"í","ic":"⁣","Icirc":"Î","icirc":"î","Icy":"И","icy":"и","Idot":"İ","IEcy":"Е","iecy":"е","iexcl":"¡","iff":"⇔","ifr":"𝔦","Ifr":"ℑ","Igrave":"Ì","igrave":"ì","ii":"ⅈ","iiiint":"⨌","iiint":"∭","iinfin":"⧜","iiota":"℩","IJlig":"Ĳ","ijlig":"ĳ","Imacr":"Ī","imacr":"ī","image":"ℑ","ImaginaryI":"ⅈ","imagline":"ℐ","imagpart":"ℑ","imath":"ı","Im":"ℑ","imof":"⊷","imped":"Ƶ","Implies":"⇒","incare":"℅","in":"∈","infin":"∞","infintie":"⧝","inodot":"ı","intcal":"⊺","int":"∫","Int":"∬","integers":"ℤ","Integral":"∫","intercal":"⊺","Intersection":"⋂","intlarhk":"⨗","intprod":"⨼","InvisibleComma":"⁣","InvisibleTimes":"⁢","IOcy":"Ё","iocy":"ё","Iogon":"Į","iogon":"į","Iopf":"𝕀","iopf":"𝕚","Iota":"Ι","iota":"ι","iprod":"⨼","iquest":"¿","iscr":"𝒾","Iscr":"ℐ","isin":"∈","isindot":"⋵","isinE":"⋹","isins":"⋴","isinsv":"⋳","isinv":"∈","it":"⁢","Itilde":"Ĩ","itilde":"ĩ","Iukcy":"І","iukcy":"і","Iuml":"Ï","iuml":"ï","Jcirc":"Ĵ","jcirc":"ĵ","Jcy":"Й","jcy":"й","Jfr":"𝔍","jfr":"𝔧","jmath":"ȷ","Jopf":"𝕁","jopf":"𝕛","Jscr":"𝒥","jscr":"𝒿","Jsercy":"Ј","jsercy":"ј","Jukcy":"Є","jukcy":"є","Kappa":"Κ","kappa":"κ","kappav":"ϰ","Kcedil":"Ķ","kcedil":"ķ","Kcy":"К","kcy":"к","Kfr":"𝔎","kfr":"𝔨","kgreen":"ĸ","KHcy":"Х","khcy":"х","KJcy":"Ќ","kjcy":"ќ","Kopf":"𝕂","kopf":"𝕜","Kscr":"𝒦","kscr":"𝓀","lAarr":"⇚","Lacute":"Ĺ","lacute":"ĺ","laemptyv":"⦴","lagran":"ℒ","Lambda":"Λ","lambda":"λ","lang":"⟨","Lang":"⟪","langd":"⦑","langle":"⟨","lap":"⪅","Laplacetrf":"ℒ","laquo":"«","larrb":"⇤","larrbfs":"⤟","larr":"←","Larr":"↞","lArr":"⇐","larrfs":"⤝","larrhk":"↩","larrlp":"↫","larrpl":"⤹","larrsim":"⥳","larrtl":"↢","latail":"⤙","lAtail":"⤛","lat":"⪫","late":"⪭","lates":"⪭︀","lbarr":"⤌","lBarr":"⤎","lbbrk":"❲","lbrace":"{","lbrack":"[","lbrke":"⦋","lbrksld":"⦏","lbrkslu":"⦍","Lcaron":"Ľ","lcaron":"ľ","Lcedil":"Ļ","lcedil":"ļ","lceil":"⌈","lcub":"{","Lcy":"Л","lcy":"л","ldca":"⤶","ldquo":"“","ldquor":"„","ldrdhar":"⥧","ldrushar":"⥋","ldsh":"↲","le":"≤","lE":"≦","LeftAngleBracket":"⟨","LeftArrowBar":"⇤","leftarrow":"←","LeftArrow":"←","Leftarrow":"⇐","LeftArrowRightArrow":"⇆","leftarrowtail":"↢","LeftCeiling":"⌈","LeftDoubleBracket":"⟦","LeftDownTeeVector":"⥡","LeftDownVectorBar":"⥙","LeftDownVector":"⇃","LeftFloor":"⌊","leftharpoondown":"↽","leftharpoonup":"↼","leftleftarrows":"⇇","leftrightarrow":"↔","LeftRightArrow":"↔","Leftrightarrow":"⇔","leftrightarrows":"⇆","leftrightharpoons":"⇋","leftrightsquigarrow":"↭","LeftRightVector":"⥎","LeftTeeArrow":"↤","LeftTee":"⊣","LeftTeeVector":"⥚","leftthreetimes":"⋋","LeftTriangleBar":"⧏","LeftTriangle":"⊲","LeftTriangleEqual":"⊴","LeftUpDownVector":"⥑","LeftUpTeeVector":"⥠","LeftUpVectorBar":"⥘","LeftUpVector":"↿","LeftVectorBar":"⥒","LeftVector":"↼","lEg":"⪋","leg":"⋚","leq":"≤","leqq":"≦","leqslant":"⩽","lescc":"⪨","les":"⩽","lesdot":"⩿","lesdoto":"⪁","lesdotor":"⪃","lesg":"⋚︀","lesges":"⪓","lessapprox":"⪅","lessdot":"⋖","lesseqgtr":"⋚","lesseqqgtr":"⪋","LessEqualGreater":"⋚","LessFullEqual":"≦","LessGreater":"≶","lessgtr":"≶","LessLess":"⪡","lesssim":"≲","LessSlantEqual":"⩽","LessTilde":"≲","lfisht":"⥼","lfloor":"⌊","Lfr":"𝔏","lfr":"𝔩","lg":"≶","lgE":"⪑","lHar":"⥢","lhard":"↽","lharu":"↼","lharul":"⥪","lhblk":"▄","LJcy":"Љ","ljcy":"љ","llarr":"⇇","ll":"≪","Ll":"⋘","llcorner":"⌞","Lleftarrow":"⇚","llhard":"⥫","lltri":"◺","Lmidot":"Ŀ","lmidot":"ŀ","lmoustache":"⎰","lmoust":"⎰","lnap":"⪉","lnapprox":"⪉","lne":"⪇","lnE":"≨","lneq":"⪇","lneqq":"≨","lnsim":"⋦","loang":"⟬","loarr":"⇽","lobrk":"⟦","longleftarrow":"⟵","LongLeftArrow":"⟵","Longleftarrow":"⟸","longleftrightarrow":"⟷","LongLeftRightArrow":"⟷","Longleftrightarrow":"⟺","longmapsto":"⟼","longrightarrow":"⟶","LongRightArrow":"⟶","Longrightarrow":"⟹","looparrowleft":"↫","looparrowright":"↬","lopar":"⦅","Lopf":"𝕃","lopf":"𝕝","loplus":"⨭","lotimes":"⨴","lowast":"∗","lowbar":"_","LowerLeftArrow":"↙","LowerRightArrow":"↘","loz":"◊","lozenge":"◊","lozf":"⧫","lpar":"(","lparlt":"⦓","lrarr":"⇆","lrcorner":"⌟","lrhar":"⇋","lrhard":"⥭","lrm":"‎","lrtri":"⊿","lsaquo":"‹","lscr":"𝓁","Lscr":"ℒ","lsh":"↰","Lsh":"↰","lsim":"≲","lsime":"⪍","lsimg":"⪏","lsqb":"[","lsquo":"‘","lsquor":"‚","Lstrok":"Ł","lstrok":"ł","ltcc":"⪦","ltcir":"⩹","lt":"<","LT":"<","Lt":"≪","ltdot":"⋖","lthree":"⋋","ltimes":"⋉","ltlarr":"⥶","ltquest":"⩻","ltri":"◃","ltrie":"⊴","ltrif":"◂","ltrPar":"⦖","lurdshar":"⥊","luruhar":"⥦","lvertneqq":"≨︀","lvnE":"≨︀","macr":"¯","male":"♂","malt":"✠","maltese":"✠","Map":"⤅","map":"↦","mapsto":"↦","mapstodown":"↧","mapstoleft":"↤","mapstoup":"↥","marker":"▮","mcomma":"⨩","Mcy":"М","mcy":"м","mdash":"—","mDDot":"∺","measuredangle":"∡","MediumSpace":" ","Mellintrf":"ℳ","Mfr":"𝔐","mfr":"𝔪","mho":"℧","micro":"µ","midast":"*","midcir":"⫰","mid":"∣","middot":"·","minusb":"⊟","minus":"−","minusd":"∸","minusdu":"⨪","MinusPlus":"∓","mlcp":"⫛","mldr":"…","mnplus":"∓","models":"⊧","Mopf":"𝕄","mopf":"𝕞","mp":"∓","mscr":"𝓂","Mscr":"ℳ","mstpos":"∾","Mu":"Μ","mu":"μ","multimap":"⊸","mumap":"⊸","nabla":"∇","Nacute":"Ń","nacute":"ń","nang":"∠⃒","nap":"≉","napE":"⩰̸","napid":"≋̸","napos":"ŉ","napprox":"≉","natural":"♮","naturals":"ℕ","natur":"♮","nbsp":" ","nbump":"≎̸","nbumpe":"≏̸","ncap":"⩃","Ncaron":"Ň","ncaron":"ň","Ncedil":"Ņ","ncedil":"ņ","ncong":"≇","ncongdot":"⩭̸","ncup":"⩂","Ncy":"Н","ncy":"н","ndash":"–","nearhk":"⤤","nearr":"↗","neArr":"⇗","nearrow":"↗","ne":"≠","nedot":"≐̸","NegativeMediumSpace":"​","NegativeThickSpace":"​","NegativeThinSpace":"​","NegativeVeryThinSpace":"​","nequiv":"≢","nesear":"⤨","nesim":"≂̸","NestedGreaterGreater":"≫","NestedLessLess":"≪","NewLine":"\n","nexist":"∄","nexists":"∄","Nfr":"𝔑","nfr":"𝔫","ngE":"≧̸","nge":"≱","ngeq":"≱","ngeqq":"≧̸","ngeqslant":"⩾̸","nges":"⩾̸","nGg":"⋙̸","ngsim":"≵","nGt":"≫⃒","ngt":"≯","ngtr":"≯","nGtv":"≫̸","nharr":"↮","nhArr":"⇎","nhpar":"⫲","ni":"∋","nis":"⋼","nisd":"⋺","niv":"∋","NJcy":"Њ","njcy":"њ","nlarr":"↚","nlArr":"⇍","nldr":"‥","nlE":"≦̸","nle":"≰","nleftarrow":"↚","nLeftarrow":"⇍","nleftrightarrow":"↮","nLeftrightarrow":"⇎","nleq":"≰","nleqq":"≦̸","nleqslant":"⩽̸","nles":"⩽̸","nless":"≮","nLl":"⋘̸","nlsim":"≴","nLt":"≪⃒","nlt":"≮","nltri":"⋪","nltrie":"⋬","nLtv":"≪̸","nmid":"∤","NoBreak":"⁠","NonBreakingSpace":" ","nopf":"𝕟","Nopf":"ℕ","Not":"⫬","not":"¬","NotCongruent":"≢","NotCupCap":"≭","NotDoubleVerticalBar":"∦","NotElement":"∉","NotEqual":"≠","NotEqualTilde":"≂̸","NotExists":"∄","NotGreater":"≯","NotGreaterEqual":"≱","NotGreaterFullEqual":"≧̸","NotGreaterGreater":"≫̸","NotGreaterLess":"≹","NotGreaterSlantEqual":"⩾̸","NotGreaterTilde":"≵","NotHumpDownHump":"≎̸","NotHumpEqual":"≏̸","notin":"∉","notindot":"⋵̸","notinE":"⋹̸","notinva":"∉","notinvb":"⋷","notinvc":"⋶","NotLeftTriangleBar":"⧏̸","NotLeftTriangle":"⋪","NotLeftTriangleEqual":"⋬","NotLess":"≮","NotLessEqual":"≰","NotLessGreater":"≸","NotLessLess":"≪̸","NotLessSlantEqual":"⩽̸","NotLessTilde":"≴","NotNestedGreaterGreater":"⪢̸","NotNestedLessLess":"⪡̸","notni":"∌","notniva":"∌","notnivb":"⋾","notnivc":"⋽","NotPrecedes":"⊀","NotPrecedesEqual":"⪯̸","NotPrecedesSlantEqual":"⋠","NotReverseElement":"∌","NotRightTriangleBar":"⧐̸","NotRightTriangle":"⋫","NotRightTriangleEqual":"⋭","NotSquareSubset":"⊏̸","NotSquareSubsetEqual":"⋢","NotSquareSuperset":"⊐̸","NotSquareSupersetEqual":"⋣","NotSubset":"⊂⃒","NotSubsetEqual":"⊈","NotSucceeds":"⊁","NotSucceedsEqual":"⪰̸","NotSucceedsSlantEqual":"⋡","NotSucceedsTilde":"≿̸","NotSuperset":"⊃⃒","NotSupersetEqual":"⊉","NotTilde":"≁","NotTildeEqual":"≄","NotTildeFullEqual":"≇","NotTildeTilde":"≉","NotVerticalBar":"∤","nparallel":"∦","npar":"∦","nparsl":"⫽⃥","npart":"∂̸","npolint":"⨔","npr":"⊀","nprcue":"⋠","nprec":"⊀","npreceq":"⪯̸","npre":"⪯̸","nrarrc":"⤳̸","nrarr":"↛","nrArr":"⇏","nrarrw":"↝̸","nrightarrow":"↛","nRightarrow":"⇏","nrtri":"⋫","nrtrie":"⋭","nsc":"⊁","nsccue":"⋡","nsce":"⪰̸","Nscr":"𝒩","nscr":"𝓃","nshortmid":"∤","nshortparallel":"∦","nsim":"≁","nsime":"≄","nsimeq":"≄","nsmid":"∤","nspar":"∦","nsqsube":"⋢","nsqsupe":"⋣","nsub":"⊄","nsubE":"⫅̸","nsube":"⊈","nsubset":"⊂⃒","nsubseteq":"⊈","nsubseteqq":"⫅̸","nsucc":"⊁","nsucceq":"⪰̸","nsup":"⊅","nsupE":"⫆̸","nsupe":"⊉","nsupset":"⊃⃒","nsupseteq":"⊉","nsupseteqq":"⫆̸","ntgl":"≹","Ntilde":"Ñ","ntilde":"ñ","ntlg":"≸","ntriangleleft":"⋪","ntrianglelefteq":"⋬","ntriangleright":"⋫","ntrianglerighteq":"⋭","Nu":"Ν","nu":"ν","num":"#","numero":"№","numsp":" ","nvap":"≍⃒","nvdash":"⊬","nvDash":"⊭","nVdash":"⊮","nVDash":"⊯","nvge":"≥⃒","nvgt":">⃒","nvHarr":"⤄","nvinfin":"⧞","nvlArr":"⤂","nvle":"≤⃒","nvlt":"<⃒","nvltrie":"⊴⃒","nvrArr":"⤃","nvrtrie":"⊵⃒","nvsim":"∼⃒","nwarhk":"⤣","nwarr":"↖","nwArr":"⇖","nwarrow":"↖","nwnear":"⤧","Oacute":"Ó","oacute":"ó","oast":"⊛","Ocirc":"Ô","ocirc":"ô","ocir":"⊚","Ocy":"О","ocy":"о","odash":"⊝","Odblac":"Ő","odblac":"ő","odiv":"⨸","odot":"⊙","odsold":"⦼","OElig":"Œ","oelig":"œ","ofcir":"⦿","Ofr":"𝔒","ofr":"𝔬","ogon":"˛","Ograve":"Ò","ograve":"ò","ogt":"⧁","ohbar":"⦵","ohm":"Ω","oint":"∮","olarr":"↺","olcir":"⦾","olcross":"⦻","oline":"‾","olt":"⧀","Omacr":"Ō","omacr":"ō","Omega":"Ω","omega":"ω","Omicron":"Ο","omicron":"ο","omid":"⦶","ominus":"⊖","Oopf":"𝕆","oopf":"𝕠","opar":"⦷","OpenCurlyDoubleQuote":"“","OpenCurlyQuote":"‘","operp":"⦹","oplus":"⊕","orarr":"↻","Or":"⩔","or":"∨","ord":"⩝","order":"ℴ","orderof":"ℴ","ordf":"ª","ordm":"º","origof":"⊶","oror":"⩖","orslope":"⩗","orv":"⩛","oS":"Ⓢ","Oscr":"𝒪","oscr":"ℴ","Oslash":"Ø","oslash":"ø","osol":"⊘","Otilde":"Õ","otilde":"õ","otimesas":"⨶","Otimes":"⨷","otimes":"⊗","Ouml":"Ö","ouml":"ö","ovbar":"⌽","OverBar":"‾","OverBrace":"⏞","OverBracket":"⎴","OverParenthesis":"⏜","para":"¶","parallel":"∥","par":"∥","parsim":"⫳","parsl":"⫽","part":"∂","PartialD":"∂","Pcy":"П","pcy":"п","percnt":"%","period":".","permil":"‰","perp":"⊥","pertenk":"‱","Pfr":"𝔓","pfr":"𝔭","Phi":"Φ","phi":"φ","phiv":"ϕ","phmmat":"ℳ","phone":"☎","Pi":"Π","pi":"π","pitchfork":"⋔","piv":"ϖ","planck":"ℏ","planckh":"ℎ","plankv":"ℏ","plusacir":"⨣","plusb":"⊞","pluscir":"⨢","plus":"+","plusdo":"∔","plusdu":"⨥","pluse":"⩲","PlusMinus":"±","plusmn":"±","plussim":"⨦","plustwo":"⨧","pm":"±","Poincareplane":"ℌ","pointint":"⨕","popf":"𝕡","Popf":"ℙ","pound":"£","prap":"⪷","Pr":"⪻","pr":"≺","prcue":"≼","precapprox":"⪷","prec":"≺","preccurlyeq":"≼","Precedes":"≺","PrecedesEqual":"⪯","PrecedesSlantEqual":"≼","PrecedesTilde":"≾","preceq":"⪯","precnapprox":"⪹","precneqq":"⪵","precnsim":"⋨","pre":"⪯","prE":"⪳","precsim":"≾","prime":"′","Prime":"″","primes":"ℙ","prnap":"⪹","prnE":"⪵","prnsim":"⋨","prod":"∏","Product":"∏","profalar":"⌮","profline":"⌒","profsurf":"⌓","prop":"∝","Proportional":"∝","Proportion":"∷","propto":"∝","prsim":"≾","prurel":"⊰","Pscr":"𝒫","pscr":"𝓅","Psi":"Ψ","psi":"ψ","puncsp":" ","Qfr":"𝔔","qfr":"𝔮","qint":"⨌","qopf":"𝕢","Qopf":"ℚ","qprime":"⁗","Qscr":"𝒬","qscr":"𝓆","quaternions":"ℍ","quatint":"⨖","quest":"?","questeq":"≟","quot":"\"","QUOT":"\"","rAarr":"⇛","race":"∽̱","Racute":"Ŕ","racute":"ŕ","radic":"√","raemptyv":"⦳","rang":"⟩","Rang":"⟫","rangd":"⦒","range":"⦥","rangle":"⟩","raquo":"»","rarrap":"⥵","rarrb":"⇥","rarrbfs":"⤠","rarrc":"⤳","rarr":"→","Rarr":"↠","rArr":"⇒","rarrfs":"⤞","rarrhk":"↪","rarrlp":"↬","rarrpl":"⥅","rarrsim":"⥴","Rarrtl":"⤖","rarrtl":"↣","rarrw":"↝","ratail":"⤚","rAtail":"⤜","ratio":"∶","rationals":"ℚ","rbarr":"⤍","rBarr":"⤏","RBarr":"⤐","rbbrk":"❳","rbrace":"}","rbrack":"]","rbrke":"⦌","rbrksld":"⦎","rbrkslu":"⦐","Rcaron":"Ř","rcaron":"ř","Rcedil":"Ŗ","rcedil":"ŗ","rceil":"⌉","rcub":"}","Rcy":"Р","rcy":"р","rdca":"⤷","rdldhar":"⥩","rdquo":"”","rdquor":"”","rdsh":"↳","real":"ℜ","realine":"ℛ","realpart":"ℜ","reals":"ℝ","Re":"ℜ","rect":"▭","reg":"®","REG":"®","ReverseElement":"∋","ReverseEquilibrium":"⇋","ReverseUpEquilibrium":"⥯","rfisht":"⥽","rfloor":"⌋","rfr":"𝔯","Rfr":"ℜ","rHar":"⥤","rhard":"⇁","rharu":"⇀","rharul":"⥬","Rho":"Ρ","rho":"ρ","rhov":"ϱ","RightAngleBracket":"⟩","RightArrowBar":"⇥","rightarrow":"→","RightArrow":"→","Rightarrow":"⇒","RightArrowLeftArrow":"⇄","rightarrowtail":"↣","RightCeiling":"⌉","RightDoubleBracket":"⟧","RightDownTeeVector":"⥝","RightDownVectorBar":"⥕","RightDownVector":"⇂","RightFloor":"⌋","rightharpoondown":"⇁","rightharpoonup":"⇀","rightleftarrows":"⇄","rightleftharpoons":"⇌","rightrightarrows":"⇉","rightsquigarrow":"↝","RightTeeArrow":"↦","RightTee":"⊢","RightTeeVector":"⥛","rightthreetimes":"⋌","RightTriangleBar":"⧐","RightTriangle":"⊳","RightTriangleEqual":"⊵","RightUpDownVector":"⥏","RightUpTeeVector":"⥜","RightUpVectorBar":"⥔","RightUpVector":"↾","RightVectorBar":"⥓","RightVector":"⇀","ring":"˚","risingdotseq":"≓","rlarr":"⇄","rlhar":"⇌","rlm":"‏","rmoustache":"⎱","rmoust":"⎱","rnmid":"⫮","roang":"⟭","roarr":"⇾","robrk":"⟧","ropar":"⦆","ropf":"𝕣","Ropf":"ℝ","roplus":"⨮","rotimes":"⨵","RoundImplies":"⥰","rpar":")","rpargt":"⦔","rppolint":"⨒","rrarr":"⇉","Rrightarrow":"⇛","rsaquo":"›","rscr":"𝓇","Rscr":"ℛ","rsh":"↱","Rsh":"↱","rsqb":"]","rsquo":"’","rsquor":"’","rthree":"⋌","rtimes":"⋊","rtri":"▹","rtrie":"⊵","rtrif":"▸","rtriltri":"⧎","RuleDelayed":"⧴","ruluhar":"⥨","rx":"℞","Sacute":"Ś","sacute":"ś","sbquo":"‚","scap":"⪸","Scaron":"Š","scaron":"š","Sc":"⪼","sc":"≻","sccue":"≽","sce":"⪰","scE":"⪴","Scedil":"Ş","scedil":"ş","Scirc":"Ŝ","scirc":"ŝ","scnap":"⪺","scnE":"⪶","scnsim":"⋩","scpolint":"⨓","scsim":"≿","Scy":"С","scy":"с","sdotb":"⊡","sdot":"⋅","sdote":"⩦","searhk":"⤥","searr":"↘","seArr":"⇘","searrow":"↘","sect":"§","semi":";","seswar":"⤩","setminus":"∖","setmn":"∖","sext":"✶","Sfr":"𝔖","sfr":"𝔰","sfrown":"⌢","sharp":"♯","SHCHcy":"Щ","shchcy":"щ","SHcy":"Ш","shcy":"ш","ShortDownArrow":"↓","ShortLeftArrow":"←","shortmid":"∣","shortparallel":"∥","ShortRightArrow":"→","ShortUpArrow":"↑","shy":"­","Sigma":"Σ","sigma":"σ","sigmaf":"ς","sigmav":"ς","sim":"∼","simdot":"⩪","sime":"≃","simeq":"≃","simg":"⪞","simgE":"⪠","siml":"⪝","simlE":"⪟","simne":"≆","simplus":"⨤","simrarr":"⥲","slarr":"←","SmallCircle":"∘","smallsetminus":"∖","smashp":"⨳","smeparsl":"⧤","smid":"∣","smile":"⌣","smt":"⪪","smte":"⪬","smtes":"⪬︀","SOFTcy":"Ь","softcy":"ь","solbar":"⌿","solb":"⧄","sol":"/","Sopf":"𝕊","sopf":"𝕤","spades":"♠","spadesuit":"♠","spar":"∥","sqcap":"⊓","sqcaps":"⊓︀","sqcup":"⊔","sqcups":"⊔︀","Sqrt":"√","sqsub":"⊏","sqsube":"⊑","sqsubset":"⊏","sqsubseteq":"⊑","sqsup":"⊐","sqsupe":"⊒","sqsupset":"⊐","sqsupseteq":"⊒","square":"□","Square":"□","SquareIntersection":"⊓","SquareSubset":"⊏","SquareSubsetEqual":"⊑","SquareSuperset":"⊐","SquareSupersetEqual":"⊒","SquareUnion":"⊔","squarf":"▪","squ":"□","squf":"▪","srarr":"→","Sscr":"𝒮","sscr":"𝓈","ssetmn":"∖","ssmile":"⌣","sstarf":"⋆","Star":"⋆","star":"☆","starf":"★","straightepsilon":"ϵ","straightphi":"ϕ","strns":"¯","sub":"⊂","Sub":"⋐","subdot":"⪽","subE":"⫅","sube":"⊆","subedot":"⫃","submult":"⫁","subnE":"⫋","subne":"⊊","subplus":"⪿","subrarr":"⥹","subset":"⊂","Subset":"⋐","subseteq":"⊆","subseteqq":"⫅","SubsetEqual":"⊆","subsetneq":"⊊","subsetneqq":"⫋","subsim":"⫇","subsub":"⫕","subsup":"⫓","succapprox":"⪸","succ":"≻","succcurlyeq":"≽","Succeeds":"≻","SucceedsEqual":"⪰","SucceedsSlantEqual":"≽","SucceedsTilde":"≿","succeq":"⪰","succnapprox":"⪺","succneqq":"⪶","succnsim":"⋩","succsim":"≿","SuchThat":"∋","sum":"∑","Sum":"∑","sung":"♪","sup1":"¹","sup2":"²","sup3":"³","sup":"⊃","Sup":"⋑","supdot":"⪾","supdsub":"⫘","supE":"⫆","supe":"⊇","supedot":"⫄","Superset":"⊃","SupersetEqual":"⊇","suphsol":"⟉","suphsub":"⫗","suplarr":"⥻","supmult":"⫂","supnE":"⫌","supne":"⊋","supplus":"⫀","supset":"⊃","Supset":"⋑","supseteq":"⊇","supseteqq":"⫆","supsetneq":"⊋","supsetneqq":"⫌","supsim":"⫈","supsub":"⫔","supsup":"⫖","swarhk":"⤦","swarr":"↙","swArr":"⇙","swarrow":"↙","swnwar":"⤪","szlig":"ß","Tab":"\t","target":"⌖","Tau":"Τ","tau":"τ","tbrk":"⎴","Tcaron":"Ť","tcaron":"ť","Tcedil":"Ţ","tcedil":"ţ","Tcy":"Т","tcy":"т","tdot":"⃛","telrec":"⌕","Tfr":"𝔗","tfr":"𝔱","there4":"∴","therefore":"∴","Therefore":"∴","Theta":"Θ","theta":"θ","thetasym":"ϑ","thetav":"ϑ","thickapprox":"≈","thicksim":"∼","ThickSpace":"  ","ThinSpace":" ","thinsp":" ","thkap":"≈","thksim":"∼","THORN":"Þ","thorn":"þ","tilde":"˜","Tilde":"∼","TildeEqual":"≃","TildeFullEqual":"≅","TildeTilde":"≈","timesbar":"⨱","timesb":"⊠","times":"×","timesd":"⨰","tint":"∭","toea":"⤨","topbot":"⌶","topcir":"⫱","top":"⊤","Topf":"𝕋","topf":"𝕥","topfork":"⫚","tosa":"⤩","tprime":"‴","trade":"™","TRADE":"™","triangle":"▵","triangledown":"▿","triangleleft":"◃","trianglelefteq":"⊴","triangleq":"≜","triangleright":"▹","trianglerighteq":"⊵","tridot":"◬","trie":"≜","triminus":"⨺","TripleDot":"⃛","triplus":"⨹","trisb":"⧍","tritime":"⨻","trpezium":"⏢","Tscr":"𝒯","tscr":"𝓉","TScy":"Ц","tscy":"ц","TSHcy":"Ћ","tshcy":"ћ","Tstrok":"Ŧ","tstrok":"ŧ","twixt":"≬","twoheadleftarrow":"↞","twoheadrightarrow":"↠","Uacute":"Ú","uacute":"ú","uarr":"↑","Uarr":"↟","uArr":"⇑","Uarrocir":"⥉","Ubrcy":"Ў","ubrcy":"ў","Ubreve":"Ŭ","ubreve":"ŭ","Ucirc":"Û","ucirc":"û","Ucy":"У","ucy":"у","udarr":"⇅","Udblac":"Ű","udblac":"ű","udhar":"⥮","ufisht":"⥾","Ufr":"𝔘","ufr":"𝔲","Ugrave":"Ù","ugrave":"ù","uHar":"⥣","uharl":"↿","uharr":"↾","uhblk":"▀","ulcorn":"⌜","ulcorner":"⌜","ulcrop":"⌏","ultri":"◸","Umacr":"Ū","umacr":"ū","uml":"¨","UnderBar":"_","UnderBrace":"⏟","UnderBracket":"⎵","UnderParenthesis":"⏝","Union":"⋃","UnionPlus":"⊎","Uogon":"Ų","uogon":"ų","Uopf":"𝕌","uopf":"𝕦","UpArrowBar":"⤒","uparrow":"↑","UpArrow":"↑","Uparrow":"⇑","UpArrowDownArrow":"⇅","updownarrow":"↕","UpDownArrow":"↕","Updownarrow":"⇕","UpEquilibrium":"⥮","upharpoonleft":"↿","upharpoonright":"↾","uplus":"⊎","UpperLeftArrow":"↖","UpperRightArrow":"↗","upsi":"υ","Upsi":"ϒ","upsih":"ϒ","Upsilon":"Υ","upsilon":"υ","UpTeeArrow":"↥","UpTee":"⊥","upuparrows":"⇈","urcorn":"⌝","urcorner":"⌝","urcrop":"⌎","Uring":"Ů","uring":"ů","urtri":"◹","Uscr":"𝒰","uscr":"𝓊","utdot":"⋰","Utilde":"Ũ","utilde":"ũ","utri":"▵","utrif":"▴","uuarr":"⇈","Uuml":"Ü","uuml":"ü","uwangle":"⦧","vangrt":"⦜","varepsilon":"ϵ","varkappa":"ϰ","varnothing":"∅","varphi":"ϕ","varpi":"ϖ","varpropto":"∝","varr":"↕","vArr":"⇕","varrho":"ϱ","varsigma":"ς","varsubsetneq":"⊊︀","varsubsetneqq":"⫋︀","varsupsetneq":"⊋︀","varsupsetneqq":"⫌︀","vartheta":"ϑ","vartriangleleft":"⊲","vartriangleright":"⊳","vBar":"⫨","Vbar":"⫫","vBarv":"⫩","Vcy":"В","vcy":"в","vdash":"⊢","vDash":"⊨","Vdash":"⊩","VDash":"⊫","Vdashl":"⫦","veebar":"⊻","vee":"∨","Vee":"⋁","veeeq":"≚","vellip":"⋮","verbar":"|","Verbar":"‖","vert":"|","Vert":"‖","VerticalBar":"∣","VerticalLine":"|","VerticalSeparator":"❘","VerticalTilde":"≀","VeryThinSpace":" ","Vfr":"𝔙","vfr":"𝔳","vltri":"⊲","vnsub":"⊂⃒","vnsup":"⊃⃒","Vopf":"𝕍","vopf":"𝕧","vprop":"∝","vrtri":"⊳","Vscr":"𝒱","vscr":"𝓋","vsubnE":"⫋︀","vsubne":"⊊︀","vsupnE":"⫌︀","vsupne":"⊋︀","Vvdash":"⊪","vzigzag":"⦚","Wcirc":"Ŵ","wcirc":"ŵ","wedbar":"⩟","wedge":"∧","Wedge":"⋀","wedgeq":"≙","weierp":"℘","Wfr":"𝔚","wfr":"𝔴","Wopf":"𝕎","wopf":"𝕨","wp":"℘","wr":"≀","wreath":"≀","Wscr":"𝒲","wscr":"𝓌","xcap":"⋂","xcirc":"◯","xcup":"⋃","xdtri":"▽","Xfr":"𝔛","xfr":"𝔵","xharr":"⟷","xhArr":"⟺","Xi":"Ξ","xi":"ξ","xlarr":"⟵","xlArr":"⟸","xmap":"⟼","xnis":"⋻","xodot":"⨀","Xopf":"𝕏","xopf":"𝕩","xoplus":"⨁","xotime":"⨂","xrarr":"⟶","xrArr":"⟹","Xscr":"𝒳","xscr":"𝓍","xsqcup":"⨆","xuplus":"⨄","xutri":"△","xvee":"⋁","xwedge":"⋀","Yacute":"Ý","yacute":"ý","YAcy":"Я","yacy":"я","Ycirc":"Ŷ","ycirc":"ŷ","Ycy":"Ы","ycy":"ы","yen":"¥","Yfr":"𝔜","yfr":"𝔶","YIcy":"Ї","yicy":"ї","Yopf":"𝕐","yopf":"𝕪","Yscr":"𝒴","yscr":"𝓎","YUcy":"Ю","yucy":"ю","yuml":"ÿ","Yuml":"Ÿ","Zacute":"Ź","zacute":"ź","Zcaron":"Ž","zcaron":"ž","Zcy":"З","zcy":"з","Zdot":"Ż","zdot":"ż","zeetrf":"ℨ","ZeroWidthSpace":"​","Zeta":"Ζ","zeta":"ζ","zfr":"𝔷","Zfr":"ℨ","ZHcy":"Ж","zhcy":"ж","zigrarr":"⇝","zopf":"𝕫","Zopf":"ℤ","Zscr":"𝒵","zscr":"𝓏","zwj":"‍","zwnj":"‌"}
 
 /***/ }),
-/* 191 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79276,7 +77269,7 @@ module.exports = encode;
 
 
 /***/ }),
-/* 192 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79405,7 +77398,7 @@ module.exports = decode;
 
 
 /***/ }),
-/* 193 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79437,7 +77430,7 @@ module.exports = function format(url) {
 
 
 /***/ }),
-/* 194 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79756,7 +77749,7 @@ module.exports = urlParse;
 
 
 /***/ }),
-/* 195 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79764,19 +77757,19 @@ module.exports = urlParse;
 
 exports.Any = __webpack_require__(26);
 exports.Cc  = __webpack_require__(27);
-exports.Cf  = __webpack_require__(196);
+exports.Cf  = __webpack_require__(195);
 exports.P   = __webpack_require__(11);
 exports.Z   = __webpack_require__(28);
 
 
 /***/ }),
-/* 196 */
+/* 195 */
 /***/ (function(module, exports) {
 
 module.exports=/[\xAD\u0600-\u0605\u061C\u06DD\u070F\u08E2\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF\uFFF9-\uFFFB]|\uD804\uDCBD|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F]/
 
 /***/ }),
-/* 197 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79784,13 +77777,13 @@ module.exports=/[\xAD\u0600-\u0605\u061C\u06DD\u070F\u08E2\u180E\u200B-\u200F\u2
 
 
 
-exports.parseLinkLabel       = __webpack_require__(198);
-exports.parseLinkDestination = __webpack_require__(199);
-exports.parseLinkTitle       = __webpack_require__(200);
+exports.parseLinkLabel       = __webpack_require__(197);
+exports.parseLinkDestination = __webpack_require__(198);
+exports.parseLinkTitle       = __webpack_require__(199);
 
 
 /***/ }),
-/* 198 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79845,7 +77838,7 @@ module.exports = function parseLinkLabel(state, start, disableNested) {
 
 
 /***/ }),
-/* 199 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79932,7 +77925,7 @@ module.exports = function parseLinkDestination(str, pos, max) {
 
 
 /***/ }),
-/* 200 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79992,7 +77985,7 @@ module.exports = function parseLinkTitle(str, pos, max) {
 
 
 /***/ }),
-/* 201 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80334,7 +78327,7 @@ module.exports = Renderer;
 
 
 /***/ }),
-/* 202 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80351,12 +78344,12 @@ var Ruler  = __webpack_require__(12);
 
 
 var _rules = [
-  [ 'normalize',      __webpack_require__(203)      ],
-  [ 'block',          __webpack_require__(204)          ],
-  [ 'inline',         __webpack_require__(205)         ],
-  [ 'linkify',        __webpack_require__(206)        ],
-  [ 'replacements',   __webpack_require__(207)   ],
-  [ 'smartquotes',    __webpack_require__(208)    ]
+  [ 'normalize',      __webpack_require__(202)      ],
+  [ 'block',          __webpack_require__(203)          ],
+  [ 'inline',         __webpack_require__(204)         ],
+  [ 'linkify',        __webpack_require__(205)        ],
+  [ 'replacements',   __webpack_require__(206)   ],
+  [ 'smartquotes',    __webpack_require__(207)    ]
 ];
 
 
@@ -80392,14 +78385,14 @@ Core.prototype.process = function (state) {
   }
 };
 
-Core.prototype.State = __webpack_require__(209);
+Core.prototype.State = __webpack_require__(208);
 
 
 module.exports = Core;
 
 
 /***/ }),
-/* 203 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80426,7 +78419,7 @@ module.exports = function inline(state) {
 
 
 /***/ }),
-/* 204 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80449,7 +78442,7 @@ module.exports = function block(state) {
 
 
 /***/ }),
-/* 205 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80469,7 +78462,7 @@ module.exports = function inline(state) {
 
 
 /***/ }),
-/* 206 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80609,7 +78602,7 @@ module.exports = function linkify(state) {
 
 
 /***/ }),
-/* 207 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80723,7 +78716,7 @@ module.exports = function replace(state) {
 
 
 /***/ }),
-/* 208 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80925,7 +78918,7 @@ module.exports = function smartquotes(state) {
 
 
 /***/ }),
-/* 209 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80952,7 +78945,7 @@ module.exports = StateCore;
 
 
 /***/ }),
-/* 210 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80970,17 +78963,17 @@ var Ruler           = __webpack_require__(12);
 var _rules = [
   // First 2 params - rule name & source. Secondary array - list of rules,
   // which can be terminated by this one.
-  [ 'table',      __webpack_require__(211),      [ 'paragraph', 'reference' ] ],
-  [ 'code',       __webpack_require__(212) ],
-  [ 'fence',      __webpack_require__(213),      [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
-  [ 'blockquote', __webpack_require__(214), [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
-  [ 'hr',         __webpack_require__(215),         [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
-  [ 'list',       __webpack_require__(216),       [ 'paragraph', 'reference', 'blockquote' ] ],
-  [ 'reference',  __webpack_require__(217) ],
-  [ 'heading',    __webpack_require__(218),    [ 'paragraph', 'reference', 'blockquote' ] ],
-  [ 'lheading',   __webpack_require__(219) ],
-  [ 'html_block', __webpack_require__(220), [ 'paragraph', 'reference', 'blockquote' ] ],
-  [ 'paragraph',  __webpack_require__(222) ]
+  [ 'table',      __webpack_require__(210),      [ 'paragraph', 'reference' ] ],
+  [ 'code',       __webpack_require__(211) ],
+  [ 'fence',      __webpack_require__(212),      [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
+  [ 'blockquote', __webpack_require__(213), [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
+  [ 'hr',         __webpack_require__(214),         [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
+  [ 'list',       __webpack_require__(215),       [ 'paragraph', 'reference', 'blockquote' ] ],
+  [ 'reference',  __webpack_require__(216) ],
+  [ 'heading',    __webpack_require__(217),    [ 'paragraph', 'reference', 'blockquote' ] ],
+  [ 'lheading',   __webpack_require__(218) ],
+  [ 'html_block', __webpack_require__(219), [ 'paragraph', 'reference', 'blockquote' ] ],
+  [ 'paragraph',  __webpack_require__(221) ]
 ];
 
 
@@ -81074,14 +79067,14 @@ ParserBlock.prototype.parse = function (src, md, env, outTokens) {
 };
 
 
-ParserBlock.prototype.State = __webpack_require__(223);
+ParserBlock.prototype.State = __webpack_require__(222);
 
 
 module.exports = ParserBlock;
 
 
 /***/ }),
-/* 211 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81284,7 +79277,7 @@ module.exports = function table(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 212 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81325,7 +79318,7 @@ module.exports = function code(state, startLine, endLine/*, silent*/) {
 
 
 /***/ }),
-/* 213 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81426,7 +79419,7 @@ module.exports = function fence(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 214 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81718,7 +79711,7 @@ module.exports = function blockquote(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 215 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81770,7 +79763,7 @@ module.exports = function hr(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 216 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82113,7 +80106,7 @@ module.exports = function list(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 217 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82318,7 +80311,7 @@ module.exports = function reference(state, startLine, _endLine, silent) {
 
 
 /***/ }),
-/* 218 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82380,7 +80373,7 @@ module.exports = function heading(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 219 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82470,7 +80463,7 @@ module.exports = function lheading(state, startLine, endLine/*, silent*/) {
 
 
 /***/ }),
-/* 220 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82479,7 +80472,7 @@ module.exports = function lheading(state, startLine, endLine/*, silent*/) {
 
 
 
-var block_names = __webpack_require__(221);
+var block_names = __webpack_require__(220);
 var HTML_OPEN_CLOSE_TAG_RE = __webpack_require__(29).HTML_OPEN_CLOSE_TAG_RE;
 
 // An array of opening and corresponding closing sequences for html tags,
@@ -82551,7 +80544,7 @@ module.exports = function html_block(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 221 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82629,7 +80622,7 @@ module.exports = [
 
 
 /***/ }),
-/* 222 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82688,7 +80681,7 @@ module.exports = function paragraph(state, startLine/*, endLine*/) {
 
 
 /***/ }),
-/* 223 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82925,7 +80918,7 @@ module.exports = StateBlock;
 
 
 /***/ }),
-/* 224 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82944,24 +80937,24 @@ var Ruler           = __webpack_require__(12);
 // Parser rules
 
 var _rules = [
-  [ 'text',            __webpack_require__(225) ],
-  [ 'newline',         __webpack_require__(226) ],
-  [ 'escape',          __webpack_require__(227) ],
-  [ 'backticks',       __webpack_require__(228) ],
+  [ 'text',            __webpack_require__(224) ],
+  [ 'newline',         __webpack_require__(225) ],
+  [ 'escape',          __webpack_require__(226) ],
+  [ 'backticks',       __webpack_require__(227) ],
   [ 'strikethrough',   __webpack_require__(30).tokenize ],
   [ 'emphasis',        __webpack_require__(31).tokenize ],
-  [ 'link',            __webpack_require__(229) ],
-  [ 'image',           __webpack_require__(230) ],
-  [ 'autolink',        __webpack_require__(231) ],
-  [ 'html_inline',     __webpack_require__(232) ],
-  [ 'entity',          __webpack_require__(233) ]
+  [ 'link',            __webpack_require__(228) ],
+  [ 'image',           __webpack_require__(229) ],
+  [ 'autolink',        __webpack_require__(230) ],
+  [ 'html_inline',     __webpack_require__(231) ],
+  [ 'entity',          __webpack_require__(232) ]
 ];
 
 var _rules2 = [
-  [ 'balance_pairs',   __webpack_require__(234) ],
+  [ 'balance_pairs',   __webpack_require__(233) ],
   [ 'strikethrough',   __webpack_require__(30).postProcess ],
   [ 'emphasis',        __webpack_require__(31).postProcess ],
-  [ 'text_collapse',   __webpack_require__(235) ]
+  [ 'text_collapse',   __webpack_require__(234) ]
 ];
 
 
@@ -83102,14 +81095,14 @@ ParserInline.prototype.parse = function (str, md, env, outTokens) {
 };
 
 
-ParserInline.prototype.State = __webpack_require__(236);
+ParserInline.prototype.State = __webpack_require__(235);
 
 
 module.exports = ParserInline;
 
 
 /***/ }),
-/* 225 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83205,7 +81198,7 @@ module.exports = function text(state, silent) {
 
 
 /***/ }),
-/* 226 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83254,7 +81247,7 @@ module.exports = function newline(state, silent) {
 
 
 /***/ }),
-/* 227 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83313,7 +81306,7 @@ module.exports = function escape(state, silent) {
 
 
 /***/ }),
-/* 228 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83363,7 +81356,7 @@ module.exports = function backtick(state, silent) {
 
 
 /***/ }),
-/* 229 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83520,7 +81513,7 @@ module.exports = function link(state, silent) {
 
 
 /***/ }),
-/* 230 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83679,7 +81672,7 @@ module.exports = function image(state, silent) {
 
 
 /***/ }),
-/* 231 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83758,7 +81751,7 @@ module.exports = function autolink(state, silent) {
 
 
 /***/ }),
-/* 232 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83812,7 +81805,7 @@ module.exports = function html_inline(state, silent) {
 
 
 /***/ }),
-/* 233 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83867,7 +81860,7 @@ module.exports = function entity(state, silent) {
 
 
 /***/ }),
-/* 234 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83918,7 +81911,7 @@ module.exports = function link_pairs(state) {
 
 
 /***/ }),
-/* 235 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83958,7 +81951,7 @@ module.exports = function text_collapse(state) {
 
 
 /***/ }),
-/* 236 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84095,7 +82088,7 @@ module.exports = StateInline;
 
 
 /***/ }),
-/* 237 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84251,7 +82244,7 @@ function createNormalizer() {
 function compile(self) {
 
   // Load & clone RE patterns.
-  var re = self.re = __webpack_require__(238)(self.__opts__);
+  var re = self.re = __webpack_require__(237)(self.__opts__);
 
   // Define dynamic patterns
   var tlds = self.__tlds__.slice();
@@ -84738,7 +82731,7 @@ module.exports = LinkifyIt;
 
 
 /***/ }),
-/* 238 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84919,7 +82912,7 @@ module.exports = function (opts) {
 
 
 /***/ }),
-/* 239 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -85458,7 +83451,7 @@ module.exports = function (opts) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)(module), __webpack_require__(6)))
 
 /***/ }),
-/* 240 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -85506,7 +83499,7 @@ module.exports = {
 
 
 /***/ }),
-/* 241 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -85575,7 +83568,7 @@ module.exports = {
 
 
 /***/ }),
-/* 242 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -85662,13 +83655,13 @@ module.exports = {
 
 
 /***/ }),
-/* 243 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(244);
+var content = __webpack_require__(243);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -85693,7 +83686,7 @@ if(false) {
 }
 
 /***/ }),
-/* 244 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)(false);
@@ -85707,7 +83700,7 @@ exports.push([module.i, "/* BASICS */\n\n.CodeMirror {\n  /* Set height, width, 
 
 
 /***/ }),
-/* 245 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -85754,7 +83747,7 @@ exports.push([module.i, "/* BASICS */\n\n.CodeMirror {\n  /* Set height, width, 
 
 
 /***/ }),
-/* 246 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -86162,7 +84155,7 @@ if (!CodeMirror.mimeModes.hasOwnProperty("text/html"))
 
 
 /***/ }),
-/* 247 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -86385,7 +84378,7 @@ if (!CodeMirror.mimeModes.hasOwnProperty("text/html"))
 
 
 /***/ }),
-/* 248 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -86393,7 +84386,7 @@ if (!CodeMirror.mimeModes.hasOwnProperty("text/html"))
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(3), __webpack_require__(32), __webpack_require__(249));
+    mod(__webpack_require__(3), __webpack_require__(32), __webpack_require__(248));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror", "../markdown/markdown", "../../addon/mode/overlay"], mod);
   else // Plain browser env
@@ -86520,7 +84513,7 @@ CodeMirror.defineMode("gfm", function(config, modeConfig) {
 
 
 /***/ }),
-/* 249 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -86616,7 +84609,7 @@ CodeMirror.overlayMode = function(base, overlay, combine) {
 
 
 /***/ }),
-/* 250 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -86685,7 +84678,7 @@ CodeMirror.overlayMode = function(base, overlay, combine) {
 
 
 /***/ }),
-/* 251 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -86763,7 +84756,7 @@ CodeMirror.overlayMode = function(base, overlay, combine) {
 
 
 /***/ }),
-/* 252 */
+/* 251 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -87708,7 +85701,7 @@ var index_esm = {
 
 
 /***/ }),
-/* 253 */
+/* 252 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -87749,7 +85742,7 @@ var index_esm = {
 });
 
 /***/ }),
-/* 254 */
+/* 253 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -87768,7 +85761,7 @@ __WEBPACK_IMPORTED_MODULE_1_vue___default.a.filter('sortlength', function (text,
 });
 
 /***/ }),
-/* 255 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -88033,10 +86026,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 255;
+webpackContext.id = 254;
 
 /***/ }),
-/* 256 */
+/* 255 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -90661,24 +88654,24 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 257 */
+/* 256 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routes; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_admin_AdminHome_vue__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_admin_AdminHome_vue__ = __webpack_require__(257);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_admin_AdminHome_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_admin_AdminHome_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_admin_category_List_vue__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_admin_category_List_vue__ = __webpack_require__(259);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_admin_category_List_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_admin_category_List_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_admin_category_New_vue__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_admin_category_New_vue__ = __webpack_require__(265);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_admin_category_New_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_admin_category_New_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_admin_category_Edit_vue__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_admin_category_Edit_vue__ = __webpack_require__(270);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_admin_category_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_admin_category_Edit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_admin_post_List_vue__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_admin_post_List_vue__ = __webpack_require__(275);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_admin_post_List_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_admin_post_List_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_admin_post_New_vue__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_admin_post_New_vue__ = __webpack_require__(280);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_admin_post_New_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_admin_post_New_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_admin_post_Edit_vue__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_admin_post_Edit_vue__ = __webpack_require__(285);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_admin_post_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_admin_post_Edit_vue__);
 
 
@@ -90715,7 +88708,7 @@ var routes = [{
 }];
 
 /***/ }),
-/* 258 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -90723,7 +88716,7 @@ var normalizeComponent = __webpack_require__(4)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(259)
+var __vue_template__ = __webpack_require__(258)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -90762,7 +88755,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 259 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -90837,19 +88830,19 @@ if (false) {
 }
 
 /***/ }),
-/* 260 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(261)
+  __webpack_require__(260)
 }
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(264)
+var __vue_script__ = __webpack_require__(263)
 /* template */
-var __vue_template__ = __webpack_require__(265)
+var __vue_template__ = __webpack_require__(264)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -90888,13 +88881,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 261 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(262);
+var content = __webpack_require__(261);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -90914,7 +88907,7 @@ if(false) {
 }
 
 /***/ }),
-/* 262 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)(false);
@@ -90928,7 +88921,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 263 */
+/* 262 */
 /***/ (function(module, exports) {
 
 /**
@@ -90961,7 +88954,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 264 */
+/* 263 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -91050,7 +89043,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 265 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -91177,19 +89170,19 @@ if (false) {
 }
 
 /***/ }),
-/* 266 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(267)
+  __webpack_require__(266)
 }
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(269)
+var __vue_script__ = __webpack_require__(268)
 /* template */
-var __vue_template__ = __webpack_require__(270)
+var __vue_template__ = __webpack_require__(269)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -91228,13 +89221,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 267 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(268);
+var content = __webpack_require__(267);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -91254,7 +89247,7 @@ if(false) {
 }
 
 /***/ }),
-/* 268 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)(false);
@@ -91268,7 +89261,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 269 */
+/* 268 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -91340,7 +89333,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 270 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -91454,19 +89447,19 @@ if (false) {
 }
 
 /***/ }),
-/* 271 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(272)
+  __webpack_require__(271)
 }
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(274)
+var __vue_script__ = __webpack_require__(273)
 /* template */
-var __vue_template__ = __webpack_require__(275)
+var __vue_template__ = __webpack_require__(274)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -91505,13 +89498,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 272 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(273);
+var content = __webpack_require__(272);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -91531,7 +89524,7 @@ if(false) {
 }
 
 /***/ }),
-/* 273 */
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)(false);
@@ -91545,7 +89538,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 274 */
+/* 273 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -91624,7 +89617,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 275 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -91738,19 +89731,19 @@ if (false) {
 }
 
 /***/ }),
-/* 276 */
+/* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(277)
+  __webpack_require__(276)
 }
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(279)
+var __vue_script__ = __webpack_require__(278)
 /* template */
-var __vue_template__ = __webpack_require__(280)
+var __vue_template__ = __webpack_require__(279)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -91789,13 +89782,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 277 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(278);
+var content = __webpack_require__(277);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -91815,7 +89808,7 @@ if(false) {
 }
 
 /***/ }),
-/* 278 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)(false);
@@ -91829,7 +89822,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 279 */
+/* 278 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -91914,7 +89907,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 280 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -92054,19 +90047,19 @@ if (false) {
 }
 
 /***/ }),
-/* 281 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(282)
+  __webpack_require__(281)
 }
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(284)
+var __vue_script__ = __webpack_require__(283)
 /* template */
-var __vue_template__ = __webpack_require__(285)
+var __vue_template__ = __webpack_require__(284)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -92105,13 +90098,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 282 */
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(283);
+var content = __webpack_require__(282);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -92131,7 +90124,7 @@ if(false) {
 }
 
 /***/ }),
-/* 283 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)(false);
@@ -92139,13 +90132,13 @@ exports = module.exports = __webpack_require__(5)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 284 */
+/* 283 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -92244,15 +90237,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             reader.onload = function (event) {
                 _this.form.photo = event.target.result;
             };
-
             reader.readAsDataURL(file);
+        },
+        addnewPost: function addnewPost() {
+            var _this2 = this;
+
+            this.form.post('/savepost').then(function () {
+                _this2.$router.push('/post-list');
+                toast({
+                    type: 'success',
+                    title: 'Post Added successfully'
+                });
+            }).catch(function () {});
         }
     }
 
 });
 
 /***/ }),
-/* 285 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -92268,7 +90271,15 @@ var render = function() {
             _vm._v(" "),
             _c(
               "form",
-              { attrs: { role: "form", enctype: "multipart/form-data" } },
+              {
+                attrs: { role: "form", enctype: "multipart/form-data" },
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    _vm.addnewPost()
+                  }
+                }
+              },
               [
                 _c("div", { staticClass: "card-body" }, [
                   _c(
@@ -92276,7 +90287,7 @@ var render = function() {
                     { staticClass: "form-group" },
                     [
                       _c("label", { attrs: { for: "postId" } }, [
-                        _vm._v("Add New Post")
+                        _vm._v("Add New Post ")
                       ]),
                       _vm._v(" "),
                       _c("input", {
@@ -92475,19 +90486,19 @@ if (false) {
 }
 
 /***/ }),
-/* 286 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(287)
+  __webpack_require__(286)
 }
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(289)
+var __vue_script__ = __webpack_require__(288)
 /* template */
-var __vue_template__ = __webpack_require__(290)
+var __vue_template__ = __webpack_require__(289)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -92526,13 +90537,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 287 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(288);
+var content = __webpack_require__(287);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -92552,7 +90563,7 @@ if(false) {
 }
 
 /***/ }),
-/* 288 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)(false);
@@ -92566,7 +90577,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-/* 289 */
+/* 288 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -92581,7 +90592,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 290 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -92601,15 +90612,15 @@ if (false) {
 }
 
 /***/ }),
-/* 291 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(292)
+var __vue_script__ = __webpack_require__(291)
 /* template */
-var __vue_template__ = __webpack_require__(293)
+var __vue_template__ = __webpack_require__(292)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -92648,7 +90659,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 292 */
+/* 291 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -92677,7 +90688,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 293 */
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -92720,7 +90731,7 @@ if (false) {
 }
 
 /***/ }),
-/* 294 */
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -92728,7 +90739,7 @@ var normalizeComponent = __webpack_require__(4)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(295)
+var __vue_template__ = __webpack_require__(294)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -92767,7 +90778,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 295 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -92787,7 +90798,7 @@ if (false) {
 }
 
 /***/ }),
-/* 296 */
+/* 295 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports =
@@ -93770,7 +91781,7 @@ var AlertSuccess_Component = normalizeComponent(
 /******/ });
 
 /***/ }),
-/* 297 */
+/* 296 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -96439,7 +94450,7 @@ if (typeof window !== 'undefined' && window.Sweetalert2){  window.Sweetalert2.ve
 "undefined"!=typeof document&&function(e,t){var n=e.createElement("style");if(e.getElementsByTagName("head")[0].appendChild(n),n.styleSheet)n.styleSheet.disabled||(n.styleSheet.cssText=t);else try{n.innerHTML=t}catch(e){n.innerText=t}}(document,"@-webkit-keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}body.swal2-toast-shown .swal2-container{position:fixed;background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-shown{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;box-shadow:0 0 .625em #d9d9d9;overflow-y:hidden}.swal2-popup.swal2-toast .swal2-header{flex-direction:row}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:initial;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon-text{font-size:2em;font-weight:700;line-height:1em}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 .0625em #fff,0 0 0 .125em rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:2em;height:2.8125em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.25em;left:-.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:2em 2em;transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;-webkit-transform-origin:0 2em;transform-origin:0 2em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:showSweetToast .5s;animation:showSweetToast .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:hideSweetToast .2s forwards;animation:hideSweetToast .2s forwards}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:animate-toast-success-tip .75s;animation:animate-toast-success-tip .75s}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:animate-toast-success-long .75s;animation:animate-toast-success-long .75s}@-webkit-keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@-webkit-keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-shown{top:auto;right:auto;bottom:auto;left:auto;background-color:transparent}body.swal2-no-backdrop .swal2-shown>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-shown.swal2-top{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-top-left,body.swal2-no-backdrop .swal2-shown.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-top-end,body.swal2-no-backdrop .swal2-shown.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-shown.swal2-center{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-left,body.swal2-no-backdrop .swal2-shown.swal2-center-start{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-end,body.swal2-no-backdrop .swal2-shown.swal2-center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom{bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom-left,body.swal2-no-backdrop .swal2-shown.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swal2-shown.swal2-bottom-right{right:0;bottom:0}.swal2-container{display:flex;position:fixed;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:10px;background-color:transparent;z-index:1060;overflow-x:hidden;-webkit-overflow-scrolling:touch}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-container.swal2-fade{transition:background-color .1s}.swal2-container.swal2-shown{background-color:rgba(0,0,0,.4)}.swal2-popup{display:none;position:relative;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem;box-sizing:border-box}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-popup .swal2-header{display:flex;flex-direction:column;align-items:center}.swal2-popup .swal2-title{display:block;position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-popup .swal2-actions{flex-wrap:wrap;align-items:center;justify-content:center;margin:1.25em auto 0;z-index:1}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-confirm{width:2.5em;height:2.5em;margin:.46875em;padding:0;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent;cursor:default;box-sizing:border-box;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-popup .swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{display:inline-block;width:15px;height:15px;margin-left:5px;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff;content:'';-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal}.swal2-popup .swal2-styled{margin:.3125em;padding:.625em 2em;font-weight:500;box-shadow:none}.swal2-popup .swal2-styled:not([disabled]){cursor:pointer}.swal2-popup .swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled:focus{outline:0;box-shadow:0 0 0 2px #fff,0 0 0 4px rgba(50,100,150,.4)}.swal2-popup .swal2-styled::-moz-focus-inner{border:0}.swal2-popup .swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-popup .swal2-image{max-width:100%;margin:1.25em auto}.swal2-popup .swal2-close{position:absolute;top:0;right:0;justify-content:center;width:1.2em;height:1.2em;padding:0;transition:color .1s ease-out;border:none;border-radius:0;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer;overflow:hidden}.swal2-popup .swal2-close:hover{-webkit-transform:none;transform:none;color:#f27474}.swal2-popup>.swal2-checkbox,.swal2-popup>.swal2-file,.swal2-popup>.swal2-input,.swal2-popup>.swal2-radio,.swal2-popup>.swal2-select,.swal2-popup>.swal2-textarea{display:none}.swal2-popup .swal2-content{justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:300;line-height:normal;z-index:1;word-wrap:break-word}.swal2-popup #swal2-content{text-align:center}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-radio,.swal2-popup .swal2-select,.swal2-popup .swal2-textarea{margin:1em auto}.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-textarea{width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;font-size:1.125em;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);box-sizing:border-box}.swal2-popup .swal2-file.swal2-inputerror,.swal2-popup .swal2-input.swal2-inputerror,.swal2-popup .swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-popup .swal2-file:focus,.swal2-popup .swal2-input:focus,.swal2-popup .swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-popup .swal2-file::-webkit-input-placeholder,.swal2-popup .swal2-input::-webkit-input-placeholder,.swal2-popup .swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-popup .swal2-file:-ms-input-placeholder,.swal2-popup .swal2-input:-ms-input-placeholder,.swal2-popup .swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::-ms-input-placeholder,.swal2-popup .swal2-input::-ms-input-placeholder,.swal2-popup .swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::placeholder,.swal2-popup .swal2-input::placeholder,.swal2-popup .swal2-textarea::placeholder{color:#ccc}.swal2-popup .swal2-range input{width:80%}.swal2-popup .swal2-range output{width:20%;font-weight:600;text-align:center}.swal2-popup .swal2-range input,.swal2-popup .swal2-range output{height:2.625em;margin:1em auto;padding:0;font-size:1.125em;line-height:2.625em}.swal2-popup .swal2-input{height:2.625em;padding:0 .75em}.swal2-popup .swal2-input[type=number]{max-width:10em}.swal2-popup .swal2-file{font-size:1.125em}.swal2-popup .swal2-textarea{height:6.75em;padding:.75em}.swal2-popup .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;color:#545454;font-size:1.125em}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-radio{align-items:center;justify-content:center}.swal2-popup .swal2-checkbox label,.swal2-popup .swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-popup .swal2-checkbox input,.swal2-popup .swal2-radio input{margin:0 .4em}.swal2-popup .swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;background:#f0f0f0;color:#666;font-size:1em;font-weight:300;overflow:hidden}.swal2-popup .swal2-validation-message::before{display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center;content:'!';zoom:normal}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}.swal2-icon{position:relative;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;line-height:5em;cursor:default;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;zoom:normal}.swal2-icon-text{font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:3.75em 3.75em;transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 3.75em;transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;top:-.25em;left:-.25em;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%;z-index:2;box-sizing:content-box}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;top:.5em;left:1.625em;width:.4375em;height:5.625em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);z-index:1}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;height:.3125em;border-radius:.125em;background-color:#a5dc86;z-index:2}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.875em;width:1.5625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-progresssteps{align-items:center;margin:0 0 1.25em;padding:0;font-weight:600}.swal2-progresssteps li{display:inline-block;position:relative}.swal2-progresssteps .swal2-progresscircle{width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center;z-index:20}.swal2-progresssteps .swal2-progresscircle:first-child{margin-left:0}.swal2-progresssteps .swal2-progresscircle:last-child{margin-right:0}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep{background:#3085d6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progresscircle{background:#add8e6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progressline{background:#add8e6}.swal2-progresssteps .swal2-progressline{width:2.5em;height:.4em;margin:0 -1px;background:#3085d6;z-index:10}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-show.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-hide.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-animate-success-icon .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-animate-error-icon{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-animate-error-icon .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}@-webkit-keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:initial!important}}");
 
 /***/ }),
-/* 298 */
+/* 297 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
