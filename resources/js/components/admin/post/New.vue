@@ -20,8 +20,9 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="descriptionId">Add New Description</label>
-                                    <textarea class="form-control" id="descriptionId" placeholder="Add New Post" v-model="form.description" name="description" :class="{ 'is-invalid': form.errors.has('description') }">
-                                    </textarea>
+
+                                    <markdown-editor v-model="form.description"></markdown-editor>
+
                                     <has-error :form="form" field="description"></has-error>
                                 </div>
 
