@@ -35,11 +35,10 @@
                                     <has-error :form="form" field="cat_id"></has-error>
                                 </div>
                                 <div class="form-group" >
-                                    <input name="photo" type="file" :class="{ 'is-invalid': form.errors.has('photo') }">
+                                    <input @change = "changePhoto($event)" name="photo" type="file" :class="{ 'is-invalid': form.errors.has('photo') }">
+                                    <img :src="form.photo" alt="" width="80" height="80">
                                     <has-error :form="form" field="photo"></has-error>
                                 </div>
-                              
-                                
 
                             </div>
                             <!-- /.card-body -->
@@ -81,7 +80,17 @@
             }
         },
         methods:{
+            changePhoto(event){
+                let file = event.target.files[0];
 
+                let reader = new FileReader();
+
+                reader.onload = event => {
+                   this.form.photo = event.target.result
+                };
+
+                reader.readAsDataURL(file);
+            }
         }
 
     }

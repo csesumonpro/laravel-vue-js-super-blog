@@ -69388,7 +69388,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -69399,7 +69399,6 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
 //
 //
 //
@@ -69482,7 +69481,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             return this.$store.getters.getCategory;
         }
     },
-    methods: {}
+    methods: {
+        changePhoto: function changePhoto(event) {
+            var _this = this;
+
+            var file = event.target.files[0];
+
+            var reader = new FileReader();
+
+            reader.onload = function (event) {
+                _this.form.photo = event.target.result;
+            };
+
+            reader.readAsDataURL(file);
+        }
+    }
 
 });
 
@@ -69667,7 +69680,21 @@ var render = function() {
                     [
                       _c("input", {
                         class: { "is-invalid": _vm.form.errors.has("photo") },
-                        attrs: { name: "photo", type: "file" }
+                        attrs: { name: "photo", type: "file" },
+                        on: {
+                          change: function($event) {
+                            _vm.changePhoto($event)
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        attrs: {
+                          src: _vm.form.photo,
+                          alt: "",
+                          width: "80",
+                          height: "80"
+                        }
                       }),
                       _vm._v(" "),
                       _c("has-error", {
