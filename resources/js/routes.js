@@ -34,7 +34,7 @@ export const routes = [
         component:AddPost
     },
     {
-        path:'/edit-category/:categoryid',
+        path:'/edit-post/:postid',
         component:EditPost
     }
 ];

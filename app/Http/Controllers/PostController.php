@@ -46,4 +46,11 @@ class PostController extends Controller
         }
         $post->delete();
     }
+    public function edit_post($id){
+        $post = Post::find($id);
+        return response()->json([
+            'post'=>$post
+        ],200);
+    }
+
 }
