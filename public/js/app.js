@@ -90736,7 +90736,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         updatePost: function updatePost() {
             var _this3 = this;
 
-            this.form.post('/savepost').then(function () {
+            this.form.post('update/' + this.$route.params.postid).then(function () {
                 _this3.$router.push('/post-list');
                 toast({
                     type: 'success',
@@ -90902,7 +90902,7 @@ var render = function() {
                             return _c(
                               "option",
                               { domProps: { value: category.id } },
-                              [_vm._v("option " + _vm._s(category.cat_name))]
+                              [_vm._v(_vm._s(category.cat_name))]
                             )
                           })
                         ],

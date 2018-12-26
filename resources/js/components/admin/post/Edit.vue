@@ -30,7 +30,7 @@
                                     <label>Select</label>
                                     <select class="form-control" :class="{ 'is-invalid': form.errors.has('cat_id') }" v-model="form.cat_id">
                                         <option disabled value="">Select One</option>
-                                        <option :value="category.id" v-for="category in getallCategory">option {{category.cat_name}}</option>
+                                        <option :value="category.id" v-for="category in getallCategory">{{category.cat_name}}</option>
 
                                     </select>
                                     <has-error :form="form" field="cat_id"></has-error>
@@ -110,7 +110,7 @@
 
             },
             updatePost(){
-                this.form.post('/savepost')
+                this.form.post(`update/${this.$route.params.postid}`)
                     .then(()=>{
                         this.$router.push('/post-list')
                         toast({
