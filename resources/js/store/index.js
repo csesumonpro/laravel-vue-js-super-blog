@@ -3,7 +3,8 @@ export default {
         category:[],
         post:[],
         blogpost:[],
-        singlepost:[]
+        singlepost:[],
+        allcategories:[]
     },
     getters:{
         getCategory(state){
@@ -17,6 +18,9 @@ export default {
         },
         singlepost(state){
             return state.singlepost
+        },
+        allcategories(state){
+            return state.allcategories
         }
 
     },
@@ -46,6 +50,13 @@ export default {
                 .then((response)=>{
                     context.commit('siglePost',response.data.post)
                 })
+        },
+        allcategories(context){
+            axios.get('/categories')
+                .then((response)=>{
+
+                    context.commit('allcategories',response.data.categories)
+                })
         }
     },
     mutations:{
@@ -60,7 +71,12 @@ export default {
         },
         siglePost(state,payload){
             return state.singlepost = payload
+        },
+        allcategories(state,payload){
+            return state.allcategories = payload
         }
+
+
 
     }
 }
