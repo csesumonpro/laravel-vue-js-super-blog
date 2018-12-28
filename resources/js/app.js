@@ -23,6 +23,7 @@ import {routes} from './routes';
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('admin-main', require('./components/admin/AdminMaster.vue'));
+Vue.component('home-main', require('./components/public/PublicMaster.vue'));
 
 // V-form
 import { Form, HasError, AlertError } from 'vform'

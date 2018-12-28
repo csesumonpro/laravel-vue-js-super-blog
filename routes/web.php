@@ -44,6 +44,9 @@ Route::group(['middleware' => ['auth']], function () {
 
 
 
+Route::get('/blogpost','BlogController@get_all_blog_post');
+Route::get('/singlepost/{id}','BlogController@getpost_by_id');
+
 
 
 
