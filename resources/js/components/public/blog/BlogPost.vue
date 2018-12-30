@@ -1,6 +1,7 @@
 <template>
     <span id="blogpost">
          <!-- end header -->
+      {{x}}
     <section id="inner-headline">
       <div class="container">
         <div class="row">
@@ -67,12 +68,15 @@
   import BlogSidebar from "./BlogSidebar.vue"
     export default {
         name: "BlogPost",
-
         components:{
             BlogSidebar
         },
         mounted(){
-          this.$store.dispatch('getblogPost');
+            if(this.$route.params.id!=null){
+              this.getAllCategoryPost();
+            }else{
+                this.$store.dispatch('getblogPost');
+            }
         },
         computed:{
           blogpost(){
@@ -80,8 +84,15 @@
           }
         },
         methods:{
-
-         }
+            getAllCategoryPost(){
+                this.$store.dispatch('getCatPostById',this.$route.params.id);
+            }
+         },
+        watch:{
+            $route(to,from){
+              this.getAllCategoryPost();
+            }
+        }
 
     }
 </script>

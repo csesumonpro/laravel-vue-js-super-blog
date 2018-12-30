@@ -45,15 +45,22 @@
             BlogSidebar
         },
         computed:{
-          singlepost(){
-              return this.$store.getters.singlepost
-          }
+            singlepost(){
+                return this.$store.getters.singlepost
+            }
         },
         methods:{
-
+          getSinglePost(){
+              this.$store.dispatch('getPostById',this.$route.params.id);
+          }
         },
         mounted(){
-            this.$store.dispatch('getPostById',this.$route.params.id);
+           this.getSinglePost();
+        },
+        watch:{
+            $route(to,from){
+                this.getSinglePost();
+            }
         }
     }
 </script>
