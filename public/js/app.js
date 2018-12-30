@@ -85811,9 +85811,10 @@ var index_esm = {
                 context.commit('allcategories', response.data.categories);
             });
         },
-        getCatPostById: function getCatPostById(context, payload) {
+        getPostByCatId: function getPostByCatId(context, payload) {
             axios.get('/categorypost/' + payload).then(function (response) {
-                context.commit('allcatpost', response.data.posts);
+                console.log(response.data.posts);
+                context.commit('getPostByCatId', response.data.posts);
             });
         }
     },
@@ -85833,8 +85834,8 @@ var index_esm = {
         allcategories: function allcategories(state, payload) {
             return state.allcategories = payload;
         },
-        allcatpost: function allcatpost(state, payload) {
-            return state.blogpost = payload;
+        getPostByCatId: function getPostByCatId(state, payload) {
+            state.blogpost = payload;
         }
     }
 });
@@ -90074,7 +90075,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -90152,7 +90153,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -90161,11 +90161,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         BlogSidebar: __WEBPACK_IMPORTED_MODULE_0__BlogSidebar_vue___default.a
     },
     mounted: function mounted() {
-        if (this.$route.params.id != null) {
-            this.getAllCategoryPost();
-        } else {
-            this.$store.dispatch('getblogPost');
-        }
+        this.$store.dispatch('getblogPost');
     },
 
     computed: {
@@ -90175,7 +90171,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     methods: {
         getAllCategoryPost: function getAllCategoryPost() {
-            this.$store.dispatch('getCatPostById', this.$route.params.id);
+            if (this.$route.params.id != null) {
+                this.$store.dispatch('getPostByCatId', this.$route.params.id);
+            } else {
+                this.$store.dispatch('getblogPost');
+            }
         }
     },
     watch: {
@@ -90183,7 +90183,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.getAllCategoryPost();
         }
     }
-
 });
 
 /***/ }),
@@ -90221,7 +90220,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -90415,7 +90414,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("span", { attrs: { id: "blogpost" } }, [
-    _vm._v("\n  " + _vm._s(_vm.x) + "\n"),
     _vm._m(0),
     _vm._v(" "),
     _c("section", { attrs: { id: "content" } }, [
@@ -90496,7 +90494,7 @@ var render = function() {
                               "router-link",
                               {
                                 staticClass: "pull-right",
-                                attrs: { to: "blog/" + post.id }
+                                attrs: { to: "/blog/" + post.id }
                               },
                               [
                                 _vm._v("Continue reading "),
@@ -90689,7 +90687,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -90754,17 +90752,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     },
     methods: {
-        getSinglePost: function getSinglePost() {
+        singlePost: function singlePost() {
             this.$store.dispatch('getPostById', this.$route.params.id);
         }
     },
     mounted: function mounted() {
-        this.getSinglePost();
+        this.singlePost();
     },
 
     watch: {
         $route: function $route(to, from) {
-            this.getSinglePost();
+            this.singlePost();
         }
     }
 });

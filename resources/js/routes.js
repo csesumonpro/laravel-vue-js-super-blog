@@ -61,8 +61,6 @@ export const routes = [
         component:BlogPost
     },
 
-
-
 ];
 
 

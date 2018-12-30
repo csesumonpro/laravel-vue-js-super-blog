@@ -26,7 +26,7 @@ class BlogController extends Controller
             'categories'=>$categories
         ],200);
     }
-    public function  get_all_post_by_category_id($id){
+    public function get_all_post_by_cat_id($id){
         $posts = Post::with('user','category')->where('cat_id',$id)->orderBy('id','desc')->get();
         return response()->json([
             'posts'=>$posts

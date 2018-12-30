@@ -40,9 +40,9 @@
     export default {
         name: "BlogSidebar",
         computed:{
-          allcategories(){
-              return this.$store.getters.allcategories;
-          },
+            allcategories(){
+                return this.$store.getters.allcategories;
+            },
             blogpost(){
                 return this.$store.getters.getblogPost
             }
@@ -50,11 +50,9 @@
         mounted(){
             this.$store.dispatch('getblogPost');
             this.$store.dispatch('allcategories')
-        },
-
+        }
     }
 </script>
 
 <style scoped>
-
 </style>

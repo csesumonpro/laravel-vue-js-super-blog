@@ -1,7 +1,6 @@
 <template>
     <span id="blogpost">
          <!-- end header -->
-      {{x}}
     <section id="inner-headline">
       <div class="container">
         <div class="row">
@@ -44,7 +43,7 @@
                       <li v-if="post.category"><i class="icon-folder-open"></i><a href="#"> {{post.category.cat_name}}</a></li>
                       <li><i class="icon-comments"></i><a href="#">4 Comments</a></li>
                     </ul>
-                    <router-link :to="`blog/${post.id}`" class="pull-right">Continue reading <i class="icon-angle-right"></i></router-link>
+                    <router-link :to="`/blog/${post.id}`" class="pull-right">Continue reading <i class="icon-angle-right"></i></router-link>
                   </div>
                 </div>
               </div>
@@ -65,38 +64,37 @@
 </template>
 
 <script>
-  import BlogSidebar from "./BlogSidebar.vue"
+    import BlogSidebar from "./BlogSidebar.vue"
     export default {
         name: "BlogPost",
         components:{
             BlogSidebar
         },
         mounted(){
-            if(this.$route.params.id!=null){
-              this.getAllCategoryPost();
-            }else{
-                this.$store.dispatch('getblogPost');
-            }
+            this.$store.dispatch('getblogPost');
         },
         computed:{
-          blogpost(){
-              return this.$store.getters.getblogPost
-          }
+            blogpost(){
+                return this.$store.getters.getblogPost
+            }
         },
         methods:{
             getAllCategoryPost(){
-                this.$store.dispatch('getCatPostById',this.$route.params.id);
+                if(this.$route.params.id!=null){
+                    this.$store.dispatch('getPostByCatId',this.$route.params.id);
+                }else{
+                    this.$store.dispatch('getblogPost');
+                }
+
             }
-         },
+        },
         watch:{
             $route(to,from){
-              this.getAllCategoryPost();
+                this.getAllCategoryPost();
             }
         }
-
     }
 </script>
 
 <style scoped>
-
 </style>

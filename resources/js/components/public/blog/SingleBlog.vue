@@ -50,21 +50,20 @@
             }
         },
         methods:{
-          getSinglePost(){
-              this.$store.dispatch('getPostById',this.$route.params.id);
-          }
+            singlePost(){
+                this.$store.dispatch('getPostById',this.$route.params.id);
+            }
         },
         mounted(){
-           this.getSinglePost();
+            this.singlePost();
         },
         watch:{
             $route(to,from){
-                this.getSinglePost();
+                this.singlePost();
             }
         }
     }
 </script>
 
 <style scoped>
-
 </style>

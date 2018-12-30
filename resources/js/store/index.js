@@ -26,10 +26,10 @@ export default {
     },
     actions:{
         allCategory(context){
-           axios.get('/category')
-               .then((response)=>{
-                   context.commit('categoreis',response.data.categories)
-               })
+            axios.get('/category')
+                .then((response)=>{
+                    context.commit('categoreis',response.data.categories)
+                })
         },
         gelAllPost(context){
             axios.get('/post')
@@ -58,10 +58,11 @@ export default {
                     context.commit('allcategories',response.data.categories)
                 })
         },
-        getCatPostById(context,payload){
+        getPostByCatId(context,payload){
             axios.get('/categorypost/'+payload)
                 .then((response)=>{
-                    context.commit('allcatpost',response.data.posts)
+                    console.log(response.data.posts)
+                    context.commit('getPostByCatId',response.data.posts)
                 })
         }
     },
@@ -81,10 +82,9 @@ export default {
         allcategories(state,payload){
             return state.allcategories = payload
         },
-        allcatpost(state,payload){
-            return state.blogpost = payload
+        getPostByCatId(state,payload){
+            state.blogpost = payload
         }
-
 
 
     }
