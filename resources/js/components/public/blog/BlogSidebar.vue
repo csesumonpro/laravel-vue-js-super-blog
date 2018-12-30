@@ -4,8 +4,8 @@
             <aside class="right-sidebar">
               <div class="widget">
                 <form class="form-search">
-                  <input placeholder="Type something" type="text" class="input-medium search-query">
-                  <button type="submit" class="btn btn-square btn-theme">Search</button>
+                  <input @keyup="RealSearch" placeholder="Type something" v-model="keyword" type="text" class="input-medium search-query">
+                  <button type="submit" @click.prevent="RealSearch" class="btn btn-square btn-theme">Search</button>
                 </form>
               </div>
               <div class="widget">
@@ -39,6 +39,11 @@
 <script>
     export default {
         name: "BlogSidebar",
+        data(){
+           return {
+               keyword:''
+           }
+        },
         computed:{
             allcategories(){
                 return this.$store.getters.allcategories;
@@ -50,6 +55,11 @@
         mounted(){
             this.$store.dispatch('getblogPost');
             this.$store.dispatch('allcategories')
+        },
+        methods:{
+            RealSearch(){
+                this.$store.dispatch('SearchPost',this.keyword);
+            }
         }
     }
 </script>

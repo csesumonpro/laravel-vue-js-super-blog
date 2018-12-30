@@ -64,6 +64,13 @@ export default {
                     console.log(response.data.posts)
                     context.commit('getPostByCatId',response.data.posts)
                 })
+        },
+        SearchPost(context,payload){
+            axios.get('/search?s='+payload)
+                .then((response)=>{
+                    context.commit('getSearchPost',response.data.posts)
+                })
+
         }
     },
     mutations:{
@@ -83,6 +90,9 @@ export default {
             return state.allcategories = payload
         },
         getPostByCatId(state,payload){
+            state.blogpost = payload
+        },
+        getSearchPost(state,payload){
             state.blogpost = payload
         }
 
