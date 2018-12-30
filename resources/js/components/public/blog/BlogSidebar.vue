@@ -37,6 +37,7 @@
 </template>
 
 <script>
+   import _ from 'lodash'
     export default {
         name: "BlogSidebar",
         data(){
@@ -57,9 +58,9 @@
             this.$store.dispatch('allcategories')
         },
         methods:{
-            RealSearch(){
+            RealSearch:_.debounce(function () {
                 this.$store.dispatch('SearchPost',this.keyword);
-            }
+            },1000)
         }
     }
 </script>

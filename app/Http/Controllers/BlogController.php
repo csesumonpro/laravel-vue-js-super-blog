@@ -33,13 +33,19 @@ class BlogController extends Controller
         ],200);
     }
     public function search_post(){
+
         $search = \Request::get('s');
-        $posts = Post::with('user','category')
-            ->where('title','LIKE',"%$search%")
-            ->orWhere('description','LIKE',"%$search%")
-            ->get();
-        return response()->json([
-            'posts'=>$posts
-        ],200);
+        if($search!=null){
+            $posts = Post::with('user','category')
+                ->where('title','LIKE',"%$search%")
+                ->orWhere('description','LIKE',"%$search%")
+                ->get();
+            return response()->json([
+                'posts'=>$posts
+            ],200);
+        }else{
+           return $this->get_all_blog_post();
+        }
+
     }
 }
