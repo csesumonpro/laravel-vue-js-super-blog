@@ -4,7 +4,8 @@ export default {
         post:[],
         blogpost:[],
         singlepost:[],
-        allcategories:[]
+        allcategories:[],
+        latestpost:[]
     },
     getters:{
         getCategory(state){
@@ -21,6 +22,9 @@ export default {
         },
         allcategories(state){
             return state.allcategories
+        },
+        latestpost(state){
+            return state.latestpost
         }
 
     },
@@ -71,6 +75,13 @@ export default {
                     context.commit('getSearchPost',response.data.posts)
                 })
 
+        },
+        latestPost(context){
+            axios.get('/latestpost')
+                .then((response)=>{
+                    // console.log(response.data)
+                    context.commit('latestpost',response.data.posts)
+                })
         }
     },
     mutations:{
@@ -94,6 +105,9 @@ export default {
         },
         getSearchPost(state,payload){
             state.blogpost = payload
+        },
+        latestpost(state,payload){
+            state.latestpost = payload
         }
 
 

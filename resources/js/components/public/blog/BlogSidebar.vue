@@ -50,11 +50,11 @@
                 return this.$store.getters.allcategories;
             },
             blogpost(){
-                return this.$store.getters.getblogPost
+                return this.$store.getters.latestpost
             }
         },
         mounted(){
-            this.$store.dispatch('getblogPost');
+            this.$store.dispatch('latestPost');
             this.$store.dispatch('allcategories')
         },
         methods:{
