@@ -82,7 +82,8 @@ export default {
                     // console.log(response.data)
                     context.commit('latestpost',response.data.posts)
                 })
-        }
+        },
+
     },
     mutations:{
         categoreis(state,data){
@@ -108,7 +109,7 @@ export default {
         },
         latestpost(state,payload){
             state.latestpost = payload
-        }
+        },
 
 
     }

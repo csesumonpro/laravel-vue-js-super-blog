@@ -33,6 +33,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('category/{id}','CategoryController@delete_category');
     Route::get('editcategory/{id}','CategoryController@edit_category');
     Route::post('update-category/{id}','CategoryController@update_category');
+    Route::get('/categorydelete/{id}','CategoryController@selected_category_by_id');
 
 //Post
     Route::get('/post','PostController@all_Post');
@@ -50,6 +51,7 @@ Route::get('/categories','BlogController@get_all_category');
 Route::get('/categorypost/{id}','BlogController@get_all_post_by_cat_id');
 Route::get('/search','BlogController@search_post');
 Route::get('/latestpost','BlogController@latest_post');
+
 
 
 

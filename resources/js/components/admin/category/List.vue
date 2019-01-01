@@ -19,6 +19,16 @@
                             <table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                 <tr>
+                                    <th>
+                                        <select name="" id="" v-model="selected" @change="deleteSelected">
+                                            <option disabled value="">Select</option>
+                                            <option value="" >Delete Selected</option>
+                                        </select><br>
+                                        <input id="select_all" @click.prevent = "selectAll" type="checkbox" v-model="allSelected"/>
+                                        <span v-if="allSelected==false">Check All</span>
+                                        <span v-else>Uncheck all</span>
+                                    </th>
+
                                     <th>Sl</th>
                                     <th>Name</th>
                                     <th>Date</th>
@@ -28,7 +38,7 @@
                                 </thead>
                                 <tbody>
 
-                                <tr v-for="(category,index) in getallCategory" :key="category.id">
+                                <tr v-for="(category,index) in getallCategory" :key="category.id">                 <td> <input type="checkbox" v-model="checkdelete" :value="category.id"></td>
                                     <td>{{index+1}}</td>
                                     <td>{{category.cat_name}}</td>
                                     <td>{{category.created_at | timeformat}}</td>
@@ -57,6 +67,13 @@
 <script>
     export default {
         name: "List",
+        data(){
+           return{
+               checkdelete:[],
+               selected:'',
+               allSelected:false
+           }
+        },
         mounted(){
             this.$store.dispatch("allCategory")
         },
@@ -78,6 +95,32 @@
                    .catch(()=>{
 
                    })
+            },
+            deleteSelected(){
+               axios.get('/categorydelete/'+this.checkdelete)
+                   .then(()=>{
+                       this.checkdelete  = []
+                       this.$store.dispatch("allCategory")
+                       toast({
+                           type: 'success',
+                           title: 'Category Deleted successfully'
+                       })
+
+
+                })
+
+            },
+            selectAll(){
+                if(this.allSelected==false){
+                    this.allSelected = true
+                    for (var category in this.getallCategory) {
+                        this.checkdelete.push(this.getallCategory[category].id);
+                    }
+                    console.log(this.checkdelete)
+                }else{
+                    this.allSelected = false
+                    this.checkdelete = []
+                }
             }
         }
     }

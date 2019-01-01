@@ -54,4 +54,5 @@ class BlogController extends Controller
             'posts'=>$posts
         ],200);
     }
+
 }
