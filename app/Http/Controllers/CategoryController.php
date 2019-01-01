@@ -45,4 +45,11 @@ class CategoryController extends Controller
         $category->cat_name = $request->cat_name;
         $category->save();
     }
+    public function selected_category($ids){
+       $all_id = explode(',',$ids);
+       foreach ($all_id as $id){
+           $category = Category::find($id);
+           $category->delete();
+       }
+    }
 }
